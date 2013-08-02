@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC Sport - Tennis</title>  
+    <link>http://www.bbc.co.uk/sport/0/tennis/</link>  
+    <description>The latest stories from the Tennis section of the BBC Sport web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Sun, 21 Apr 2013 14:55:21 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbc.co.uk/sol/shared/img/sport_120x60.gif</url>  
+      <title>BBC Sport - Tennis</title>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/sport/0/tennis/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>Djokovic beats Nadal in final</title>  
+      <description>Novak Djokovic beats Rafael Nadal to win his first Monte Carlo Masters title and end the Spaniard's unbeaten run.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/22239813</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/22239813</guid>  
+      <pubDate>Sun, 21 Apr 2013 15:46:32 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67145000/jpg/_67145950_djokovic4_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67147000/jpg/_67147109_djokovic1_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Robson draws GB level in Argentina</title>  
+      <description>Laura Robson brings Great Britain level at 1-1 in their Fed Cup tie against Argentina with victory over Florencia Molinero.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/22219914</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/22219914</guid>  
+      <pubDate>Sat, 20 Apr 2013 16:04:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67133000/jpg/_67133917_rob.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67133000/jpg/_67133915_rob.jpg"/> 
+    </item>  
+    <item> 
+      <title>Nadal to face Djokovic in final</title>  
+      <description>Eight-time champion Rafael Nadal and world number one Novak Djokovic win their Monte Carlo semi-finals in straight sets.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/22231768</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/22231768</guid>  
+      <pubDate>Sat, 20 Apr 2013 14:16:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67130000/jpg/_67130144_rn.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67130000/jpg/_67130128_rn.jpg"/> 
+    </item>  
+    <item> 
+      <title>Nadal extends Monte Carlo record</title>  
+      <description>Rafael Nadal extends his unbeaten record at the Monte Carlo Masters to 45 matches with victory over Grigor Dimitrov.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/22220518</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/22220518</guid>  
+      <pubDate>Fri, 19 Apr 2013 18:36:09 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67113000/jpg/_67113639_67113593.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67113000/jpg/_67113637_67113593.jpg"/> 
+    </item>  
+    <item> 
+      <title>Murray suffers swift Wawrinka defeat</title>  
+      <description>British number one Andy Murray suffers a 58-minute defeat to Stanislas Wawrinka as he is swept aside 6-1 6-2 in Monte Carlo.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/22204827</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/22204827</guid>  
+      <pubDate>Thu, 18 Apr 2013 16:33:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67089000/jpg/_67089027_67088962.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67089000/jpg/_67089025_67088962.jpg"/> 
+    </item>  
+    <item> 
+      <title>Murray makes winning start on clay</title>  
+      <description>Andy Murray wins his Monte Carlo opener against Edouard Roger-Vasselin, while Rafael Nadal and Novak Djokovic also progress.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/22169576</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/22169576</guid>  
+      <pubDate>Wed, 17 Apr 2013 16:06:30 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67069000/jpg/_67069820_am.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67069000/jpg/_67069824_am.jpg"/> 
+    </item>  
+    <item> 
+      <title>Murray and Peers win first title</title>  
+      <description>Jamie Murray and John Peers beat Bob and Mike Bryan to win the US Men's Clay Court Championship doubles title.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/22141581</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/22141581</guid>  
+      <pubDate>Sun, 14 Apr 2013 08:18:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66994000/jpg/_66994153_jamie-murray2-ap.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66994000/jpg/_66994158_jamie-murray2-ap.jpg"/> 
+    </item>  
+    <item> 
+      <title>Baltacha still happy despite loss</title>  
+      <description>Former British number one Elena Baltacha is upbeat despite failing to complete her first match in nine months following injury.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/22111885</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/22111885</guid>  
+      <pubDate>Thu, 11 Apr 2013 13:58:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66950000/jpg/_66950198_146437118.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66950000/jpg/_66950151_146437118.jpg"/> 
+    </item>  
+    <item> 
+      <title>GB male tennis embarrassing - Henman</title>  
+      <description>Former world number four Tim Henman says the state of British men's tennis, bar Andy Murray, is "embarrassing".</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/22100820</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/22100820</guid>  
+      <pubDate>Wed, 10 Apr 2013 19:50:22 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66934000/jpg/_66934791_evans-getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66934000/jpg/_66934789_evans-getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Tsonga joins Murray at Queen's Club</title>  
+      <description>Former finalist and world number eight Jo-Wilfried Tsonga will be among Andy Murray's rivals at Queen's Club in June.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21657991</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21657991</guid>  
+      <pubDate>Thu, 11 Apr 2013 09:53:45 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66940000/jpg/_66940276_tsonga_reuters.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66940000/jpg/_66940272_tsonga_reuters.jpg"/> 
+    </item>  
+    <item> 
+      <title>Watson targets French Open return</title>  
+      <description>Heather Watson is hoping to return in time for the French Open in May as she recovers from glandular fever.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/22098204</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/22098204</guid>  
+      <pubDate>Wed, 10 Apr 2013 15:48:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66929000/jpg/_66929789_159555681.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66929000/jpg/_66929787_159555681.jpg"/> 
+    </item>  
+    <item> 
+      <title>GB to face Croatia in Davis Cup</title>  
+      <description>Great Britain's Davis Cup team have been drawn away against Croatia for September's World Group play-off.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/22094033</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/22094033</guid>  
+      <pubDate>Wed, 10 Apr 2013 11:22:02 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66806000/jpg/_66806634_smith.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66806000/jpg/_66806600_smith.jpg"/> 
+    </item>  
+    <item> 
+      <title>Ward taken ill after Davis Cup win</title>  
+      <description>James Ward reveals he was placed on a drip the day after Great Britain's dramatic win over Russia in the Davis Cup.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/22087687</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/22087687</guid>  
+      <pubDate>Tue, 09 Apr 2013 20:43:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66915000/jpg/_66915165_66915129.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66915000/jpg/_66915163_66915129.jpg"/> 
+    </item>  
+    <item> 
+      <title>Djokovic a doubt for Monte Carlo</title>  
+      <description>Novak Djokovic is a doubt for next week's Monte Carlo Masters after damaging his ankle on Davis Cup duty.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/22078976</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/22078976</guid>  
+      <pubDate>Tue, 09 Apr 2013 12:35:09 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66825000/jpg/_66825545_djokovic_reuters.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66825000/jpg/_66825547_djokovic_reuters.jpg"/> 
+    </item>  
+    <item> 
+      <title>Ill Watson to miss Argentina tie</title>  
+      <description>Heather Watson is ruled out of Great Britain's Fed Cup tie in Argentina next week as she recovers from glandular fever.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/22078971</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/22078971</guid>  
+      <pubDate>Tue, 09 Apr 2013 10:28:33 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66821000/jpg/_66821511_wats.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66821000/jpg/_66821477_wats.jpg"/> 
+    </item>  
+    <item> 
+      <title>Robson out in Katowice first round</title>  
+      <description>Laura Robson is knocked out of the Katowice Open first round with a 5-7 7-6 (9-7) 6-1 loss to Lourdes Dominguez Lino.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/22074175</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/22074175</guid>  
+      <pubDate>Mon, 08 Apr 2013 22:02:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66815000/jpg/_66815957_laura_robson2_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66815000/jpg/_66815955_laura_robson2_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>GB fight back to seal famous victory</title>  
+      <description>James Ward and Dan Evans both win to help Great Britain clinch a historic victory over Russia in the Davis Cup.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/22059002</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/22059002</guid>  
+      <pubDate>Sun, 07 Apr 2013 21:50:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66794000/jpg/_66794471_66794415.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66802000/jpg/_66802169_66796419.jpg"/> 
+    </item>  
+    <item> 
+      <title>Williams wins Family Circle Cup</title>  
+      <description>Serena Williams comes from a set down to beat Jelena Jankovic 3-6 6-0 6-2 and win the Family Circle Cup in Charleston.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/22060759</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/22060759</guid>  
+      <pubDate>Sun, 07 Apr 2013 20:58:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66796000/jpg/_66796662_serena_williams_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66796000/jpg/_66796668_serena_williams_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Defeat will motivate me - Andy Murray</title>  
+      <description>British tennis number one Andy Murray speaks after losing to Swiss Stanislas Wawrinka in Monte Carlo and says he will use the heavy 6-1 6-2 defeat as motivation for the Madrid Masters.</description>  
+      <link>http://www.bbc.co.uk/sport/0/scotland/22207702</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/scotland/22207702</guid>  
+      <pubDate>Thu, 18 Apr 2013 16:09:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67090000/jpg/_67090856_andy_murray_web_1804.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67090000/jpg/_67090966_66752154.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Murray on his clay-court 'struggle'</title>  
+      <description>British number one Andy Murray admits he finds the start of the clay season a "struggle" ahead of this week's Monte Carlo Masters.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/22159340</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/22159340</guid>  
+      <pubDate>Tue, 16 Apr 2013 06:04:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67020000/png/_67020519_mmmurraystill.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67020000/png/_67020521_mmmurraystill.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Wozniacki carries clubs for McIlroy</title>  
+      <description>Tennis star Caroline Wozniacki acts as caddie for boyfriend Rory McIlroy in the par-three competition on the eve of the Masters</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/22105740</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/22105740</guid>  
+      <pubDate>Thu, 11 Apr 2013 09:43:59 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66941000/jpg/_66941839_166233380_10.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66941000/jpg/_66941840_166233380_10.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: British men's tennis 'embarrassing'</title>  
+      <description>Former British number one Tim Henman says having only one man in the world's top 200 is "embarrassing" for Great Britain.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/22098956</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/22098956</guid>  
+      <pubDate>Wed, 10 Apr 2013 21:22:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66935000/png/_66935208_mmtimhenmanstill.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66935000/png/_66935210_mmtimhenmanstill.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Baltacha returns after nine months</title>  
+      <description>Suffolk's Elena Baltacha tells BBC Look East it has been hard returning to training for her comeback tournament after a nine-month lay off.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/22078348</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/22078348</guid>  
+      <pubDate>Tue, 09 Apr 2013 12:13:18 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66821000/jpg/_66821750_66821741.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66821000/jpg/_66821748_66821741.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: GB beat Russia in Davis Cup thriller</title>  
+      <description>Listen to BBC Radio 5 live's commentary of stunning victories by James Ward and Dan Evans that help seal Great Britain's 3-2 win over Russia in the Davis Cup on Sunday.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/22061585</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/22061585</guid>  
+      <pubDate>Mon, 08 Apr 2013 08:17:17 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66799000/jpg/_66799000_gbteam.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66799000/jpg/_66799002_gbteam.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Murray happy with 'tough' Miami win</title>  
+      <description>Andy Murray says it's been a good week for him after he won the Miami Open and moved up to number two in the world rankings.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21991905</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21991905</guid>  
+      <pubDate>Sun, 31 Mar 2013 23:44:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66693000/png/_66693119_mmmurraymiamiclip.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66693000/png/_66693121_mmmurraymiamiclip.png"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Serena targets Evert &amp; Navratilova mark</title>  
+      <description>Serena Williams tells BBC Radio 5 live she aims to overtake the 18 Grand Slam singles titles won by Chris Evert and Martina Navratilova.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21990730</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21990730</guid>  
+      <pubDate>Sun, 31 Mar 2013 19:23:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66690000/jpg/_66690832_serena_williams.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66690000/jpg/_66690834_serena_williams.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Murray 'moving in the right direction'</title>  
+      <description>Andy Murray says he is "moving in the right direction" after reaching the final of the Miami Masters.</description>  
+      <link>http://www.bbc.co.uk/sport/0/scotland/21981433</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/scotland/21981433</guid>  
+      <pubDate>Sat, 30 Mar 2013 11:42:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66677000/jpg/_66677401_andy_murray_web3003.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66677000/jpg/_66677399_andy_murray_web3003.jpg"/> 
+    </item>  
+    <item> 
+      <title>'Absolutely nuts' Murray 'is a brilliant captain'</title>  
+      <description>She may like steaks, cakes and laughs, but Judy Murray knows what she's talking about, says BBC tennis correspondent Jonathan Overend</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/22226123</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/22226123</guid>  
+      <pubDate>Fri, 19 Apr 2013 21:18:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67122000/jpg/_67122429_judy_murray_getty2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67122000/jpg/_67122403_judy_murray_getty2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Murray confident ahead of Monte Carlo</title>  
+      <description>World number two Andy Murray feels practice will make perfect in this year's clay court season</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/22142935</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/22142935</guid>  
+      <pubDate>Sun, 14 Apr 2013 10:37:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66995000/jpg/_66995495_165123602.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66995000/jpg/_66995497_165123602.jpg"/> 
+    </item>  
+    <item> 
+      <title>Time for the Brits to start punching their weight</title>  
+      <description>Tennis correspondent Jonathan Overend says the win over Russia proves Great Britain can hold their own in the Davis Cup</description>  
+      <link>http://www.bbc.co.uk/sport/0/22063382</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/22063382</guid>  
+      <pubDate>Mon, 08 Apr 2013 17:48:44 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66811000/jpg/_66811339_dan_evans_getty66.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66811000/jpg/_66811337_dan_evans_getty66.jpg"/> 
+    </item>  
+    <item> 
+      <title>Fit-again Nadal exceeds expectations</title>  
+      <description>Rafael Nadal's stunning start to the season leaves him favourite to add to his tally of French Open titles, says Jonathan Overend</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21853981</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21853981</guid>  
+      <pubDate>Wed, 20 Mar 2013 06:30:35 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66492000/jpg/_66492714_nadal_afp_hi017528855.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66492000/jpg/_66492716_nadal_afp_hi017528855.jpg"/> 
+    </item>  
+    <item> 
+      <title>Murray savours Miami setting</title>  
+      <description>Andy Murray tells BBC Scotland that having a Miami base has improved his tennis</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21899917</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21899917</guid>  
+      <pubDate>Fri, 22 Mar 2013 16:23:33 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66381000/jpg/_66381605_amgetty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66382000/jpg/_66382066_66382064.jpg"/> 
+    </item>  
+    <item> 
+      <title>Draper's exit no surprise as British tennis review widens</title>  
+      <description>Common sense and straight talking are essential requirements for next LTA chief executive, says Jonathan Overend</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21779687</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21779687</guid>  
+      <pubDate>Wed, 13 Mar 2013 22:58:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66380000/jpg/_66380322_roger_draper2_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66380000/jpg/_66380320_roger_draper2_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Nadal wants low expectations</title>  
+      <description>Rafael Nadal pleading for patience as he returns to the concrete for the first time since 2012</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21712212</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21712212</guid>  
+      <pubDate>Fri, 08 Mar 2013 09:13:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66271000/jpg/_66271943_rafaelnadal_getty_163294838.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66271000/jpg/_66271941_rafaelnadal_getty_163294838.jpg"/> 
+    </item>  
+    <item> 
+      <title>Meeting Djokovic boosts Lapthorne</title>  
+      <description>Wheelchair tennis player Andy Lapthorne says meeting Novak Djokovic helped him refocus</description>  
+      <link>http://www.bbc.co.uk/sport/0/disability-sport/21660201</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/disability-sport/21660201</guid>  
+      <pubDate>Wed, 06 Mar 2013 16:57:58 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/44991000/gif/_44991487_67b16407-98ec-4420-9a98-b164a2964ae6.gif"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66195000/jpg/_66195706_andylapthornebackhandgettty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Improving GB ready for Argentina</title>  
+      <description>Judy Murray's progressing side have a good chance of beating Argentina in the Fed Cup World Group II play-off, says Jonathan Overend</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/21449769</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/21449769</guid>  
+      <pubDate>Wed, 13 Feb 2013 16:55:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65872000/jpg/_65872436_britishtennis2_getty_160875651.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65875000/jpg/_65875253_tennis-robsonandmurraygetty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Vergeer quits after 100% decade</title>  
+      <description>Wheelchair tennis champion Esther Vergeer retires after going over 10 years unbeaten, winning her last 470 matches.</description>  
+      <link>http://www.bbc.co.uk/sport/0/disability-sport/21426554</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/disability-sport/21426554</guid>  
+      <pubDate>Tue, 12 Feb 2013 15:33:02 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65839000/jpg/_65839713_151430052.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65839000/jpg/_65839709_151432419.jpg"/> 
+    </item>  
+    <item> 
+      <title>In pictures: Andy Murray's journey to his US Open win</title>  
+      <description>We look back at the images of Andy Murray's journey to his US Open title victory</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/19555391</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/19555391</guid>  
+      <pubDate>Tue, 11 Sep 2012 11:42:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/62815000/jpg/_62815582_murray_young_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/62821000/jpg/_62821497_murray_young_getty.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

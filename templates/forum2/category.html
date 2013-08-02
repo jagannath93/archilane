@@ -1,0 +1,23 @@
+<html>
+<body>
+
+
+<h3>	Category: {{ category.cat_name }} </h3> <h4>cat_desc: {{category.cat_desc}}</h4>
+
+	<table border=1>
+		<th>sr.no</th>                <th>name</th>                 <th>desc</th>  
+		{% for topic in topics %}
+		<tr>	
+		<td>{{ forloop.counter }}</td> 
+		<td>{{ topic.topic_name }}</td>
+		<td>{{ topic.topic_desc }}</td>
+		</tr>
+		{% endfor %}
+
+	<!--form action="/forum/add_post/" method="POST"> {% csrf_token %}
+		<textarea name="post_content"></textarea>
+		<input type = "hidden" name="topic" value = "{{ topic_id }}">
+		<input type="submit" value= "Post">
+	</form-->
+</body>
+</html>

@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+{% load static %}
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Archilane</title>
+<link type="text/css" href="{{ STATIC_URL }}css/commonElements/commonElements.css" rel="stylesheet"></link>
+<link type="text/css" href="{{ STATIC_URL }}css/portfolio/portfolio_stylesheet.css" rel="stylesheet"></link>
+<link rel="stylesheet" href="{{ STATIC_URL }}js/modal_window/colorbox.css" />
+<script type = "text/JavaScript" src = "{{ STATIC_URL }}js/commonElements/jquery-1.9.1.min.js"></script>
+<script type="text/JavaScript" src = "{{ STATIC_URL }}js/portfolio/ajax_functions.js"></script>
+<script type="text/JavaScript" src = "{{ STATIC_URL }}js/modal_window/jquery.colorbox.js"></script>
+<script type="text/JavaScript" src = "{{ STATIC_URL }}js/modal_window/jquery.colorbox-min.js"></script>	
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<link rel="shortcut icon" type="image/png" href="{{ STATIC_URL }}images/commonElements/favicon.png" />
+
+<script type="text/Javascript">
+	function choose_like_term(val) {
+		/* Handling like/likes terms according to data */
+		if(val == 1)
+			$('#portfolio_likes').html(
+				val + " like"
+			);
+		else if(val == 0)
+			$('#portfolio_likes').html(
+				"" //nothing
+			);
+		else
+			$('#portfolio_likes').html(
+				val + " likes"
+			);
+	}
+</script>
+</head>
+
+<body>
+<div style="display:none;">
+	<div id="add_item">
+		<div id="add_item_msg"></div>
+		<form id="add_item_form" action="/portfolio/add_item/" method="POST">{% csrf_token %}
+			<table>
+				<tr><td>Group</td><td>
+				<select name = "group">
+					{% for group in groups %}
+					<option value = "{{ group.id }}">{{ group.title }}</option>
+					{% endfor %}
+				</select>
+				</td></tr>
+				<br/>
+				<tr><td>Describe: </td><td><textarea name="item_desc"></textarea></td></tr>
+			</table>
+			<p>
+				<input type="submit" value="Submit" />
+			</p>
+		</form>
+	</div>
+</div>
+
+<div id = "main_content">
+	<div id = "portfolio_content">
+		
+		<div id = "personal_info">
+			
+			<div id = "buttons_box">
+				<!--button type = "button" name = "my_activity">Add a new Item</button-->
+				<a class='inline' href="#add_item"><button type = "button" name = "new_item">Add New Item</button></a>
+				<button type = "button" name = "my_activity" id = "edit_btn">Edit Portfolio</button>
+				<button type = "button" name = "add_item_btn" id = "add_item_btn">add_item</button>
+			</div>
+			
+			<div id = "profile_img_box">
+				<img id = "profile_img" src = "{{ user.userprofile.image.url }}"/>
+			</div>
+			
+			<p id = "portfolio_text">Portfolio 
+				<span id = "portfolio_likes" class = "pl" style = "cursor:pointer;"> 
+					<script type="text/javascript">
+						choose_like_term( {{ plikes }} );
+					</script>
+				</span> 
+			</p>
+			
+			<div id = "details_box">
+				<p id = "portfolio_username"> {{ user.first_name }} {{ user.last_name }} </p>
+				<p id = "portfolio_year"> {{ user.userprofile.course }} </p>
+				<p id = "college"> {{ user.userprofile.college }} </p>
+				<p id = "email"> {{ user.email }} </p>
+			</div>
+			
+		</div>
+		<div id = "entry_box" class = "groups">
+		{% for group in groups %}		
+		<div id = "main_group_{{ group.pk }}" class = "main_group">
+		<div class = "group_header">
+			{{ group.title }}
+		</div>
+		<div id = "main_items_{{ group.pk }}" class = "main_items">
+		{% for key,value in items.items %}
+			{% if key == group.pk %}			
+			{% for item in value %}			
+				{% if not item.has_image %}
+		<div id = "main_item_{{ item.pk }}" class = "single_entry_withOutPics">
+			<div class = "desc_box_big">
+				<p class = "desc_title">This is the title of the body</p>
+				<!--img class = "item_edit_btn" src="{{ STATIC_URL }}images/commonElements/edit_item.png" title = "Edit this Item" 
+					style="width:30px;height:30px;float:right;cursor:pointer;"-->
+				<br />
+				<div class = "desc_body">
+				<p>
+				{{ item.content }}
+				</p>
+				</div>
+			</div>
+			
+			<div class = "portfolio_entry_additional">
+				<p class = "item_left_links">
+				<span class = "entry_likes"> {{ item.likes }} </span> <span class = "entry_likes">Likes</span> | <a class = "read_more_btn">Read more...</a>
+				</p>
+				
+				<p class = "item_right_links"> 
+				<!--a class = "like_btn">Like</a--> <a class = "discussion_btn">Start a Discussion</a>  <!--a class = "feedback_btn">Send Feedback</a-->
+				</p>
+			</div>
+		</div>
+		{% elif item.has_image %}
+		<div id = "main_item_{{ item.pk }}" class = "single_entry_withPics">
+			<div class = "desc_box_small">
+				<p class = "desc_title">This is the title of the body</p>
+				<br />
+				<div class = "desc_body">
+				<p>
+				{{ item.content }} 
+				</p>
+				</div>
+			</div>
+			
+			<div class = "entry_pic_box">
+				<a class = "cover_pic" href = " {{ item.image_path }} " title = "This is the title of the body">
+					<img class = "entry_pic" src = "{{ item.image_path }}"/>
+				</a>
+			</div>
+			
+			<div class = "portfolio_entry_additional">
+				<p class = "item_left_links">
+				<span class = "entry_likes"> {{ item.likes }} </span> <span class = "entry_likes">Likes</span> | <a class = "read_more_btn">View this Item</a>
+				</p>
+				
+				<p class = "item_right_links"> 
+				<!--a class = "like_btn">Like</a--> <a class = "discussion_btn">Start a Discussion</a> <!--a class = "feedback_btn">Send Feedback</a-->
+				</p>
+			</div>
+		</div>	
+		{% endif %}
+		{% endfor %}		
+	{% endif %}
+	{% endfor %}
+	</div> 
+	</div>
+	{% endfor %}
+	</div> <!-- Group env -->
+	</div>
+	
+	</div>
+</div>
+
+
+<!--div id = "container_home"-->	
+	<div id = "Header_2">
+		<img src = "{{ STATIC_URL }}images/commonElements/header_2.png"/>
+		
+		<div id = "topBand_2"></div>
+		<div id = "bottomBand_2"></div>
+		
+		<div id = "top_arrow">
+		<img src = "{{ STATIC_URL }}images/commonElements/arrow_down.png" id = "arrow_img"/>
+		</div>
+		
+		<input type = "text" name = "Search_box" id = "Search_box" placeholder = "Search Archilane"/>
+		
+		<!--div id = "search_glass"><img src = "../commonElements/search_glass.png"/></div-->
+		<div id = "download_basket"><img src = "{{ STATIC_URL }}images/commonElements/download_basket.png"/></div>
+		<div id = "home_btn">
+		<a href="/home/"><p>Home</p></a>
+		</div>
+		<div id="page_message">
+		   <!-- To display global messages -->
+		   <p></p>
+		</div>
+	</div>
+	
+	<div id = "mainNavigation_panel">
+		<div id = "portfolio_icon" class = "main_navigation_icon">
+			<a href="/portfolio/{{ user.pk }}"><img src = "{{ STATIC_URL }}images/commonElements/portfolio_icon.png"/></a>
+			<p class = "mainNavigation_icon_text">Portfolio</p>
+		</div>
+		
+		<div id = "forum_icon" class = "main_navigation_icon">
+			<a href="/forum/"><img src = "{{ STATIC_URL }}images/commonElements/forum_icon.png"/></a>
+			<p class = "mainNavigation_icon_text">Forum</p>
+		</div>
+		
+		<div id = "resources_icon" class = "main_navigation_icon">
+			<img src = "{{ STATIC_URL }}images/commonElements/resources_icon.png"/>
+			<p class = "mainNavigation_icon_text">Resources</p>
+		</div>
+		
+		<div id = "people_icon" class = "main_navigation_icon">
+			<img src = "{{ STATIC_URL }}images/commonElements/people_icon.png"/>
+			<p class = "mainNavigation_icon_text">People</p>
+		</div>
+		
+		<div id = "messages_icon" class = "main_navigation_icon">
+			<img src = "{{ STATIC_URL }}images/commonElements/messages_icon.png"/>
+			<p class = "mainNavigation_icon_text">Messages</p>
+		</div>
+	</div>
+	
+	<div id = "panel_left">
+	<!--This is the secondary navigation bar-->
+	<p id = "contents_text">Contents</p>
+	<div id = "portfolio_navigation">	
+		{% for group in groups %}
+			<div id = "group_{{ group.pk }}" class = "group">
+			<div class = "portfolio_group">{{ group.title }}</div>
+			<div id = "items_{{ group.pk }}" class = "entry_panel">
+				{% for key, value in items.items %}	
+					{% if key == group.pk %}
+						{% for item in value %}
+						<div id = "portfolio_entry_{{ item.pk }}" class = "portfolio_entry"><p class="entry_text" >{{ item.content }}</p></div>									
+			
+						{% endfor %}
+					{% endif %}
+				{% endfor %}
+			</div>
+			</div>
+		{% endfor %}
+	</div>
+		
+		
+		<div style = "font-size:13px;width:100%;height:150px;">
+			<hr />
+			ad
+		</div>
+		
+	</div>
+	
+
+	
+	<!--div id = "panel_right"-->
+	<!--The one with the profile pic and also the archifeed-->
+		<div id = "profile_info" class = "panel_right">
+		<!--Profile information points etc.-->
+			<img src = "{{ user.userprofile.image.url }}" id = "profile_pic"/>
+		
+			<p id = "profileInfo_userName">{{ user.first_name }} </br> {{ user.last_name }}</p>
+			<p id = "profileInfo_collegeName">{{ user.userprofile.college }}</p>
+			<p id = "profileInfo_links"><a  href="/logout/" id = "logout_btn">Logout</a> | <a id = "settings_btn">Settings</a></p>
+		
+			<div id = "points">
+			<img src = "{{ STATIC_URL }}images/commonElements/points_icon.png" id = "points_icon">
+			<p>123</p><!--maximum number of digits limited to 7 only-->
+			</div>
+		
+		</div>
+		
+		<!--div id = "archifeed" class = "panel_right">
+			<div id = "archifeed_header">
+				<em>Archifeed</em>
+			</div>
+			<div class = "archifeed_item">
+			</div>
+			<div class = "archifeed_item">
+			</div>
+			<div class = "archifeed_item">
+			</div>
+		</div-->
+	<!--/div-->
+	
+	<div id = "searchResults_panel">
+	
+		<div class = "search_accordion_header">
+			Forum	
+			<img src = "{{ STATIC_URL }}images/commonElements/Loading_gif.gif"/ class = "loading_gif">
+			<p id = "forum_result_number" class = "search_result_number"></p>
+		</div>
+		<div class = "search_accordion_content" id = "forum_results">
+			<!--div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div-->
+			
+		</div>
+		<div class = "search_accordion_header">
+			Resources
+			<img src = "{{ STATIC_URL }}images/commonElements/Loading_gif.gif"/ class = "loading_gif">
+			<p id = "forum_result_number" class = "search_result_number"></p>
+		</div>
+		<div class = "search_accordion_content" id = "resources_results">
+			<!--div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div-->
+		</div>
+		<div class = "search_accordion_header">
+			People
+			<img src = "{{ STATIC_URL }}images/commonElements/Loading_gif.gif"/ class = "loading_gif">
+			<p id = "forum_result_number" class = "search_result_number"></p>
+		</div>
+		<div class = "search_accordion_content" id = "people_results">
+			<!--div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div-->
+		</div>
+		<div class = "search_accordion_header">
+			Archifeed
+			<img src = "{{ STATIC_URL }}images/commonElements/Loading_gif.gif"/ class = "loading_gif">
+			<p id = "forum_result_number" class = "search_result_number"></p>
+		</div>
+		<div class = "search_accordion_content" id = "archifeed_results">
+			<!--div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div-->
+		</div>
+	
+	</div>
+	
+	<div id = "side_arrow">
+	<
+	</div>
+	
+<!--/div-->
+	<script type = "text/JavaScript" src = "{{ STATIC_URL }}js/commonElements/commonScript.js"></script>
+	<script type = "text/JavaScript" src = "{{ STATIC_URL }}js/portfolio/portfolio_script.js"></script>	
+	<script type = "text/JavaScript"> 
+		$(document).ready(function(){	
+
+			$('a.cover_pic').colorbox({ opacity: 0.6, speed: 400, maxWidth:"800px", maxHeight:"650px;", transition:"elastic", fixed: "true"}); // left: "300px", top: "50px"});
+
+			$('.entry_text').click(function(){
+		var item_id = $(this).parent('.portfolio_entry').attr('id').replace('portfolio_entry_','main_item_');
+		var item_offset = $('#'+item_id).offset().top;	
+		var item_height = $('#'+item_id).height();
+		var scroll_position = item_offset + (item_height/2) - ($(window).height()/2) - 28;
+		$('html, body').animate({		
+		'scrollTop' : scroll_position },2000);
+		});		
+			
+	
+			$('#edit_btn').click(function(){
+				$('.desc_box_big').each(function(){
+					$(this).prepend('<img class = "item_edit_btn" src="{{ STATIC_URL }}images/commonElements/edit_item.png"'+
+                                        'style="width:20px;height:20px;float:right;cursor:pointer;margin:5px;" title = "Edit this Item">'+
+										'<img class = "item_share_btn" src="{{ STATIC_URL }}images/commonElements/share_item.png"'+
+                                        'style="width:20px;height:20px;float:right;cursor:pointer;margin:5px;" title = "Share this Item">');	
+				});
+				$('.desc_box_small').each(function(){
+					$(this).prepend('<img class = "item_edit_btn" src="{{ STATIC_URL }}images/commonElements/edit_item.png"'+
+                                        'style="width:20px;height:20px;float:right;cursor:pointer;margin:5px;" title = "Edit this Item">'+
+										'<img class = "item_share_btn" src="{{ STATIC_URL }}images/commonElements/share_item.png"'+
+                                        'style="width:20px;height:20px;float:right;cursor:pointer;margin:5px;" title = "Share this Item">');	
+				});
+				
+				$('.item_edit_btn').click(function(){
+					$(this).siblings('.desc_title').html("<input type='text' value='"+$(this).siblings('.desc_title').text()+"'/>");
+					$(this).siblings('.desc_body').html("<textarea style='width:500px;height:150px;overflow-y:scroll;'>"+ 
+						$(this).siblings('.desc_body').text() +"</textarea>");
+					$(this).hide();
+					$(this).parent('.desc_box_big').prepend('<img class = "item_save_btn" src="{{ STATIC_URL }}images/commonElements/portfolio_item_save.png"'+
+                                        'style="width:20px;height:20px;float:right;cursor:pointer;margin:5px;" title = "Save this Item">');
+				});
+
+				if($('#edit_btn').text() == 'Edit Portfolio'){
+				$('<div class = "group_handle"><img src = "{{ STATIC_URL }}images/commonElements/move_icon.png" class = "move_icon"/></div>').appendTo('.portfolio_group');
+				$('<div class = "entry_handle"><img src = "{{ STATIC_URL }}images/commonElements/move_icon.png" class = "move_icon"/></div>').insertBefore('.entry_text');
+				
+				$('<div class = "drop_down">'+
+					'<p style = "font-size:13px;color:#818181;cursor:default;">Move to :</p>'
+					{% for group in groups %}
+						+'<div id = "{{ group.pk }}" class = "drop_down_option">{{ group.title }}</div>'
+					{% endfor %}
+						).appendTo('.entry_handle');
+
+				$('.drop_down_option').click(function(){
+				
+		var item_id = $(this).parent().parent().parent().attr('id').replace('portfolio_entry_','');					
+					var from_id = $('#portfolio_entry_'+item_id).parent().attr('id');
+					var to_group_id = $(this).attr('id');
+					$("#portfolio_entry_"+item_id).appendTo('#items_'+to_group_id);
+					
+					   $.ajaxSetup({
+						data:{csrfmiddlewaretoken : '{{ csrf_token }}'},
+					   });
+					   var url = "/portfolio/move_items/?group_id="+to_group_id+"&item_id="+item_id;
+
+					
+					//$.ajax({dataType: 'json'});
+					   $.get(url, function(response){
+						//alert(response);
+						 /*var json = JSON.parse(response, function(key, value){
+							if(key == "itemID") itemID = value;
+
+							if(key == "groupID") groupID = value;							
+						});*/	
+						
+						 $("#main_item_"+response['data']['itemID']).appendTo('#main_items_'+response['data']['groupID']);
+					   });			
+				});
+				
+				$('.drop_down').hide();
+				
+				$('.item_right_links').hide();
+				$('.item_left_links').hide();
+				
+				$('<div class = "entry_buttons_box"><button type = "button" name = "my_activity">Delete</button></div>'+
+					'<select class = "item_privacy">'+
+					'<option value = "private">Public</option>'+
+					'<option value = "public">Private</option>'+
+					'</select>').appendTo('.single_entry_withOutPics');
+				$('<div class = "entry_buttons_box"><button type = "button" name = "my_activity">Delete</button></div>'+
+					'<select class = "item_privacy">'+
+					'<option value = "private">Public</option>'+
+					'<option value = "public">Private</option>'+
+					'</select>').appendTo('.single_entry_withPics');
+				
+				$('#edit_btn').text('Save Portfolio');
+				
+				$('.entry_handle').click(function(){
+				$(this).parent().siblings().children('.entry_handle').children('.drop_down').hide();
+				$(this).children('.drop_down').slideToggle('fast');
+				$(this).siblings('.entry_text').css({'background-color':'#024b83'});
+				$(this).parent().siblings().children('.entry_text').css({'background-color':'#eff8ff'});
+				$(this).siblings('.entry_text').css({'color':'#e6e6e6'});
+				$(this).parent().siblings().children('.entry_text').css({'color':'#4b4b4b'});
+				});
+				
+				}else if($('#edit_btn').text() == 'Save Portfolio'){
+				$('#edit_btn').text('Edit Portfolio');  
+				$('.item_edit_btn').remove();
+				$('.item_save_btn').remove();
+				$('.item_share_btn').remove();
+				$('.item_privacy').remove();
+				$('.group_handle').remove();
+				$('.entry_handle').remove();
+				$('.entry_buttons_box').remove();
+				$('.item_right_links').show();
+				$('.item_left_links').show();
+				}
+			});
+			
+			$('#add_item_btn').click(function(){
+				$('<div id = "uploadForm_box">'+
+					'<div id = "formBox_back"></div>'+
+					'<div id = "uploadForm_close_btn"><img src = "'+$('#forum_icon').children('a').children('img').attr('src').replace('forum_icon.png','close_btn.png')+'"/></div>'+
+					'</div>').appendTo('body');
+					
+				$('#uploadForm_close_btn').click(function(){
+					$(this).parent('#uploadForm_box').remove();
+				});
+				
+				$(document).keyup(function(e){
+					if(e.keyCode == 27){
+						$('#uploadForm_box').remove();
+					}
+				});
+				
+				//here goes the ajax code
+				
+				$('#formBox_back, #uploadForm_box').css('min-height',$(window).height()-57);
+			
+				$(window).resize(function(){
+					$('#formBox_back, #uploadForm_box').css('min-height',$(window).height()-57);
+				});
+				
+				//ajax code for loading portfolio_uploadForm.html - starts
+				$.get('/portfolio/item/upload/', function(res){
+					$(res).appendTo('#uploadForm_box');
+				});			
+				//ajax code for loading portfolio_uploadForm.html - ends
+			});
+
+			/* Script - Edit mode */			
+
+							
+
+				/*$('.items').hide();
+				$('.group_menu').hide();
+				
+				$('.group_title').click(function(){ 
+					$(this).siblings('.items').toggle();
+				});*/
+				
+				/*$('.group_handle').click(function(){
+					$('.group_menu').toggle()
+				});*/
+
+				/*$('.item').click(function(){
+					$(this).css({'background-color':'grey'}).siblings().css({'background-color':'white'});
+				});*/
+				
+
+
+
+				/* Groups sorting */
+				$("#portfolio_navigation").sortable({opacity: 0.6, handle: '.group_handle', cursor: 'move', update: function(event, ui) {
+					//alert(ui.item); 
+					var order = $(this).sortable("serialize");
+
+					$.ajaxSetup({
+						data:{csrfmiddlewaretoken : '{{ csrf_token }}'},
+					});
+					var url = '/portfolio/update_groups/?'+order;
+					$.get( url, function(response){
+						//alert(response['data'][0]);
+
+						//alert(response['data'].length);
+ 
+						/*var groups = new Array();
+						JSON.parse(response, function(key, value){
+							groups[key] = value;
+						});*/
+						
+						var j=0;
+						for(j=0;j < (Object.keys(response['data']).length)-1;j++)
+						{
+	$("#entry_box").children('#main_group_'+response['data'][j+1]).insertAfter($("#entry_box").children('#main_group_'+response['data'][j]));
+						}
+					}); }
+				});
+			
+				
+				/* Items sorting within a Group */
+				$(".entry_panel").sortable({opacity: 0.6, cursor: 'move', handle : '.entry_handle', update: function(event, ui) {
+						//alert(ui.item); 
+						var order = $(this).sortable("serialize");
+						var id = $(this).attr('id');
+						var group_id = id.replace('items_','');
+						//alert(group_id);
+					
+						$.ajaxSetup({
+							data:{csrfmiddlewaretoken : '{{ csrf_token }}'},
+						});
+						var url = '/portfolio/update_items/?'+order+"&group_id="+group_id;
+
+						$.get( url, function(response){
+							
+							/*JSON.parse(response, function(key,value){
+								//alert("check2");
+								items[key] = value;
+								alert(key+", "+value);
+							});*/
+							//var data = "{{ json|safe }}";
+							//alert(Object.keys(response['data']).length);
+							var i = 0;
+							for(i=0;i<(Object.keys(response['data']).length)-1;i++)
+							{
+								//var div1 = $('#main_'+id).children('#main_item_'+items[i]);
+							 	//var div2 = $('#main_'+id).children('#main_item_'+items[i+1]);
+							//alert(response['data'][i+1]);
+
+							
+ $('#main_items_'+group_id).children('#main_item_'+response['data'][i+1]).insertAfter($('#main_items_'+group_id).children('#main_item_'+response['data'][i]));
+							}
+						}); }
+				}).disableSelection(); 
+
+
+
+				/* Moving an Item between Groups */
+
+				
+											
+		});
+
+		/*$(document).ajaxStart(function(){
+			var msg = "Saving...";
+			$('#page_message').children('p').text(msg);
+			}).ajaxStop(function(){
+			msg = "Saved";
+			$('#page_message').children('p').text(msg);
+		   	});*/
+			
+		function fetch_likes(){
+			$.get('/portfolio/likes/{{ user.pk }}/', function(res){
+
+				var val = res['data']['pl'];
+				choose_like_term( val );
+
+				var j=1; var plu="";
+				for(j=1; j <= (Object.keys(res['data']['plu']).length); j++){
+					plu += res['data']['plu'][j] + "\n";
+				}
+				plu = plu.slice(0,-1);
+				$('span.pl').attr('title', plu);
+			});
+		}
+		
+		window.setInterval(function(){ fetch_likes(); }, 5000);
+
+
+
+		
+	</script>
+
+<!--div id = "itemViewingBox">
+<div id = "ViewingBox_back"></div>
+	<div id = "itemViewer_close_btn"><img src = "{{ STATIC_URL }}images/commonElements/close_btn.png"/></div>
+</div-->
+	
+</body>
+
+</html>

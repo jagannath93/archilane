@@ -1,0 +1,6 @@
+{% if key_expired %}
+<h3 style='color:red;'>You are trying to login with an expired key!! So please sign-up again.</h3>
+{% endif %}
+{% if confirmed %}
+<p>Congratulations!! Your email account has successfully verified.Pleae login <a href="/site_auth/signin/">here</a></p>
+{% endif %}

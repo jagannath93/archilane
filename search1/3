@@ -1,0 +1,15 @@
+from haystack.query import SearchQuerySet
+from django.shortcuts import render_to_response
+from django.http import HttpResponse
+
+from site_auth.models import UserProfile
+
+def search(request):
+	render_to_response('apple.html')
+
+def global_search(request):
+	data = request.GET.get["q"]
+	sqs = SearchQuerySet().filter(designation=data).models(UserProfile)
+	return HttpResponse(sqs)
+
+

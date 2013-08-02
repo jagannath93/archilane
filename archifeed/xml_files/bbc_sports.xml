@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC Sport - Sport</title>  
+    <link>http://www.bbc.co.uk/sport/0/</link>  
+    <description>The latest stories from the Sport section of the BBC Sport web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Sun, 21 Apr 2013 16:47:20 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbc.co.uk/sol/shared/img/sport_120x60.gif</url>  
+      <title>BBC Sport - Sport</title>  
+      <link>http://www.bbc.co.uk/sport/0/</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/sport/0/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>Farah runs half of London Marathon</title>  
+      <description>"Next year I'll do the full race," he says.</description>  
+      <link>http://www.bbc.co.uk/sport/0/athletics/22237835</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/athletics/22237835</guid>  
+      <pubDate>Sun, 21 Apr 2013 11:41:37 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67142000/jpg/_67142075_hi017797910.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67142000/jpg/_67142073_hi017797910.jpg"/> 
+    </item>  
+    <item> 
+      <title>Celtic 4-1 Inverness CT</title>  
+      <description></description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22141268</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22141268</guid>  
+      <pubDate>Sun, 21 Apr 2013 13:51:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67145000/jpg/_67145331_hooper.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67145000/jpg/_67145329_hooper.jpg"/> 
+    </item>  
+    <item> 
+      <title>Vettel dominates to take Bahrain win</title>  
+      <description>Red Bull's Sebastian Vettel takes his second win in four races this year as he dominates the Bahrain Grand Prix.</description>  
+      <link>http://www.bbc.co.uk/sport/0/formula1/22240232</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/formula1/22240232</guid>  
+      <pubDate>Sun, 21 Apr 2013 14:04:57 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67145000/jpg/_67145166_race_solo_vettel_afp.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67145000/jpg/_67145082_race_solo_vettel_afp.jpg"/> 
+    </item>  
+    <item> 
+      <title>Charge after player punched on pitch</title>  
+      <description></description>  
+      <link>http://www.bbc.co.uk/news/uk-england-hereford-worcester-22238150#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-hereford-worcester-22238150</guid>  
+      <pubDate>Sun, 21 Apr 2013 15:07:57 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67146000/jpg/_67146694_jex_9645_de43-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67146000/jpg/_67146695_jex_9645_de43-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Tottenham 3-1 Man City</title>  
+      <description>Tottenham's stunning comeback against Manchester City leaves Manchester United three points away from the Premier League title.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22141282</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22141282</guid>  
+      <pubDate>Sun, 21 Apr 2013 15:02:47 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67145000/jpg/_67145994_167128732.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67146000/jpg/_67146499_167128732.jpg"/> 
+    </item>  
+    <item> 
+      <title>Djokovic beats Nadal in final</title>  
+      <description>Novak Djokovic beats Rafael Nadal to win his first Monte Carlo Masters title and end the Spaniard's unbeaten run.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/22239813</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/22239813</guid>  
+      <pubDate>Sun, 21 Apr 2013 15:46:32 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67145000/jpg/_67145950_djokovic4_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67147000/jpg/_67147109_djokovic1_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Jeptoo &amp; Kebede take marathon wins</title>  
+      <description>Priscah Jeptoo capitalises on Tiki Gelana's fall to win the London Marathon, with Tsegaye Kebede winning the men's race.</description>  
+      <link>http://www.bbc.co.uk/sport/0/athletics/22238317</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/athletics/22238317</guid>  
+      <pubDate>Sun, 21 Apr 2013 11:37:18 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67142000/jpg/_67142966_hi017798256.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67142000/jpg/_67142964_hi017798256.jpg"/> 
+    </item>  
+    <item> 
+      <title>Ireland's Martin wins oldest classic</title>  
+      <description>Ireland's Daniel Martin secures his first classic win in the Liege-Bastogne-Liege on Sunday.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cycling/22241871</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cycling/22241871</guid>  
+      <pubDate>Sun, 21 Apr 2013 16:38:30 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67147000/jpg/_67147952_martin2_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67147000/jpg/_67147921_martin2_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>GB's Oldham clinches high bar silver</title>  
+      <description>Sam Oldham completes Great Britain's five-medal haul at the European Gymnastic Championships with a silver.</description>  
+      <link>http://www.bbc.co.uk/sport/0/gymnastics/22240794</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/gymnastics/22240794</guid>  
+      <pubDate>Sun, 21 Apr 2013 15:21:45 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67145000/jpg/_67145671_167126402.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67145000/jpg/_67145673_167126402.jpg"/> 
+    </item>  
+    <item> 
+      <title>Russian tycoon top of rich list</title>  
+      <description>Arsenal FC shareholder Alisher Usmanov tops the annual Sunday Times list of the wealthiest people in Britain and Ireland with a £13.3bn fortune.</description>  
+      <link>http://www.bbc.co.uk/news/uk-22233389#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-22233389</guid>  
+      <pubDate>Sat, 20 Apr 2013 18:10:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67139000/jpg/_67139824_159921005-5.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67139000/jpg/_67139825_159921005-5.jpg"/> 
+    </item>  
+    <item> 
+      <title>Fury moves closer to world title</title>  
+      <description>Tyson Fury moves closer to a world heavyweight title fight after knocking out American Steve Cunningham in New York.</description>  
+      <link>http://www.bbc.co.uk/sport/0/boxing/22235044</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/boxing/22235044</guid>  
+      <pubDate>Sat, 20 Apr 2013 22:15:58 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67138000/jpg/_67138614_tysonfury6.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67138000/jpg/_67138595_tysonfury6.jpg"/> 
+    </item>  
+    <item> 
+      <title>Cleverly targets Hopkins unification</title>  
+      <description>WBO champion Nathan Cleverly says he wants to test his credentials as an "elite level boxer" against Bernard Hopkins.</description>  
+      <link>http://www.bbc.co.uk/sport/0/wales/22238831</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/wales/22238831</guid>  
+      <pubDate>Sun, 21 Apr 2013 13:13:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67142000/jpg/_67142851_167105950.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67142000/jpg/_67142918_167105950.jpg"/> 
+    </item>  
+    <item> 
+      <title>QPR survival 'almost impossible'</title>  
+      <description></description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22235355</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22235355</guid>  
+      <pubDate>Sat, 20 Apr 2013 18:39:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67136000/jpg/_67136793_67136216.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67136000/jpg/_67136398_67136391.jpg"/> 
+    </item>  
+    <item> 
+      <title>Daley eases into final on return</title>  
+      <description>British Olympic bronze medallist Tom Daley qualifies for Sunday night's World Series platform final in Edinburgh</description>  
+      <link>http://www.bbc.co.uk/sport/0/diving/22238361</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/diving/22238361</guid>  
+      <pubDate>Sun, 21 Apr 2013 13:03:42 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67144000/jpg/_67144730_tomdaley2_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67144000/jpg/_67144722_tomdaley2_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Arsenal Ladies exit Champions League</title>  
+      <description>Arsenal are out of the Women's Champions League after a 4-1 aggregate defeat in their semi-final against Wolfsburg.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22240737</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22240737</guid>  
+      <pubDate>Sun, 21 Apr 2013 15:02:18 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67145000/jpg/_67145616_kim_little2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67145000/jpg/_67145614_kim_little2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Brownlee eases to San Diego win</title>  
+      <description>Olympic champion Alistair Brownlee wins by 20 seconds in San Diego in his first triathlon of the 2013 World Series.</description>  
+      <link>http://www.bbc.co.uk/sport/0/triathlon/22237513</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/triathlon/22237513</guid>  
+      <pubDate>Sun, 21 Apr 2013 06:54:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67140000/jpg/_67140021_alistair_brownlee_ap.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67140000/jpg/_67140019_alistair_brownlee_ap.jpg"/> 
+    </item>  
+    <item> 
+      <title>Shooter Wilson wins World Cup gold</title>  
+      <description>London 2012 gold medallist Peter Wilson wins shooting gold in the United Arab Emirates on his competitive return.</description>  
+      <link>http://www.bbc.co.uk/sport/0/shooting/22237583</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/shooting/22237583</guid>  
+      <pubDate>Sun, 21 Apr 2013 06:45:47 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67140000/jpg/_67140179_peter_wilson_getty2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67140000/jpg/_67140177_peter_wilson_getty2.jpg"/> 
+    </item>  
+    <item> 
+      <title>In pictures: London Marathon</title>  
+      <description>Thousands of runners are taking part in Sunday's London Marathon, amid tightened security following the Boston Marathon bombings.</description>  
+      <link>http://www.bbc.co.uk/news/uk-22237688#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-22237688</guid>  
+      <pubDate>Sun, 21 Apr 2013 14:47:20 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67140000/jpg/_67140629_elitewomen.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67140000/jpg/_67140630_elitewomen.jpg"/> 
+    </item>  
+    <item> 
+      <title>Sir Chris Hoy's career in pictures</title>  
+      <description>A look back at Sir Chris Hoy's career, with the six-time Olympic champion expected to announce his retirement from the sport.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cycling/22112188</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cycling/22112188</guid>  
+      <pubDate>Thu, 18 Apr 2013 11:50:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67036000/jpg/_67036500_hoy2222.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67036000/jpg/_67036502_hoy2222.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Moto3 Grand Prix - USA</title>  
+      <description>Watch live coverage of MotoGP, Moto2 and Moto3 races from the Circuit of the Americas in Austin, Texas.</description>  
+      <link>http://www.bbc.co.uk/sport/0/motogp/20020369</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/motogp/20020369</guid>  
+      <pubDate>Sun, 21 Oct 2012 07:28:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67134000/jpg/_67134752_moto3-maverickvinales.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67134000/jpg/_67134754_moto3-maverickvinales.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Bahrain Grand Prix highlights</title>  
+      <description>Watch BBC One highlights of the Bahrain Grand Prix from the Bahrain International Circuit.</description>  
+      <link>http://www.bbc.co.uk/sport/0/formula1/20485847</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/formula1/20485847</guid>  
+      <pubDate>Sun, 25 Nov 2012 17:04:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67148000/jpg/_67148424_vettel_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67148000/jpg/_67148426_vettel_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Ethiopia's Kebede wins men's marathon</title>  
+      <description>Ethiopian Tsegaye Kebede storms through late on to win the London Marathon for a second time.</description>  
+      <link>http://www.bbc.co.uk/sport/0/athletics/22238615</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/athletics/22238615</guid>  
+      <pubDate>Sun, 21 Apr 2013 12:01:30 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67143000/png/_67143842_mmmensracelondonmarathon.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67143000/png/_67143843_mmmensracelondonmarathon.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Highlights - Vettel powers to Bahrain win</title>  
+      <description>Watch race highlights as Red Bull's Sebastian Vettel powers to a dominant victory in the Bahrain Grand Prix.</description>  
+      <link>http://www.bbc.co.uk/sport/0/formula1/22241910</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/formula1/22241910</guid>  
+      <pubDate>Sun, 21 Apr 2013 16:10:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67148000/jpg/_67148397_167128192.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67148000/jpg/_67148399_167128192.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Marathon runner hit by wheelchair</title>  
+      <description>Olympic marathon champion Tiki Gelana collides with wheelchair athlete Josh Cassidy during the 2013 London Marathon.</description>  
+      <link>http://www.bbc.co.uk/sport/0/athletics/22238423</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/athletics/22238423</guid>  
+      <pubDate>Sun, 21 Apr 2013 09:39:28 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67142000/png/_67142094_mmathmargelanapic.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67142000/png/_67142096_mmathmargelanapic.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Kenya's Jeptoo wins women's marathon</title>  
+      <description>Kenya's Priscah Jeptoo says she is very happy with her "tough" 2013 London Marathon win in two hours, 20 minutes and 13 seconds.</description>  
+      <link>http://www.bbc.co.uk/sport/0/athletics/22238430</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/athletics/22238430</guid>  
+      <pubDate>Sun, 21 Apr 2013 11:20:30 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67142000/png/_67142144_mmathmarwomensracepic.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67142000/png/_67142145_mmathmarwomensracepic.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Marquez grabs maiden pole in Texas</title>  
+      <description>Spain's Marc Marquez becomes the youngest rider to earn a MotoGP pole position after setting the fastest time ahead of Sunday's Grand Prix of the Americas.</description>  
+      <link>http://www.bbc.co.uk/sport/0/motogp/22235556</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/motogp/22235556</guid>  
+      <pubDate>Sat, 20 Apr 2013 20:49:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67135000/jpg/_67135509_marquez_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67135000/jpg/_67135511_marquez_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: QPR dream in tatters - Redknapp</title>  
+      <description>QPR boss Harry Redknapp admits his team's dream of Premier League survival "looks to be in tatters" after a 2-0 defeat at home to fellow strugglers Stoke.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22230460</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22230460</guid>  
+      <pubDate>Sat, 20 Apr 2013 17:02:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67134000/jpg/_67134164_mmftbredknapp2004.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67134000/jpg/_67134160_mmftbredknapp2004.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Wenger on Arsenal's 'sensational' run</title>  
+      <description>Arsene Wenger says Arsenal's recent run of form has been "sensational" after the Gunners boosted their hopes of a Premier League top four finish with a 1-0 win at Fulham.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22230458</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22230458</guid>  
+      <pubDate>Sat, 20 Apr 2013 16:40:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67133000/jpg/_67133924_wenger.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67133000/jpg/_67133908_wenger.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Fulham played like lions - Jol</title>  
+      <description>Martin Jol says his Fulham side "played like lions" and "heroes," after competing for the most part with 10 men during their 1-0 home defeat to Arsenal.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22232380</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22232380</guid>  
+      <pubDate>Sat, 20 Apr 2013 18:06:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67135000/jpg/_67135520_67134669.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67135000/jpg/_67135522_67134669.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Pardew admits Newcastle aren't safe</title>  
+      <description>Newcastle manager Alan Pardew says his side have "got to keep working" if they are to avoid relegation following their 1-1 draw against West Brom.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22234755</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22234755</guid>  
+      <pubDate>Sat, 20 Apr 2013 16:36:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67133000/png/_67133834_mmftbwbanewpardewpic.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67133000/png/_67133836_mmftbwbanewpardewpic.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Yorston screamer boosts Bristol</title>  
+      <description>Bristol Academy's Corinne Yorston scores a spectacular brace as they beat Everton 4-3 in the Women's Super League.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22225017</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22225017</guid>  
+      <pubDate>Fri, 19 Apr 2013 16:38:30 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67119000/jpg/_67119096_wslbristol.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67119000/jpg/_67119094_wslbristol.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Stanford sprints to dramatic second</title>  
+      <description>American Gwen Jorgensen wins the second women's race of the World Triathlon Series, while Britain's Non Stanford secures second with a sprint finish.</description>  
+      <link>http://www.bbc.co.uk/sport/0/triathlon/22228211</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/triathlon/22228211</guid>  
+      <pubDate>Sat, 20 Apr 2013 07:23:32 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67124000/png/_67124856_mmtriwomenswinner.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67124000/png/_67124858_mmtriwomenswinner.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Snooker - Higgins v Davis</title>  
+      <description>Live coverage of table one at the World Snooker Championship from the Crucible in Sheffield.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/22193792</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/22193792</guid>  
+      <pubDate>Wed, 17 Apr 2013 18:22:17 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/57045000/jpg/_57045694_snooker3.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67144000/jpg/_67144810_higgins_afp.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Neil Lennon addresses Celtic fans</title>  
+      <description>Celtic manager Neil Lennon speaks to fans after clinching the Scottish Premier League title and thanks them for their support.</description>  
+      <link>http://www.bbc.co.uk/sport/0/scotland/22240183</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/scotland/22240183</guid>  
+      <pubDate>Sun, 21 Apr 2013 14:59:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67146000/jpg/_67146408_celtic_celebrations_web2104.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67146000/jpg/_67146276_celtic_celebrations_web2104.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Brownlee wins San Diego race in style</title>  
+      <description>Alistair Brownlee dominated in his 2013 World Triathlon Series debut to win the second race of the season in San Diego, United States.</description>  
+      <link>http://www.bbc.co.uk/sport/0/triathlon/22237086</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/triathlon/22237086</guid>  
+      <pubDate>Sun, 21 Apr 2013 05:22:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67139000/jpg/_67139153_mmtribrownleewinsandiego.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67139000/jpg/_67139156_mmtribrownleewinsandiego.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Marathon support incredible - Farah</title>  
+      <description>Double Olympic gold medallist Mo Farah says the support he received from spectators while running half of the London Marathon was "unbelievable".</description>  
+      <link>http://www.bbc.co.uk/sport/0/athletics/22238981</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/athletics/22238981</guid>  
+      <pubDate>Sun, 21 Apr 2013 10:50:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67142000/jpg/_67142881_mmathlonmarfarahdropout.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67142000/jpg/_67142877_mmathlonmarfarahdropout.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Weir beaten in thrilling finish</title>  
+      <description>GB's David Weir misses out on a seventh London Marathon victory, finishing fifth in the 2013 wheelchair race, which was won by Australia's Kurt Fearnley.</description>  
+      <link>http://www.bbc.co.uk/sport/0/athletics/22238982</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/athletics/22238982</guid>  
+      <pubDate>Sun, 21 Apr 2013 11:55:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67143000/jpg/_67143762_mmathlonmarwchairmens2edit.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67143000/jpg/_67143758_mmathlonmarwchairmens2edit.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: London Marathon sights and sounds</title>  
+      <description>BBC Sport takes a look at the highlights of the 2013 London Marathon where Kenya's Priscah Jeptoo triumphed in the women's race and Ethiopian Tsegaye Kebede was the fastest man.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/22239218</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/22239218</guid>  
+      <pubDate>Sun, 21 Apr 2013 12:11:48 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67143000/jpg/_67143702_mmmarathonsightspic.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67144000/jpg/_67144177_mmmarathonsightspic.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Hull KR knock Saints out of Challenge Cup</title>  
+      <description>Hull Kingston Rovers knock 12-man St Helens out of the Challenge Cup at the fourth round stage with a 26-18 victory at Craven Park.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/22232378</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/22232378</guid>  
+      <pubDate>Sat, 20 Apr 2013 17:13:53 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67136000/jpg/_67136564_sw01_hullkr-sthelens.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67136000/jpg/_67136566_sw01_hullkr-sthelens.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Sunderland still not safe - Di Canio</title>  
+      <description>Sunderland boss Paolo Di Canio says his side are not yet guaranteed Premier League survival, despite beating Everton 1-0 at the Stadium of Light.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22230462</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22230462</guid>  
+      <pubDate>Sat, 20 Apr 2013 17:38:33 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67134000/jpg/_67134718_dicanio.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67134000/jpg/_67134714_dicanio.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Defeat difficult to explain - Martinez</title>  
+      <description>Wigan boss Roberto Martinez says his side "should have got something" after their 2-0 defeat at West Ham, and admits he finds it "hard to understand" how his side lost.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22235143</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22235143</guid>  
+      <pubDate>Sat, 20 Apr 2013 17:25:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67134000/jpg/_67134445_67134440.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67134000/jpg/_67134447_67134440.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Keatings delighted with golden return</title>  
+      <description>Britain's Daniel Keatings "confident" after winning European gold in the pommel horse final in Russia.</description>  
+      <link>http://www.bbc.co.uk/sport/0/gymnastics/22231024</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/gymnastics/22231024</guid>  
+      <pubDate>Sat, 20 Apr 2013 12:08:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67129000/png/_67129520_mmgymkeatingsgoldpic.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67129000/png/_67129522_mmgymkeatingsgoldpic.png"/> 
+    </item>  
+    <item> 
+      <title>How credible is Celtic's title triumph?</title>  
+      <description>Former Celtic favourite Pat Bonner looks at what the club's SPL title win means in the absence of Rangers</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22198357</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22198357</guid>  
+      <pubDate>Sun, 21 Apr 2013 14:22:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67095000/jpg/_67095876_commons_reuters.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67095000/jpg/_67095874_commons_reuters.jpg"/> 
+    </item>  
+    <item> 
+      <title>Ronnie the Rolling Stone</title>  
+      <description>Ronnie O'Sullivan makes his comeback at the World Championship and provides some much-needed box office</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/22236837</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/22236837</guid>  
+      <pubDate>Sat, 20 Apr 2013 22:16:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67138000/jpg/_67138483_67138482.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67141000/jpg/_67141946_ronnieosullivan_feature.jpg"/> 
+    </item>  
+    <item> 
+      <title>'Absolutely nuts' Murray 'is a brilliant captain'</title>  
+      <description>She may like steaks, cakes and laughs, but Judy Murray knows what she's talking about, says Jonathan Overend</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/22226123</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/22226123</guid>  
+      <pubDate>Fri, 19 Apr 2013 21:18:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67122000/jpg/_67122429_judy_murray_getty2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67122000/jpg/_67122403_judy_murray_getty2.jpg"/> 
+    </item>  
+    <item> 
+      <title>A decade on: When Radcliffe had the world in awe</title>  
+      <description>Paula Radcliffe talks to chief sports writer Tom Fordyce 10 years after smashing the marathon world record</description>  
+      <link>http://www.bbc.co.uk/sport/0/athletics/22184970</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/athletics/22184970</guid>  
+      <pubDate>Fri, 19 Apr 2013 05:56:59 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67059000/jpg/_67059090_1927887.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67058000/jpg/_67058292_1927887.jpg"/> 
+    </item>  
+    <item> 
+      <title>Lewis Hamilton: Racing is more strategic now</title>  
+      <description>In his latest BBC Sport column, Lewis Hamilton talks about strategic racing and his car collection, as well as answering your questions</description>  
+      <link>http://www.bbc.co.uk/sport/0/formula1/22209168</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/formula1/22209168</guid>  
+      <pubDate>Fri, 19 Apr 2013 06:54:50 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66401000/jpg/_66401230_lewis_hamilton_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66401000/jpg/_66401149_hamilton5.jpg"/> 
+    </item>  
+    <item> 
+      <title>From San Siro to a concentration camp</title>  
+      <description>The story of Ferdinando Valletti, the Italian whose football skills helped him survive a concentration camp</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22221976</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22221976</guid>  
+      <pubDate>Fri, 19 Apr 2013 19:21:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67122000/jpg/_67122021_vallettipic.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67115000/jpg/_67115691_vallettipic.jpg"/> 
+    </item>  
+    <item> 
+      <title>Warner's football legacy goes on</title>  
+      <description>Former Fifa vice president Jack Warner's football legacy goes on as he faces further accusations from Concacaf</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22227395</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22227395</guid>  
+      <pubDate>Fri, 19 Apr 2013 22:08:33 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67123000/jpg/_67123205_jack_warner_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67123000/jpg/_67123203_jack_warner_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>End of season ups and downs</title>  
+      <description>How will your team fare? Promotion, relegation and the race for Europe across England and Scotland</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21686144</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21686144</guid>  
+      <pubDate>Sun, 21 Apr 2013 16:18:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67045000/jpg/_67045462_gestude_pa.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67048000/jpg/_67048840_67048839.jpg"/> 
+    </item>  
+    <item> 
+      <title>Must-not-miss sport on the BBC</title>  
+      <description>Your guide to this weekend's sporting events on the BBC</description>  
+      <link>http://www.bbc.co.uk/sport/0/17151954</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/17151954</guid>  
+      <pubDate>Fri, 19 Apr 2013 16:07:33 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/56361000/jpg/_56361347_premiership_2_203.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67118000/jpg/_67118790_mofarah_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>London 2012's most-watched</title>  
+      <description>BBC Sport reveals all 50 of the most-watched videos from the 2012 London Olympics</description>  
+      <link>http://www.bbc.co.uk/sport/0/olympics/20950228</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/olympics/20950228</guid>  
+      <pubDate>Sun, 13 Jan 2013 07:57:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65162000/jpg/_65162766_jessicaennis1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65162000/jpg/_65162762_jessicaennis1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Record sales for Anniversary Games</title>  
+      <description>Tickets for the first two days of the London 2012 Anniversary Games at the Olympic Stadium sell out in only 75 minutes.</description>  
+      <link>http://www.bbc.co.uk/sport/0/athletics/22218446</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/athletics/22218446</guid>  
+      <pubDate>Fri, 19 Apr 2013 13:22:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66669000/jpg/_66669055_usainboltreuters.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67108000/jpg/_67108291_olympicstadium2getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Chisora labours to win over Avila</title>  
+      <description>Dereck Chisora beats Hector Alfredo Avila in the ninth round in his first fight since losing to David Haye in July.</description>  
+      <link>http://www.bbc.co.uk/sport/0/boxing/22236634</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/boxing/22236634</guid>  
+      <pubDate>Sun, 21 Apr 2013 06:16:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67139000/jpg/_67139953_dereck_chisora_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67139000/jpg/_67139951_dereck_chisora_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Wright inspires Warwickshire win</title>  
+      <description>Chris Wright takes 6-31 as Warwickshire bowl out Durham to win their Championship game at Edgbaston by 318 runs.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22226543</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22226543</guid>  
+      <pubDate>Sat, 20 Apr 2013 14:13:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67130000/jpg/_67130490_wright_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67130000/jpg/_67130492_wright_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>GB's Reade &amp; Phillips win again</title>  
+      <description>Shanaze Reade and Liam Phillips give Britain a clean sweep of victories for the second night at the BMX World Cup in Manchester.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cycling/22236700</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cycling/22236700</guid>  
+      <pubDate>Sat, 20 Apr 2013 20:59:51 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67144000/jpg/_67144450_lp2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67144000/jpg/_67144448_lp2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Boston marathon winner races London</title>  
+      <description>Tatyana McFadden is one of 24 wheelchair athletes who will compete in London after taking part in Boston on the day of the bombings.</description>  
+      <link>http://www.bbc.co.uk/sport/0/disability-sport/22154417</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/disability-sport/22154417</guid>  
+      <pubDate>Fri, 19 Apr 2013 18:04:42 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67120000/jpg/_67120202_67117337.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67120000/jpg/_67120187_67117337.jpg"/> 
+    </item>  
+    <item> 
+      <title>Liverpool v Chelsea</title>  
+      <description>Preview followed by live coverage of Sunday's game between Liverpool and Chelsea in the Premier League.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22141299</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22141299</guid>  
+      <pubDate>Fri, 19 Apr 2013 11:19:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/44477000/gif/_44477859_premiership_66_49.gif"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/51683000/jpg/_51683891_premier_live_114.jpg"/> 
+    </item>  
+    <item> 
+      <title>Bahrain GP stupid - Ecclestone</title>  
+      <description>Formula 1 boss Bernie Ecclestone believes the Bahrain government were "stupid in a lot of ways" for hosting a grand prix.</description>  
+      <link>http://www.bbc.co.uk/sport/0/formula1/22231448</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/formula1/22231448</guid>  
+      <pubDate>Sat, 20 Apr 2013 13:11:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67129000/jpg/_67129969_ecclestone1_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67129000/jpg/_67129940_ecclestone1_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Donald one behind at RBC Heritage</title>  
+      <description>Luke Donald remains in contention at the RBC Heritage with a second-round 68 to move within one shot of the lead.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/22229696</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/22229696</guid>  
+      <pubDate>Sat, 20 Apr 2013 09:39:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67126000/jpg/_67126413_luke_donald2_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67126000/jpg/_67126415_luke_donald2_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Godsmejudge wins Scottish National</title>  
+      <description>Godsmejudge, ridden by by Wayne Hutchinson, becomes the youngest horse since 2001 to win the Scottish Grand National.</description>  
+      <link>http://www.bbc.co.uk/sport/0/horse-racing/22216973</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/horse-racing/22216973</guid>  
+      <pubDate>Sat, 20 Apr 2013 17:24:09 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67133000/jpg/_67133030_godsmejudge_pa.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67133000/jpg/_67133028_godsmejudge_pa.jpg"/> 
+    </item>  
+    <item> 
+      <title>Marquez storms to pole in Texas</title>  
+      <description>Spain's Marc Marquez becomes the youngest rider to earn a MotoGP pole with a superb ride at the Grand Prix of the Americas.</description>  
+      <link>http://www.bbc.co.uk/sport/0/motogp/22215062</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/motogp/22215062</guid>  
+      <pubDate>Sat, 20 Apr 2013 19:56:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67122000/jpg/_67122900_67123141.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67140000/jpg/_67140091_67123141.jpg"/> 
+    </item>  
+    <item> 
+      <title>GB's Whitlock wins European silver</title>  
+      <description>Double Olympic bronze medallist Max Whitlock secures his first senior European medal with second place in the all-around in Russia</description>  
+      <link>http://www.bbc.co.uk/sport/0/gymnastics/22219808</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/gymnastics/22219808</guid>  
+      <pubDate>Fri, 19 Apr 2013 12:44:28 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67111000/jpg/_67111628_maxwhitlock_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67111000/jpg/_67111626_maxwhitlock_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Keighley 4-74 Warrington</title>  
+      <description>Holders Warrington Wolves ease through to round five of the Challenge Cup with a convincing win at Keighley Cougars.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/22203359</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/22203359</guid>  
+      <pubDate>Sun, 21 Apr 2013 15:38:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67146000/jpg/_67146760_an5i3424.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67146000/jpg/_67146758_an5i3424.jpg"/> 
+    </item>  
+    <item> 
+      <title>London Wasps 24-37 Exeter Chiefs</title>  
+      <description>Exeter Chiefs boosted their hopes of a Heineken Cup spot as they condemn London Wasps to a seventh consecutive defeat.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/22176229</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/22176229</guid>  
+      <pubDate>Sun, 21 Apr 2013 16:17:14 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67146000/jpg/_67146620_167128009.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67146000/jpg/_67146622_167128009.jpg"/> 
+    </item>  
+    <item> 
+      <title>O'Sullivan eases through at Worlds</title>  
+      <description>Four-time world champion Ronnie O'Sullivan beats Marcus Campbell 10-4 in their first round match at the Crucible.</description>  
+      <link>http://www.bbc.co.uk/sport/0/snooker/22232528</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/snooker/22232528</guid>  
+      <pubDate>Sun, 21 Apr 2013 10:10:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67130000/jpg/_67130389_ronnie_osullivan2_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67141000/jpg/_67141862_ronnie.jpg"/> 
+    </item>  
+    <item> 
+      <title>Armstrong withdraws from swim meet</title>  
+      <description>Disgraced cyclist Lance Armstrong withdraws from the US Masters swimming championships after an objection from Fina.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cycling/22023732</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cycling/22023732</guid>  
+      <pubDate>Thu, 04 Apr 2013 15:09:09 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65351000/jpg/_65351341_65350768.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66739000/jpg/_66739629_65350768.jpg"/> 
+    </item>  
+    <item> 
+      <title>Robson draws GB level in Argentina</title>  
+      <description>Laura Robson brings Great Britain level at 1-1 in their Fed Cup tie against Argentina with victory over Florencia Molinero.</description>  
+      <link>http://www.bbc.co.uk/sport/0/tennis/22219914</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/22219914</guid>  
+      <pubDate>Sat, 20 Apr 2013 16:04:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67133000/jpg/_67133917_rob.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67133000/jpg/_67133915_rob.jpg"/> 
+    </item>  
+    <item> 
+      <title>Barrow sets British snowboard record</title>  
+      <description>Bath-based Jamie Barrow sets the British speed snowboarding record after reaching 94 mph in Verbier, Switzerland.</description>  
+      <link>http://www.bbc.co.uk/sport/0/winter-sports/22207817</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/winter-sports/22207817</guid>  
+      <pubDate>Thu, 18 Apr 2013 16:59:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67090000/jpg/_67090749_barrow3.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67090000/jpg/_67090751_barrow3.jpg"/> 
+    </item>  
+    <item> 
+      <title>Hull FC 62-6 Crusaders</title>  
+      <description>Full-back Jamie Shaul's hat-trick helps Hull FC reach the Challenge Cup fifth round with victory against Crusaders.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-league/22202926</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-league/22202926</guid>  
+      <pubDate>Sun, 21 Apr 2013 13:50:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67145000/jpg/_67145427_shaul.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67145000/jpg/_67145429_shaul.jpg"/> 
+    </item>  
+    <item> 
+      <title>Lennon targets squad improvements</title>  
+      <description>Celtic boss Neil Lennon admits some players may leave in the summer, but replacements will depend on future income.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22240718</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22240718</guid>  
+      <pubDate>Sun, 21 Apr 2013 15:30:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67147000/jpg/_67147005_lennonflag.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67147000/jpg/_67147003_lennonflag.jpg"/> 
+    </item>  
+    <item> 
+      <title>Platini doubts Wales' Euro 2020 bid</title>  
+      <description>Uefa president Michel Platini says Cardiff lacks the required infrastructure to be a host city for Euro 2020.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22239338</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22239338</guid>  
+      <pubDate>Sun, 21 Apr 2013 14:13:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67145000/jpg/_67145223_cdf_aerial_views_04.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67145000/jpg/_67145221_cdf_aerial_views_04.jpg"/> 
+    </item>  
+    <item> 
+      <title>McDowell four behind in Heritage</title>  
+      <description>Graeme McDowell trails leader Charley Hoffman by four shots going into Sunday's final round of the Heritage event.</description>  
+      <link>http://www.bbc.co.uk/sport/0/golf/22213280</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/golf/22213280</guid>  
+      <pubDate>Sun, 21 Apr 2013 10:30:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66033000/jpg/_66033720_hi017305875.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66033000/jpg/_66033718_hi017305875.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

@@ -1,0 +1,58 @@
+<html>
+<h3><a href='/site_auth/upload_pic/'>Upload Profile Picture</a><a style="float:right;" href='/site_auth/signout'>Logout</a></h3>
+<h3>Hello {{ user.email}}</h3>
+<title>ArchiLane | Forum Home</title>
+
+<div id='left_bar' style='float:left;'>
+	{% for category in categories %}
+		<span> <a href="/forum/category/?cat='{{category.cat_name}}'"> {{ category.cat_name }} </a> </span> </br>
+	{% endfor %}
+</div>	
+
+<h2>Add a Topic</h2>
+		<form action="/forum/add_topic/" method="POST">{% csrf_token %}
+			<table>
+			<tr><td>Category</td><td>
+			<select name = "category">
+				{% for category in categories %}
+				<option value = "{{ category.id }}">{{ category.cat_name }}</option>
+				{% endfor %}
+			</select>
+			</td></tr>
+			<tr><td>Topic</td><td><input type='text' name="topic_name"></td></tr>
+			<br/>
+			<tr><td>Describe your Topic</td><td><textarea name="topic_desc"></textarea></td></tr>
+			</table>
+			<p>
+			<input type="submit" value="Submit" />
+			</p>
+		</form>
+
+<h3>Latest Topics</h3>
+<table border=1>
+{% for topic in latest_topics %}
+	<tr><td>{{ forloop.counter }}</td><td width="100px">{{ topic.topic_name }}</td>
+			<td width="500px">{{ topic.topic_desc }}</td></tr>
+{% endfor %}
+</table>
+
+<h3>Active Topics</h3>
+<table border=1>
+{% for topic in active_topics %}
+	<tr><td>{{ forloop.counter }}</td><td width="100px">{{ topic.topic_name }}</td>
+			<td width="500px">{{ topic.topic_desc }}</td></tr>
+{% endfor %}
+</table>
+
+<h3>Top Topics</h3>
+<table border=1>
+{% for topic in top_topics %}
+	<tr><td>{{ forloop.counter }}</td><td width="100px">{{ topic.topic_name }}</td>
+			<td width="500px">{{ topic.topic_desc }}</td></tr>
+{% endfor %}
+</table>
+
+
+	</body>
+
+</html>

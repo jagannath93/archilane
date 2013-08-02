@@ -1,0 +1,26 @@
+<html>
+<body>
+	
+	<table>
+		{% for topic in topics %}
+		<tr>	
+			<td>{{ forloop.counter }}</td> 
+			<td>{{ topic.topic_name }}</td>
+			<td>{{ topic.topic_desc }}</td>
+		</tr>
+			<table>
+			{% for post in posts %}
+			<tr><td>{{ forloop.counter }}</td> <td>{{ post.post_content }}</td></tr>
+			{% endfor %}
+			<table>
+		{% endfor %}
+	<table>
+{{posts[1]}}
+
+	<!--form action="/forum/add_post/" method="POST"> {% csrf_token %}
+		<textarea name="post_content"></textarea>
+		<input type = "hidden" name="topic" value = "{{ topic_id }}">
+		<input type="submit" value= "Post">
+	</form-->
+</body>
+</html>

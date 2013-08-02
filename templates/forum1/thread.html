@@ -1,0 +1,12 @@
+<html>
+<body>
+	{% for post in posts %}
+		{{ forloop.counter }} <p>.) {{ post.post_content }}<br/></p>
+	{% endfor %}
+
+	<form action="/forum/add_post" method="POST">
+		<textarea name="post_content"></textarea>
+		<input type="submit" value= "Post">
+	</form>
+</body>
+</html>

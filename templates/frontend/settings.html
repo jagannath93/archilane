@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<style type = "text/css">
+		html{
+			margin : 0px;
+			padding : 0px;
+		}
+		#canvas1 {
+				position : absolute;
+				top : 20px;
+				left : 20px;
+				border : solid #024b87 1px;
+				background-color : #eff8ff;
+				cursor : pointer;
+				}
+		#inp {
+			position : absolute;
+			left : 300px;
+			}
+		#imageUploaded {
+					display : none;
+					opacity : 0.6;
+					z-index : -1;
+					}
+		.zoomButtons{
+				height : 25px;
+				width : 25px;
+				background-color : #eff8ff;
+				border : solid #024b87 1px;
+				text-align : center;
+				font-size : 25px;      n
+				cursor : pointer;
+				}
+		.zoomButtons:hover {
+			background-color : #eff899;
+		}
+		#controlBox{
+				width : 150px;
+				position : absolute;
+				top : 285px;
+				left : 65px;           
+				cursor : pointer;
+				}
+		#helpText{
+			position : absolute;
+		}
+		#signupForm{
+			position : absolute;
+			top : 150px;
+			left : 300px;
+		}
+	</style>
+	<script type = "text/JavaScript" src = "{{ STATIC_URL }}js/commonElements/jquery-1.9.1.min.js"></script>
+</head>
+
+<body>
+<div style = "margin : 100px">
+<canvas id = "canvas1" width = "250px" height = "250px"></canvas><!--always specify the canvas dimensions here but not in the css-->
+<input type = "file" name = "img" id = "inp" accept = "image/*" onchange = "loadImage()"/>
+<p id = "helpText">Select a file</p>
+<div id = "controlBox">
+	<div id = "zoomIn" class = "zoomButtons" style = "float:right">+</div>
+	<div id = "zoomOut" class = "zoomButtons" style = "float:left">-</div>
+</div>
+<form action = "" method = "POST" id = "signupForm">{% csrf_token %}
+	<input type = "hidden" name = "profile_pic" value = "" id = "picSubmitTag"/>
+	<input type = "submit" id = "submit_btn"/>
+</form>
+</div>
+<script type = "text/JavaScript" src = "{{ STATIC_URL }}js/commonElements/profilePicUpload_script.js"></script>
+</body>
+</html>

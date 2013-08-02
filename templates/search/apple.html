@@ -1,0 +1,33 @@
+<html>
+	<form action="/search/global" method="GET">
+		<input type="text" name="q"/>
+		<input type="submit" value="Search"/>
+	</form>
+
+	<div id="results">
+		{% if forum_results != 0 %}
+			{% if forum_topics %}
+				<h3>Topics</h3>
+				{% for result in forum_topics %}
+					{{ result.object.topic_name}}</br>{{ result.object.topic_desc }}<hr/>
+				{% endfor %}
+			{% endif %}
+			{% if forum_posts %}
+				<h3>Posts</h3>
+				{% for result in forum_posts %}
+					{{ result.object.post_content }}<hr/>
+				{% endfor %}
+			{% endif %}
+			{% if forum_replies %}
+				<h3>Replies</h3>
+				{% for result in forum_replies %}
+					{{ result.object.reply_content }}<hr/>
+				{% endfor %}
+			{% endif %}
+		{% else %}
+			<h4>No results from 'Forum' app !!</h4>
+		{% endif %}
+
+
+	</div>
+</html>

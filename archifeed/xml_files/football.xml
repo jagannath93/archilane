@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC Sport - Football</title>  
+    <link>http://www.bbc.co.uk/sport/0/football/</link>  
+    <description>The latest stories from the Football section of the BBC Sport web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Sun, 21 Apr 2013 16:37:32 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbc.co.uk/sol/shared/img/sport_120x60.gif</url>  
+      <title>BBC Sport - Football</title>  
+      <link>http://www.bbc.co.uk/sport/0/football/</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/sport/0/football/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>Tottenham 3-1 Man City</title>  
+      <description>Spurs score three goals in seven minutes to defeat Man City 3-1 - and leave Man Utd three points from the Premier League title.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22141282</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22141282</guid>  
+      <pubDate>Sun, 21 Apr 2013 15:02:47 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67145000/jpg/_67145994_167128732.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67146000/jpg/_67146499_167128732.jpg"/> 
+    </item>  
+    <item> 
+      <title>Celtic 4-1 Inverness CT</title>  
+      <description>Celtic retain the Scottish Premier League title with a comfortable 4-1 home victory against Inverness Caledonian Thistle.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22141268</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22141268</guid>  
+      <pubDate>Sun, 21 Apr 2013 13:51:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67145000/jpg/_67145331_hooper.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67145000/jpg/_67145329_hooper.jpg"/> 
+    </item>  
+    <item> 
+      <title>Liverpool v Chelsea</title>  
+      <description>Preview followed by live coverage of Sunday's game between Liverpool and Chelsea in the Premier League.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22141299</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22141299</guid>  
+      <pubDate>Fri, 19 Apr 2013 11:19:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/44477000/gif/_44477859_premiership_66_49.gif"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/51683000/jpg/_51683891_premier_live_114.jpg"/> 
+    </item>  
+    <item> 
+      <title>St Johnstone v Ross County</title>  
+      <description>Preview followed by live coverage of Sunday's game between St Johnstone and Ross County in the Scottish Premier League.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22141275</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22141275</guid>  
+      <pubDate>Fri, 19 Apr 2013 17:19:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67098000/jpg/_67098895_7903495.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67098000/jpg/_67098893_7903495.jpg"/> 
+    </item>  
+    <item> 
+      <title>Arsenal Ladies exit Champions League</title>  
+      <description>Arsenal are out of the Women's Champions League after a 4-1 aggregate defeat in their semi-final against Wolfsburg.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22240737</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22240737</guid>  
+      <pubDate>Sun, 21 Apr 2013 15:02:18 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67145000/jpg/_67145616_kim_little2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67145000/jpg/_67145614_kim_little2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Birmingham grab late Lincoln draw</title>  
+      <description>Kirsty Linnett scores on her Birmingham home debut to earn a 1-1 Women's Super League draw against Lincoln Ladies.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22241778</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22241778</guid>  
+      <pubDate>Sun, 21 Apr 2013 16:35:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67147000/jpg/_67147494_brum_ladies_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67146000/jpg/_67146576_birminghamvlincolngetty.jpg"/> 
+    </item>  
+    <item> 
+      <title>QPR survival 'almost impossible'</title>  
+      <description>Harry Redknapp says QPR face an "almost impossible" task to stay up, adding that promotion next season will not be easy.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22235355</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22235355</guid>  
+      <pubDate>Sat, 20 Apr 2013 18:39:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67136000/jpg/_67136793_67136216.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67136000/jpg/_67136398_67136391.jpg"/> 
+    </item>  
+    <item> 
+      <title>Di Canio insists Sunderland not safe</title>  
+      <description>Manager Paolo Di Canio says Sunderland cannot consider themselves safe from relegation despite victory over Everton.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22235536</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22235536</guid>  
+      <pubDate>Sat, 20 Apr 2013 18:35:04 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67136000/jpg/_67136242_67136241.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67136000/jpg/_67136244_67136243.jpg"/> 
+    </item>  
+    <item> 
+      <title>Proud Mackay hails Cardiff spirit</title>  
+      <description>Malky Mackay says Cardiff City have shown togetherness and a lack of ego in their march to the Championship title.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22233467</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22233467</guid>  
+      <pubDate>Sat, 20 Apr 2013 16:06:51 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67133000/jpg/_67133245_cdf_200413_burnley_v_cardiffcity08.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67133000/jpg/_67133243_cdf_200413_burnley_v_cardiffcity08.jpg"/> 
+    </item>  
+    <item> 
+      <title>Man Utd v Aston Villa</title>  
+      <description>Preview followed by live coverage of Monday's game between Manchester United and Aston Villa in the Premier League.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22149292</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22149292</guid>  
+      <pubDate>Sun, 21 Apr 2013 14:41:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/44477000/gif/_44477859_premiership_66_49.gif"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/51683000/jpg/_51683891_premier_live_114.jpg"/> 
+    </item>  
+    <item> 
+      <title>Fulham 0-1 Arsenal</title>  
+      <description>Arsenal move third in the Premier League after beating Fulham, who had Steve Sidwell sent off on 12 minutes.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22133449</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22133449</guid>  
+      <pubDate>Sat, 20 Apr 2013 16:42:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67132000/jpg/_67132882_per.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67132000/jpg/_67132983_per.jpg"/> 
+    </item>  
+    <item> 
+      <title>Norwich 2-1 Reading</title>  
+      <description>Reading edge closer to relegation as Norwich City score two quick goals to take a big step towards Premier League survival.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22133281</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22133281</guid>  
+      <pubDate>Sat, 20 Apr 2013 16:41:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67132000/jpg/_67132961_nor-getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67132000/jpg/_67132959_nor-getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Swansea 0-0 Southampton</title>  
+      <description>Mauricio Pochettino's Southampton extend their unbeaten run to six games with a hard-earned point at Swansea.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22133505</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22133505</guid>  
+      <pubDate>Sat, 20 Apr 2013 15:52:09 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/44477000/gif/_44477859_premiership_66_49.gif"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67132000/jpg/_67132587_167097822.jpg"/> 
+    </item>  
+    <item> 
+      <title>West Brom 1-1 Newcastle</title>  
+      <description>Newcastle's lingering relegation fears continue after they are held to a draw by West Brom at The Hawthorns.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22133519</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22133519</guid>  
+      <pubDate>Sat, 20 Apr 2013 16:29:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67133000/jpg/_67133111_jones2_pa.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67133000/jpg/_67133109_jones2_pa.jpg"/> 
+    </item>  
+    <item> 
+      <title>West Ham 2-0 Wigan</title>  
+      <description>West Ham's 2-0 victory over Wigan ends their relegation fears but causes further worries for the wasteful Latics.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22133267</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22133267</guid>  
+      <pubDate>Sat, 20 Apr 2013 16:22:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67132000/jpg/_67132612_67132611.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67132000/jpg/_67132614_67132613.jpg"/> 
+    </item>  
+    <item> 
+      <title>Sunderland 1-0 Everton</title>  
+      <description>Paolo Di Canio's fruitful reign as Sunderland manager continues as his team beat Everton 1-0 to move closer to survival.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22133512</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22133512</guid>  
+      <pubDate>Sat, 20 Apr 2013 16:32:47 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67132000/jpg/_67132212_67132211.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67132000/jpg/_67132214_67132213.jpg"/> 
+    </item>  
+    <item> 
+      <title>QPR 0-2 Stoke</title>  
+      <description>Stoke take a giant step towards Premier League survival with a 2-0 away win that all but seals Queen Park Rangers' fate.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22133477</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22133477</guid>  
+      <pubDate>Sat, 20 Apr 2013 16:18:50 GMT</pubDate>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67133000/jpg/_67133253_67131079.jpg"/> 
+    </item>  
+    <item> 
+      <title>Kidderminster 4-0 Stockport</title>  
+      <description>Stockport County are relegated after defeat at Kidderminster, whose player Lee Vaughan is punched in a match marred by crowd trouble.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22133379</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22133379</guid>  
+      <pubDate>Sat, 20 Apr 2013 22:46:45 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67136000/jpg/_67136844_kidder.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/51683000/jpg/_51683739_bsp_live_144.jpg"/> 
+    </item>  
+    <item> 
+      <title>Burnley 1-1 Cardiff</title>  
+      <description>Cardiff concede late at Burnley but a 1-1 draw is enough to secure the Championship title for the Welsh club.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22133470</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22133470</guid>  
+      <pubDate>Sat, 20 Apr 2013 13:51:04 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67132000/jpg/_67132184_cardiff2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67132000/jpg/_67132220_cardiff2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Bournemouth 3-1 Carlisle</title>  
+      <description>Bournemouth secure promotion to the Championship after overcoming Carlisle for a club record eighth successive league win.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22133176</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22133176</guid>  
+      <pubDate>Sat, 20 Apr 2013 20:12:18 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67133000/jpg/_67133699_pitman.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67133000/jpg/_67133702_pitman.jpg"/> 
+    </item>  
+    <item> 
+      <title>Port Vale 2-2 Northampton</title>  
+      <description>Port Vale all but secure automatic promotion from League Two after a draw with play-off-bound Northampton.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22133274</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22133274</guid>  
+      <pubDate>Sat, 20 Apr 2013 20:16:17 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67133000/jpg/_67133544_lee_collins.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67133000/jpg/_67133674_lee_collins.jpg"/> 
+    </item>  
+    <item> 
+      <title>Mansfield 1-0 Wrexham</title>  
+      <description>Mansfield beat Wrexham to clinch the Blue Square Bet Premier title and secure promotion back to the Football League.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22133246</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22133246</guid>  
+      <pubDate>Sat, 20 Apr 2013 20:19:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67136000/jpg/_67136143_pa-16322048.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67136000/jpg/_67136145_pa-16322048.jpg"/> 
+    </item>  
+    <item> 
+      <title>Falkirk 0-2 Partick Thistle</title>  
+      <description>Partick Thistle win the First Division and promotion to the Scottish Premier League thanks to victory at Falkirk.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22211236</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22211236</guid>  
+      <pubDate>Sat, 20 Apr 2013 16:14:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67133000/jpg/_67133733_8533288.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67133000/jpg/_67133735_8533288.jpg"/> 
+    </item>  
+    <item> 
+      <title>Cup final no distraction - Martinez</title>  
+      <description>Wigan boss Roberto Martinez says the FA Cup final will not divert his team's Premier League attentions after losing to West Ham.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22235448</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22235448</guid>  
+      <pubDate>Sat, 20 Apr 2013 18:42:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67136000/jpg/_67136363_67135749.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67136000/jpg/_67136361_67135749.jpg"/> 
+    </item>  
+    <item> 
+      <title>Abidal makes Barcelona comeback</title>  
+      <description>Defender Eric Abidal makes his first start for Barcelona since undergoing a liver transplant last year.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22235363</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22235363</guid>  
+      <pubDate>Sat, 20 Apr 2013 20:14:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67137000/jpg/_67137821_67137463.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67137000/jpg/_67137462_67136412.jpg"/> 
+    </item>  
+    <item> 
+      <title>Chelsea beat Doncaster to top WSL</title>  
+      <description>Sofia Jakobsson scores twice as Chelsea beat Doncaster Belles 4-0 to move top of the Women's Super League.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22236190</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22236190</guid>  
+      <pubDate>Sat, 20 Apr 2013 20:21:03 GMT</pubDate>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67137000/jpg/_67137504_womens.jpg"/> 
+    </item>  
+    <item> 
+      <title>Lescott unsure of Man City future</title>  
+      <description>Manchester City defender Joleon Lescott wants the club to show him some respect when deciding on his future</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22230082</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22230082</guid>  
+      <pubDate>Sat, 20 Apr 2013 10:01:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67127000/jpg/_67127270_joleonlescott1_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67127000/jpg/_67127266_joleonlescott1_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Portsmouth out of administration</title>  
+      <description>Portsmouth are out of administration and deducted 10 points, with the club now owned by the Pompey Supporters' Trust.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22167294</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22167294</guid>  
+      <pubDate>Sat, 20 Apr 2013 11:00:09 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/44936000/gif/_44936203_portsmouth_66x49.gif"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67110000/jpg/_67110317_fratton_park.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Neil Lennon addresses Celtic fans</title>  
+      <description>Celtic manager Neil Lennon speaks to fans after clinching the Scottish Premier League title and thanks them for their support.</description>  
+      <link>http://www.bbc.co.uk/sport/0/scotland/22240183</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/scotland/22240183</guid>  
+      <pubDate>Sun, 21 Apr 2013 14:59:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67146000/jpg/_67146408_celtic_celebrations_web2104.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67146000/jpg/_67146276_celtic_celebrations_web2104.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Man Utd deserve title win - Mancini</title>  
+      <description>Manchester City manager Roberto Mancini says that Manchester United deserve their title win.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22238618</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22238618</guid>  
+      <pubDate>Sun, 21 Apr 2013 15:13:22 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67146000/png/_67146380_mmftbmacinipostmatch.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67146000/png/_67146382_mmftbmacinipostmatch.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: QPR dream in tatters - Redknapp</title>  
+      <description>QPR boss Harry Redknapp admits his team's dream of Premier League survival "looks to be in tatters" after a 2-0 defeat at home to fellow strugglers Stoke.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22230460</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22230460</guid>  
+      <pubDate>Sat, 20 Apr 2013 17:02:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67134000/jpg/_67134164_mmftbredknapp2004.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67134000/jpg/_67134160_mmftbredknapp2004.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Defeat difficult to explain - Martinez</title>  
+      <description>Wigan boss Roberto Martinez says his side "should have got something" after their 2-0 defeat at West Ham, and admits he finds it "hard to understand" how his side lost.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22235143</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22235143</guid>  
+      <pubDate>Sat, 20 Apr 2013 17:25:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67134000/jpg/_67134445_67134440.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67134000/jpg/_67134447_67134440.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Sunderland still not safe - Di Canio</title>  
+      <description>Sunderland boss Paolo Di Canio says his side are not yet guaranteed Premier League survival, despite beating Everton 1-0 at the Stadium of Light.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22230462</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22230462</guid>  
+      <pubDate>Sat, 20 Apr 2013 17:38:33 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67134000/jpg/_67134718_dicanio.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67134000/jpg/_67134714_dicanio.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Stoke safety not a given yet - Pulis</title>  
+      <description>Stoke City boss Tony Pulis is delighted his side beat QPR 2-0 but feels they still need another three points before their place in the Premier League is preserved.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22230767</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22230767</guid>  
+      <pubDate>Sat, 20 Apr 2013 17:20:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67134000/jpg/_67134817_67134810.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67134000/jpg/_67134815_67134810.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Wenger on Arsenal's 'sensational' run</title>  
+      <description>Arsene Wenger says Arsenal's recent run of form has been "sensational" after the Gunners boosted their hopes of a Premier League top four finish with a 1-0 win at Fulham.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22230458</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22230458</guid>  
+      <pubDate>Sat, 20 Apr 2013 16:40:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67133000/jpg/_67133924_wenger.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67133000/jpg/_67133908_wenger.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Southampton 'deserved' a point</title>  
+      <description>Southampton boss Mauricio Pochettino says his players "deserved" their point in their 0-0 Premier League draw with Swansea.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22231966</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22231966</guid>  
+      <pubDate>Sat, 20 Apr 2013 17:50:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67135000/png/_67135463_mmftbswasotpochettinopic.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67135000/png/_67135464_mmftbswasotpochettinopic.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Swansea lacked quality - Laudrup</title>  
+      <description>Swansea boss Michael Laudrup says his side "lacked quality" in their 0-0 Premier League draw with Southampton.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22231964</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22231964</guid>  
+      <pubDate>Sat, 20 Apr 2013 17:40:57 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67134000/png/_67134949_mmftbswasotlaudruppic.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67134000/png/_67134951_mmftbswasotlaudruppic.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Jones goal pleases Clarke</title>  
+      <description>West Brom manager Steve Clarke says he is "pleased" for Billy Jones after the defender became the club's first English goalscorer this season in their 1-1 draw against Newcastle.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22234763</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22234763</guid>  
+      <pubDate>Sat, 20 Apr 2013 17:54:35 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67135000/png/_67135070_mmftbwbanewclarkepic.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67135000/png/_67135072_mmftbwbanewclarkepic.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Pardew admits Newcastle aren't safe</title>  
+      <description>Newcastle manager Alan Pardew says his side have "got to keep working" if they are to avoid relegation following their 1-1 draw against West Brom.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22234755</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22234755</guid>  
+      <pubDate>Sat, 20 Apr 2013 16:36:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67133000/png/_67133834_mmftbwbanewpardewpic.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67133000/png/_67133836_mmftbwbanewpardewpic.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Clinical West Ham delight Allardyce</title>  
+      <description>West Ham boss Sam Allardyce is thrilled with his team's finishing as they beat Wigan 2-0 at Upton Park.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22235146</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22235146</guid>  
+      <pubDate>Sat, 20 Apr 2013 17:30:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67134000/png/_67134604_mmftbplwhuwigallardyce.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67134000/png/_67134954_mmftbplwhuwigallardyce.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Fulham played like lions - Jol</title>  
+      <description>Martin Jol says his Fulham side "played like lions" and "heroes," after competing for the most part with 10 men during their 1-0 home defeat to Arsenal.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22232380</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22232380</guid>  
+      <pubDate>Sat, 20 Apr 2013 18:06:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67135000/jpg/_67135520_67134669.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67135000/jpg/_67135522_67134669.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Everton deserved a point - Moyes</title>  
+      <description>Everton boss David Moyes says his side did not create enough chances but feels they did not deserve to lose 1-0 at Sunderland.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22235469</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22235469</guid>  
+      <pubDate>Sat, 20 Apr 2013 17:45:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67135000/jpg/_67135226_mmftbmoyes2004.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67135000/jpg/_67135224_mmftbmoyes2004.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Adkins rues defeat to Norwich</title>  
+      <description>Reading manager Nigel Adkins admits his side "didn't deal" properly with Norwich after the Royals lose 2-1 to edge closer to relegation from the Premier League.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22234761</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22234761</guid>  
+      <pubDate>Sat, 20 Apr 2013 18:00:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67134000/png/_67134590_mmftbnorreaadkinspic.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67134000/png/_67134592_mmftbnorreaadkinspic.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Hughton relieved with 'big win'</title>  
+      <description>Norwich manager Chris Hughton says his side's 2-1 victory over Reading in the Premier League is a "big win" for the Canaries.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22234758</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22234758</guid>  
+      <pubDate>Sat, 20 Apr 2013 16:54:14 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67134000/png/_67134165_mmftbnorreahughtonpic.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67134000/png/_67134167_mmftbnorreahughtonpic.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Yorston screamer boosts Bristol</title>  
+      <description>Bristol Academy's Corinne Yorston scores a spectacular brace as they beat Everton 4-3 in the Women's Super League.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22225017</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22225017</guid>  
+      <pubDate>Fri, 19 Apr 2013 16:38:30 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67119000/jpg/_67119096_wslbristol.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67119000/jpg/_67119094_wslbristol.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Kidd discusses battle with cancer</title>  
+      <description>Manchester City first-team coach Brian Kidd discusses his battle with prostate cancer with BBC Radio Manchester's Ian Cheeseman.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22199444</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22199444</guid>  
+      <pubDate>Thu, 18 Apr 2013 11:29:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67079000/jpg/_67079900_150477458.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67079000/jpg/_67079902_150477458.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Freddy Adu on 'next Pele' tag - full interview</title>  
+      <description>Ghana-born Freddy Adu, who was touted at the age of 14 as the new Pele, talks to Football Focus about how this affected his career.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22208072</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22208072</guid>  
+      <pubDate>Thu, 18 Apr 2013 16:10:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67091000/jpg/_67091006_mmftbaduint.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67091000/jpg/_67091004_mmftbaduint.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Mackay reveals Ferguson texts</title>  
+      <description>Cardiff City manager Malky Mackay tells Sport Wales that he received a text from Manchester United boss Sir Alex Ferguson after the Bluebirds secured promotion to the Premier League.</description>  
+      <link>http://www.bbc.co.uk/sport/0/wales/22215248</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/wales/22215248</guid>  
+      <pubDate>Fri, 19 Apr 2013 11:27:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67108000/jpg/_67108856_malky.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67109000/jpg/_67109663_malky.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Underhill departure sad - Fairclough</title>  
+      <description>Barnet director of football Paul Fairclough tells BBC Late Kick Off London and the South East that their final game at Underhill on Saturday will be a sad occasion for the club.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22221970</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22221970</guid>  
+      <pubDate>Fri, 19 Apr 2013 16:32:37 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67114000/jpg/_67114841_barnet_still_1_gfx.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67114000/jpg/_67114843_barnet_still_1_gfx.jpg"/> 
+    </item>  
+    <item> 
+      <title>How credible is Celtic's title triumph?</title>  
+      <description>Former Celtic favourite Pat Bonner looks at what the club's SPL title win means in the absence of Rangers</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22198357</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22198357</guid>  
+      <pubDate>Sun, 21 Apr 2013 14:22:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67095000/jpg/_67095876_commons_reuters.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67095000/jpg/_67095874_commons_reuters.jpg"/> 
+    </item>  
+    <item> 
+      <title>Lawro's predictions</title>  
+      <description>BBC football expert Mark Lawrenson takes on six-time London Marathon winner David Weir</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22199585</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22199585</guid>  
+      <pubDate>Sat, 20 Apr 2013 16:17:17 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67120000/jpg/_67120530_weirwolf3.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67120000/jpg/_67120311_weirwolf3.jpg"/> 
+    </item>  
+    <item> 
+      <title>End of season ups and downs</title>  
+      <description>Which teams will qualify for Europe, win promotion or be relegated in the English and Scottish leagues?</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/21686144</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/21686144</guid>  
+      <pubDate>Sun, 21 Apr 2013 16:18:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67045000/jpg/_67045462_gestude_pa.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67048000/jpg/_67048840_67048839.jpg"/> 
+    </item>  
+    <item> 
+      <title>From unknown to ever-present: Leeds' new star</title>  
+      <description>The emergence of full-back Sam Byram has been the bright spot in an otherwise gloomy season for Leeds</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22159403</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22159403</guid>  
+      <pubDate>Fri, 19 Apr 2013 05:38:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67021000/jpg/_67021362_67021357.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67021000/jpg/_67021360_67021357.jpg"/> 
+    </item>  
+    <item> 
+      <title>From San Siro to a concentration camp</title>  
+      <description>The story of Ferdinando Valletti, the Italian whose football skills helped him survive a concentration camp.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22221976</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22221976</guid>  
+      <pubDate>Fri, 19 Apr 2013 19:21:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67122000/jpg/_67122021_vallettipic.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67115000/jpg/_67115691_vallettipic.jpg"/> 
+    </item>  
+    <item> 
+      <title>Warner's football legacy goes on</title>  
+      <description>Former Fifa vice president Jack Warner's football legacy goes on as he faces further accusations from Concacaf.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22227395</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22227395</guid>  
+      <pubDate>Fri, 19 Apr 2013 22:08:33 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67123000/jpg/_67123205_jack_warner_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67123000/jpg/_67123203_jack_warner_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Conference title race goes to wire</title>  
+      <description>All eyes on Field Mill and Aggborough for the climax of the most exciting Conference title race in years</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22183692</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22183692</guid>  
+      <pubDate>Thu, 18 Apr 2013 09:15:51 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67073000/jpg/_67073964_stags.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67073000/jpg/_67073983_stags.jpg"/> 
+    </item>  
+    <item> 
+      <title>Lennon targets squad improvements</title>  
+      <description>Celtic boss Neil Lennon admits some players may leave in the summer, but replacements will depend on future income.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22240718</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22240718</guid>  
+      <pubDate>Sun, 21 Apr 2013 15:30:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67147000/jpg/_67147005_lennonflag.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67147000/jpg/_67147003_lennonflag.jpg"/> 
+    </item>  
+    <item> 
+      <title>Platini doubts Wales' Euro 2020 bid</title>  
+      <description>Uefa president Michel Platini says Cardiff lacks the required infrastructure to be a host city for Euro 2020.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22239338</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22239338</guid>  
+      <pubDate>Sun, 21 Apr 2013 14:13:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67145000/jpg/_67145223_cdf_aerial_views_04.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67145000/jpg/_67145221_cdf_aerial_views_04.jpg"/> 
+    </item>  
+    <item> 
+      <title>Crusaders v Cliftonville (Mon)</title>  
+      <description>Crusaders will aim to stretch their unbeaten home league record to 19 games when they take on the champions at Seaview.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22239926</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22239926</guid>  
+      <pubDate>Sun, 21 Apr 2013 13:05:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67144000/jpg/_67144616_crues.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67144000/jpg/_67144614_crues.jpg"/> 
+    </item>  
+    <item> 
+      <title>Paolo Di Canio in pictures</title>  
+      <description>All the best pictures from Sunday's Tyne-Wear derby as Paolo Di Canio secures his first win as Sunderland manager.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/22145282</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/22145282</guid>  
+      <pubDate>Sun, 14 Apr 2013 15:04:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66999000/jpg/_66999791_dicanio1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66999000/jpg/_66999789_dicanio1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Russian tycoon top of rich list</title>  
+      <description>Arsenal FC shareholder Alisher Usmanov tops the annual Sunday Times list of the wealthiest people in Britain and Ireland with a £13.3bn fortune.</description>  
+      <link>http://www.bbc.co.uk/news/uk-22233389#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-22233389</guid>  
+      <pubDate>Sat, 20 Apr 2013 18:10:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67139000/jpg/_67139824_159921005-5.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67139000/jpg/_67139825_159921005-5.jpg"/> 
+    </item>  
+    <item> 
+      <title>Charge after player punched on pitch</title>  
+      <description>A man is charged with assault after disorder at a football match, during which one of the players was punched.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-hereford-worcester-22238150#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-hereford-worcester-22238150</guid>  
+      <pubDate>Sun, 21 Apr 2013 15:07:57 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67146000/jpg/_67146694_jex_9645_de43-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67146000/jpg/_67146695_jex_9645_de43-1.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

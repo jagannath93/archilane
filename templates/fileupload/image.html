@@ -1,0 +1,17 @@
+<html>
+<body>
+	<!--div>
+		Location: {{ last_pic.get_image_filename }}</br>
+		Size:  {{ last_pic.get_image_height }} X {{ last_pic.get_image_width }}</br>
+	</div-->
+	<div style="text-align:center;">
+		<img src="{{ last_pic.get_image_url }}" alt="last_pic"/>
+	</div>
+	<form enctype="multipart/form-data" action="." method="POST">
+	{% csrf_token %}
+		{{ form.as_table }}
+		<input type="submit" value="Submit"/>
+	</form>
+</body>
+</html>
+

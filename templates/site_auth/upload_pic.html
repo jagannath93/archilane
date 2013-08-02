@@ -1,0 +1,16 @@
+<html>
+<h3>Upload Pic Form</h3>
+        <form action='/site_auth/upload_pic/' method='POST'>{% csrf_token %}
+                <table>
+                        {% for field in form %}
+                                <tr><div class ='fieldwrapper'>
+                                        <td>{{ field.label_tag }}:</td><td>{{field}}</td>
+                        {{ form.name_of_field.errors }}
+                                <td>{{ field.errors }}</td>
+                                </div></tr>
+                        {% endfor %}
+                </table>
+                <p>{{ message }}</p>
+                <input type='submit' name="submit"  value= "Signin->" />
+        </form>
+</html>

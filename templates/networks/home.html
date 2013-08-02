@@ -1,0 +1,20 @@
+<html>
+
+<h3>Your Not Friends</h3>
+        {% for user in  all_users%}
+        {{user}} {{user.id}} <a href="/networks/add_friend/{{user.user_id}}">Add Friend</a> </br>
+        {% endfor %}
+<h3>Your Friends</h3>
+        {% for user in friends %}
+        {{user}} <a href="/networks/del_friend/{{user.user_id}}">Delete Friend</a> </br>
+        {% endfor %}
+<h3>You are Following</h3>
+        {% for user in following %}
+                {{user}}</br>
+        {% endfor %}
+<h3>Your Followers</h3>
+        {% for user in followers %}
+                {{user}}</br>
+        {% endfor %}
+</html>
+

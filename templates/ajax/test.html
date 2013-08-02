@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+{% load static %}
+	
+	<script type="text/JavaScript" src = "{{ STATIC_URL }}js/commonElements/jquery.min.js"></script>
+	<script type="text/JavaScript" src = "{{ STATIC_URL }}js/commonElements/ajax_functions.js"></script>
+	<script type="text/JavaScript">
+		$(document).ready(function(){
+			//alert("in ajax");
+			$('.btn').bind('click', function(){
+				$.ajaxSetup({ data: {csrfmiddlewaretoken: '{{ csrf_token }}' }, }); // Sending csrf_token with ajax post request.
+				get_content(this,"con","POST");
+				get_app_navigation(this,"nav","POST");				
+			});
+		});
+		
+		$(document).ajaxStart(function(){
+			msg = "Fetching data, please wait ...";
+			$('#msg')[0].innerHTML = msg;
+		}).ajaxStop(function(){
+			msg = "";
+			$("#msg")[0].innerHTML = msg;	
+		   });
+
+	</script>
+</head>
+<body>
+	<div id="msg" style="margin-left:200px;margin-top:10px;width:300px;height:35px;background-color:black;color:white;text-align:center;"></div>	
+	<div style="clear:both;"></div>
+	<div id="" style="width:75px;height:300px;float:left;background-color:yellow;">
+		<div id="nav_1" class="btn" style="width:73px;height:30px;margin:1px;background-color:grey;cursor:pointer;">Home</div>
+		<div id="nav_2" class="btn" style="width:73px;height:30px;margin:1px;background-color:grey;cursor:pointer;">Portfolio</div>
+		<div id="nav_3" class="btn" style="width:73px;height:30px;margin:1px;background-color:grey;cursor:pointer;">Forum</div>
+		<div id="nav_4" class="btn" style="width:73px;height:30px;margin:1px;background-color:grey;cursor:pointer;">People</div>
+		<div id="nav_5" class="btn" style="width:73px;height:30px;margin:1px;background-color:grey;cursor:pointer;">Resources</div>
+		<div id="nav_6" class="btn" style="width:73px;height:30px;margin:1px;background-color:grey;cursor:pointer;">Messages</div>
+	</div>
+	<div id="nav" style="width:100px;height:300px;float:left;background-color:grey;"></div>
+	<div id="con" style="width:500px;height:300px;float:left;background-color:orange;"></div>
+
+</body>
+</html>

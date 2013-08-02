@@ -1,0 +1,16 @@
+<html>
+<head>
+<script type="text/javascript">
+	$('#upload_btn').uploadify({
+		swf: 'http://test.archilane.com/static/uploadify.swf',
+		uploader: '/uploadurl',
+		cancelImage: '/my/media/images/uploadify-cancel.png',
+		checkExisting: false,
+		postData: {sessionid: $.cookie('sessionid')},
+		auto: true
+	});
+</script>
+</head>
+<body>
+<button id="upload_btn">Upload</button>
+</body>

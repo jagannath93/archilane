@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC Sport - Cricket</title>  
+    <link>http://www.bbc.co.uk/sport/0/cricket/</link>  
+    <description>The latest stories from the Cricket section of the BBC Sport web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Sat, 20 Apr 2013 20:04:50 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbc.co.uk/sol/shared/img/sport_120x60.gif</url>  
+      <title>BBC Sport - Cricket</title>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/sport/0/cricket/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>Wright inspires Warwickshire win</title>  
+      <description>Chris Wright takes 6-31 as Warwickshire bowl out Durham to win their Championship game at Edgbaston by 318 runs.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22226543</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22226543</guid>  
+      <pubDate>Sat, 20 Apr 2013 14:13:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67130000/jpg/_67130490_wright_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67130000/jpg/_67130492_wright_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Watson steps down as vice-captain</title>  
+      <description>Shane Watson steps down as Australia vice-captain in all formats less than three months before the first Ashes Test.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22229301</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22229301</guid>  
+      <pubDate>Sat, 20 Apr 2013 07:54:45 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67125000/jpg/_67125933_shane_watson_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67126000/jpg/_67126095_shane_watson_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Somerset pair miss out on tons</title>  
+      <description>Alviro Petersen and Jos Buttler fall just short of centuries as Somerset's game with Surrey ends in a draw.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22226537</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22226537</guid>  
+      <pubDate>Sat, 20 Apr 2013 17:35:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67133000/jpg/_67133631_petersen_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67134000/jpg/_67134144_petersen_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Key hits hundred in Grace Road draw</title>  
+      <description>Kent batsman Rob Key hits an unbeaten 104 as they play out a draw against Leicestershire at Grace Road.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22226589</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22226589</guid>  
+      <pubDate>Sat, 20 Apr 2013 18:31:57 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67136000/jpg/_67136204_key_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67136000/jpg/_67136206_key_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Glamorgan finish off Worcestershire</title>  
+      <description>Glamorgan beat Worcestershire by 10 wickets after dismissing the visitors for 207 on the final morning.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22226595</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22226595</guid>  
+      <pubDate>Sat, 20 Apr 2013 12:28:14 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/51108000/jpg/_51108985_43048991.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/59484000/jpg/_59484184_cricket-144x81.jpg"/> 
+    </item>  
+    <item> 
+      <title>Northants seek second T20 signing</title>  
+      <description>Northants are chasing an unnamed batsman as their second signing for this summer's FL t20 campaign</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22231741</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22231741</guid>  
+      <pubDate>Sat, 20 Apr 2013 12:01:36 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/42845000/gif/_42845545_northants_66x49.gif"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65862000/jpg/_65862124_144127254.jpg"/> 
+    </item>  
+    <item> 
+      <title>Former England captain Denness dies</title>  
+      <description>Mike Denness, the only Scotland-born cricketer to have captained England, dies of cancer aged 72.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22222995</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22222995</guid>  
+      <pubDate>Fri, 19 Apr 2013 16:08:51 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67117000/jpg/_67117132_103962773.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67117000/jpg/_67117130_103962773.jpg"/> 
+    </item>  
+    <item> 
+      <title>Murtagh sets up easy Middlesex win</title>  
+      <description>Tim Murtagh takes 5-12 as Middlesex reduce Derbyshire to 60 all out, before easily knocking off the 77 needed to win.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22210184</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22210184</guid>  
+      <pubDate>Fri, 19 Apr 2013 16:16:58 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67117000/jpg/_67117604_tim_murtagh.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67117000/jpg/_67117608_tim_murtagh.jpg"/> 
+    </item>  
+    <item> 
+      <title>Willey five-for seals Northants win</title>  
+      <description>David Willey takes five Essex wickets to comprehensively wrap up Northants' first win of the Championship season.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22210190</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22210190</guid>  
+      <pubDate>Fri, 19 Apr 2013 14:24:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67113000/jpg/_67113645_david_willey.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67113000/jpg/_67113647_david_willey.jpg"/> 
+    </item>  
+    <item> 
+      <title>Mahmood returns to Surrey for FL t20</title>  
+      <description>Pakistan all-rounder Azhar Mahmood will return to Surrey as a non-overseas player for the FL t20 competition.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22214788</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22214788</guid>  
+      <pubDate>Fri, 19 Apr 2013 09:44:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67104000/jpg/_67104956_azharmahmoodgetty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67104000/jpg/_67104954_azharmahmoodgetty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Prince believes Test career over</title>  
+      <description>Ashwell Prince says he has not retired from international cricket, but does not expect to be recalled by South Africa.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22206741</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22206741</guid>  
+      <pubDate>Thu, 18 Apr 2013 15:37:00 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67090000/jpg/_67090692_136136005.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67090000/jpg/_67090658_136136005.jpg"/> 
+    </item>  
+    <item> 
+      <title>Butt vows to play on after ban ends</title>  
+      <description>Former Pakistan skipper Salman Butt has said he will continue playing cricket despite failing to have his ban overturned.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22190861</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22190861</guid>  
+      <pubDate>Wed, 17 Apr 2013 17:17:17 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67070000/jpg/_67070673_butt3.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67070000/jpg/_67070598_butt3.jpg"/> 
+    </item>  
+    <item> 
+      <title>Pietersen out of New Zealand series</title>  
+      <description>Kevin Pietersen will miss England's Test series against New Zealand in May because of a knee injury.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22166496</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22166496</guid>  
+      <pubDate>Tue, 16 Apr 2013 11:03:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67031000/jpg/_67031211_pietersen1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67031000/jpg/_67031212_pietersen1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Butt &amp; Asif lose 'spot-fix' appeals</title>  
+      <description>Former Pakistan captain Salman Butt and bowler Mohammad Asif lose their appeals over their bans for 'spot-fixing'.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22183517</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22183517</guid>  
+      <pubDate>Wed, 17 Apr 2013 14:46:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67055000/jpg/_67055752_salmanbutt1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67055000/jpg/_67055754_salmanbutt1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Adams has 'strongest' Surrey squad</title>  
+      <description>Surrey team director Chris Adams says his current squad is the strongest he has had since joining the county.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22166733</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22166733</guid>  
+      <pubDate>Tue, 16 Apr 2013 11:50:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67030000/jpg/_67030867_surreypressconf2013empics.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67034000/jpg/_67034259_surreypressconf2013empics.jpg"/> 
+    </item>  
+    <item> 
+      <title>Kaneria has 'high hopes' for appeal</title>  
+      <description>Former Pakistan and Essex leg spinner Danish Kaneria is hoping to overturn a lifetime ban imposed by the ECB.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22166331</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22166331</guid>  
+      <pubDate>Tue, 16 Apr 2013 11:48:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67034000/jpg/_67034794_103156427.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67034000/jpg/_67034759_103156427.jpg"/> 
+    </item>  
+    <item> 
+      <title>Kent's Northeast has self-confidence</title>  
+      <description>Kent youngster Sam Northeast believes he is a stronger player following his achievements with the bat in 2012.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22029209</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22029209</guid>  
+      <pubDate>Tue, 16 Apr 2013 17:03:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67041000/jpg/_67041237_northeast2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/61198000/jpg/_61198982_northeast.jpg"/> 
+    </item>  
+    <item> 
+      <title>Lancashire post £1.5m loss for 2012</title>  
+      <description>Lancashire are confident of a healthy financial future, despite posting an operating loss of £1.5m for 2012.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22152570</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22152570</guid>  
+      <pubDate>Mon, 15 Apr 2013 10:17:47 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67008000/jpg/_67008647_165263365.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67008000/jpg/_67008645_165263365.jpg"/> 
+    </item>  
+    <item> 
+      <title>BBC expands county cricket coverage</title>  
+      <description>The BBC will broadcast live commentary on every county game this summer under a new deal with the ECB.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21880927</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21880927</guid>  
+      <pubDate>Thu, 21 Mar 2013 21:23:22 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66527000/jpg/_66527820_e17cddab-f544-4d8b-b847-496745910231.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66527000/jpg/_66527821_3491b625-b6a2-4150-afd7-8e4467879ffa.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Ripley talks up Northants promotion</title>  
+      <description>Northamptonshire head coach David Ripley tells BBC Radio Northampton his side are capable of winning promotion to Division One after an innings victory over Essex.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22222125</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22222125</guid>  
+      <pubDate>Fri, 19 Apr 2013 16:38:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67119000/jpg/_67119234_142329167.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67119000/jpg/_67119232_142329167.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Cook to return for Essex - Foster</title>  
+      <description>Essex captain James Foster tells BBC Essex that England captain Alastair Cook will make his first appearance of the season against Hampshire after an innings defeat by Northamptonshire.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22222123</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22222123</guid>  
+      <pubDate>Fri, 19 Apr 2013 16:04:02 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67118000/jpg/_67118624_112706473.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67118000/jpg/_67118622_112706473.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 'The lifeblood of English cricket'</title>  
+      <description>BBC Sport's Matthew Slater looks at the state of English County Championship cricket as the new season gets under way.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22095605</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22095605</guid>  
+      <pubDate>Wed, 10 Apr 2013 13:51:09 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66927000/png/_66927623_mmcrislatercountiespreview.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66927000/jpg/_66927656_cricketstill.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Notts move is ideal fit - Cowan</title>  
+      <description>Australia batsman Ed Cowan tells BBC Radio Nottingham that Nottinghamshire is the ideal fit both on an off the pitch and he would love to look into extending his stay.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22096600</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22096600</guid>  
+      <pubDate>Wed, 10 Apr 2013 13:28:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/64815000/jpg/_64815729_158438659.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/64815000/jpg/_64815727_158438659.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Brown keen to keep improving Bears</title>  
+      <description>New Warwickshire coach Dougie Brown tells BBC WM on the eve of the new season it is important the county champions do not stand still, but keep improving.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22085948</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22085948</guid>  
+      <pubDate>Tue, 09 Apr 2013 18:17:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66912000/jpg/_66912982_dougie.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66912000/jpg/_66912054_dougie.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Chanderpaul excited by Derbys talent</title>  
+      <description>Derbyshire and West Indies batsman Shivnarine Chanderpaul tells BBC East Midlands Today he is excited by the chance to help nurture the young talent at the County Ground.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22081896</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22081896</guid>  
+      <pubDate>Tue, 09 Apr 2013 16:11:45 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66910000/jpg/_66910023_66907870.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66910000/jpg/_66910021_66907870.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Essex eye Olympic Stadium for T20</title>  
+      <description>The chairman of Essex County Cricket Club, Derek Bowden, tells the BBC he is keen to stage Twenty20 matches at the Olympic Stadium.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22047167</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22047167</guid>  
+      <pubDate>Fri, 05 Apr 2013 17:12:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66775000/jpg/_66775595_olympicstadiumgetty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66775000/jpg/_66775290_olympicstadiumgetty.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Overton twins revel in rivalry</title>  
+      <description>Twins Jamie and Craig Overton talk to BBC Points West about their sibling rivalry at Somerset and their hopes for the 2013 season.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22070420</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22070420</guid>  
+      <pubDate>Mon, 08 Apr 2013 14:55:59 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66809000/jpg/_66809531_overtontwinssg.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66809000/jpg/_66809527_overtontwinssg.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Klinger relishes Glos captaincy challenge</title>  
+      <description>Gloucestershire batsman Michael Klinger tells BBC Points West he is relishing the challenge of being captain in his first season with the club.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22044525</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22044525</guid>  
+      <pubDate>Fri, 05 Apr 2013 14:58:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66772000/jpg/_66772900_klinger_sg.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66772000/jpg/_66772898_klinger_sg.jpg"/> 
+    </item>  
+    <item> 
+      <title>Stephen Moore column</title>  
+      <description>Lancashire batsman Stephen Moore on the highs of winning the league and the lows of relegation</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22152067</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22152067</guid>  
+      <pubDate>Mon, 15 Apr 2013 12:08:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67011000/jpg/_67011175_moore_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67011000/jpg/_67011176_moore_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Smith's arrival heralds world-class county summer</title>  
+      <description>On the first day of the new county cricket season, former England captain Alec Stewart looks at the summer ahead</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22079510</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22079510</guid>  
+      <pubDate>Wed, 10 Apr 2013 09:36:35 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66907000/jpg/_66907713_jamestaylor.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66920000/jpg/_66920700_smithy2.jpg"/> 
+    </item>  
+    <item> 
+      <title>From fours and sixes to nine-to-five</title>  
+      <description>Durham's Michael Richardson sacrificed a winter of relaxation for a stint in an office as part of his post-cricket development</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22084029</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22084029</guid>  
+      <pubDate>Wed, 10 Apr 2013 09:31:37 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66917000/jpg/_66917805_66917797.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66917000/jpg/_66917839_66917797.jpg"/> 
+    </item>  
+    <item> 
+      <title>Margaret Thatcher’s sporting legacy</title>  
+      <description>BBC sports editor David Bond takes a look at the sporting legacy left by former Prime Minister Margaret Thatcher</description>  
+      <link>http://www.bbc.co.uk/sport/0/22085827</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/22085827</guid>  
+      <pubDate>Tue, 09 Apr 2013 18:34:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66911000/jpg/_66911791_66911665.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66911000/jpg/_66911789_66911665.jpg"/> 
+    </item>  
+    <item> 
+      <title>County ins &amp; outs</title>  
+      <description>Keep up to date with the latest signings, departures and rumours</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/19595016</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/19595016</guid>  
+      <pubDate>Mon, 17 Sep 2012 07:25:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/62886000/jpg/_62886729_james_harris_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/62886000/jpg/_62886727_james_harris_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Shahzad ready for change in fortune</title>  
+      <description>Nottinghamshire new boy Ajmal Shahzad is confident his fortunes are about to change following successive relegations.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22063190</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22063190</guid>  
+      <pubDate>Mon, 08 Apr 2013 09:22:59 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66799000/jpg/_66799640_pa-13547168.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66799000/jpg/_66799638_pa-13547168.jpg"/> 
+    </item>  
+    <item> 
+      <title>Alec Stewart answers your questions</title>  
+      <description>The ex-England captain on Chris Tremlett's Ashes chances, Gilchrist the great and imaginary fisticuffs with Michael Atherton</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/22171050</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/22171050</guid>  
+      <pubDate>Wed, 17 Apr 2013 06:05:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67038000/jpg/_67038925_67037853.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67038000/jpg/_67038882_67037853.jpg"/> 
+    </item>  
+    <item> 
+      <title>County cricket club-by-club guide</title>  
+      <description>Graeme Smith at Surrey and no overseas players at Durham - BBC Sport's guide to the new county cricket season</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/21874992</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/21874992</guid>  
+      <pubDate>Mon, 08 Apr 2013 10:18:47 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/66522000/jpg/_66522746_troughton_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/66522000/jpg/_66522748_troughton_getty.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

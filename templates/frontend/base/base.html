@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+<title>Archilane</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link type="text/css" href="{{ STATIC_URL }}css/commonElements/commonElements.css" rel="stylesheet"></link>
+<link rel="shortcut icon" type="image/png" href="{{ STATIC_URL }}images/commonElements/favicon.png" />
+<script type = "text/JavaScript" src = "{{ STATIC_URL }}js/commonElements/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+	//function fetch_ntfns(){
+		$(document).ready(function(){
+
+			$('#notification_box').hide();
+			$('#rectangle').click(function(){
+				$('#notification_box').slideDown('slow');
+				$('#ntfn_no').html("<b>0</b>");
+				$('#rectangle').css({'background-color':'gray'});
+			});
+
+			function fetch_ntfns(){
+			$.get('/notifications/', function(res){
+
+				if(res == ''){
+					$('#notification_box').html('<div id="ntfn"><span style="color:orange;"><b>No Notifications Yet.</b></span></div>')
+				}
+				else{
+					$('#ntfn_no').html("<b>" + Object.keys(res['ntfns']).length + "</b>");
+					var i=0;
+					var ntfns = ''
+					$('#notification_box').html = '';
+					for(i=0; i<(Object.keys(res['ntfns']).length); i++)
+					{
+						var content = res['ntfns'][i]['content'];
+						var url = res['ntfns'][i]['url'];
+						ntfns += "<div id='ntfn'><a href='"+url+"'>"+content+"</a></div>";
+					}	
+					$('#notification_box').html(ntfns)
+				}	
+			});
+			}
+			window.setInterval(function(){ fetch_ntfns();}, 5000);
+
+		});
+	//}	
+</script>
+<style type="text/css">
+	#ntfn{
+		height:75px;
+		background-color:#eff8ff;
+		margin: 5px;
+		padding:10px;
+	}
+</style>
+</head>
+
+<body>
+<div id = "main_content">
+	<div id="notifyers">
+		<div id="rectangle" style="height:25px;width:25px;background-color:red;margin-left:300px;cursor:pointer;">
+			<span id="ntfn_no" style="font-size:20px;color:white;padding:7px;"><b>0</b></span>
+		</div>		
+	</div>
+	</br></br>
+	<b>Notifications:</b>
+	<div id="notification_box">
+		<img src="http://sierrafire.cr.usgs.gov/images/loading.gif" alt='Loading...' style='width:120px;margin-left:260px;'/>
+	</div>
+	<div>
+		<a href = "/portfolio/2/"><b>Link to Other Portfolio</b></a>
+	</div>
+</div>
+
+<!--div id = "container_home"-->	
+	<div id = "Header_2">
+		<img src = "{{ STATIC_URL }}images/commonElements/header_2.png"/>
+		
+		<div id = "topBand_2"></div>
+		<div id = "bottomBand_2"></div>
+		
+		<div id = "top_arrow">
+		<img src = "{{ STATIC_URL }}images/commonElements/arrow_down.png" id = "arrow_img"/>
+		</div>
+		
+		<input type = "text" name = "Search_box" id = "Search_box" placeholder = "Search Archilane"/>
+		
+		<!--div id = "search_glass"><img src = "{{ STATIC_URL }}images/commonElements/search_glass.png"/></div-->
+		<div id = "download_basket"><img src = "{{ STATIC_URL }}images/commonElements/download_basket.png"/></div>
+		<div id = "home_btn">
+		<a href="/home/"><p>Home</p></a>
+		</div>
+	</div>
+	
+	<div id = "mainNavigation_panel">
+		<div id = "portfolio_icon" class = "main_navigation_icon">
+			<a href="/portfolio/{{ user.pk }}/"><img src = "{{ STATIC_URL }}images/commonElements/portfolio_icon.png"/></a>
+			<p class = "mainNavigation_icon_text">Portfolio</p>
+		</div>
+		
+		<div id = "forum_icon" class = "main_navigation_icon">
+			<a href="/forum/"><img src = "{{ STATIC_URL }}images/commonElements/forum_icon.png"/></a>
+			<p class = "mainNavigation_icon_text">Forum</p>
+		</div>
+		
+		<div id = "resources_icon" class = "main_navigation_icon">
+			<img src = "{{ STATIC_URL }}images/commonElements/resources_icon.png"/>
+			<p class = "mainNavigation_icon_text">Resources</p>
+		</div>
+		
+		<div id = "people_icon" class = "main_navigation_icon">
+			<a href ="/networks/"><img src = "{{ STATIC_URL }}images/commonElements/people_icon.png"/></a>
+			<p class = "mainNavigation_icon_text">People</p>
+		</div>
+		
+		<div id = "messages_icon" class = "main_navigation_icon">
+			<a href = "/messages/"><img src = "{{ STATIC_URL }}images/commonElements/messages_icon.png"/></a>
+			<p class = "mainNavigation_icon_text">Messages</p>
+		</div>
+	</div>
+	
+	<div id = "panel_left">
+	<!--This is the secondary navigation bar-->
+	</div>
+	
+
+	
+	<!--div id = "panel_right"-->
+	<!--The one with the profile pic and also the archifeed-->
+		<div id = "profile_info" class = "panel_right">
+		<!--Profile information points etc.-->
+			<img src = "{{ profile.image.url }}" id = "profile_pic"/>
+		
+			<p id = "profileInfo_userName">{{ user.first_name }} </br>{{ user.last_name }}</p>
+			<p id = "profileInfo_collegeName">{{ profile.college }}</p>
+			<p id = "profileInfo_links"><a id = "logout_btn" href="/logout/">Log Out</a> | <a href = '/site_auth/upload_pic/' id = "settings_btn">Settings</a></p>
+		
+			<div id = "points">
+			<img src = "{{ STATIC_URL }}images/commonElements/points_icon.png" id = "points_icon">
+			<p>150</p><!--maximum number of digits limited to 7 only-->
+			</div>
+		
+		</div>
+		
+		<div id = "archifeed" class = "panel_right">
+			<div id = "archifeed_header">
+				<em>Archifeed</em>
+			</div>
+			<div class = "archifeed_item">
+			</div>
+			<div class = "archifeed_item">
+			</div>
+			<div class = "archifeed_item">
+			</div>
+		</div>
+	<!--/div-->
+	
+	<div id = "searchResults_panel">
+	
+		<div class = "search_accordion_header">
+			Forum	
+			<img src = "{{ STATIC_URL }}images/commonElements/Loading_gif.gif"/ class = "loading_gif">
+			<p id = "forum_result_number" class = "search_result_number"></p>
+		</div>
+		<div class = "search_accordion_content" id = "forum_results">
+			<!--div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div-->
+			
+		</div>
+		<div class = "search_accordion_header">
+			Resources
+			<img src = "{{ STATIC_URL }}images/commonElements/Loading_gif.gif"/ class = "loading_gif">
+			<p id = "forum_result_number" class = "search_result_number"></p>
+		</div>
+		<div class = "search_accordion_content" id = "resources_results">
+			<!--div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div-->
+		</div>
+		<div class = "search_accordion_header">
+			People
+			<img src = "{{ STATIC_URL }}images/commonElements/Loading_gif.gif"/ class = "loading_gif">
+			<p id = "forum_result_number" class = "search_result_number"></p>
+		</div>
+		<div class = "search_accordion_content" id = "people_results">
+			<!--div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div-->
+		</div>
+		<div class = "search_accordion_header">
+			Archifeed
+			<img src = "{{ STATIC_URL }}images/commonElements/Loading_gif.gif"/ class = "loading_gif">
+			<p id = "forum_result_number" class = "search_result_number"></p>
+		</div>
+		<div class = "search_accordion_content" id = "archifeed_results">
+			<!--div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div-->
+		</div>
+	
+	</div>
+	
+	<div id = "side_arrow">
+	</div>
+	
+<!--/div-->
+
+	<script type="JavaScript"> var STATIC_URL = "{{ STATIC_URL }}"; </script>
+	<script type = "text/JavaScript" src="{{ STATIC_URL }}js/commonElements/commonScript.js"></script>
+	<script type = "text/JavaScript">
+	
+	$(document).ready(function(){
+	
+	if($(window).width()<1280){
+	$('.panel_right').hide();$('#side_arrow').html('<');
+	$('#side_arrow').show();
+	}else{
+	$('.panel_right').show();
+	$('#side_arrow').hide();
+	}
+
+	$(window).resize(function(){
+	if($(window).width()<1280){
+	$('.panel_right').hide();$('#side_arrow').html('<');
+	$('#side_arrow').show();
+	}else{
+	$('.panel_right').show();
+	$('#side_arrow').hide();
+	}
+	});
+
+	});
+	
+	</script>
+</body>
+
+</html>

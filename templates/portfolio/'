@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+{% load static %}
+<title>Archilane</title>
+<link type="text/css" href="{{ STATIC_URL }}css/commonElements/commonElements.css" rel="stylesheet"></link>
+<link type="text/css" href="{{ STATIC_URL }}css/portfolio/portfolio_stylesheet.css" rel="stylesheet"></link>
+<link rel="stylesheet" href="{{ STATIC_URL }}js/modal_window/colorbox.css" />
+<script type = "text/JavaScript" src = "{{ STATIC_URL }}js/commonElements/jquery-1.9.1.min.js"></script>
+</head>
+
+<body>
+<div id = "main_content">
+	<div id = "portfolio_content">
+		
+		<div id = "personal_info">
+			
+			<div id = "buttons_box">
+				<a href="/portfolio/{{ other_user.pk }}/1/">Like</a>
+				<a href="/portfolio/{{ other_user.pk }}/0/">Unlike</a>
+				<button type = "button" name = "like_btn" id = "likeUnlike_btn">Like this Portfolio</button>
+			</div>
+			
+			<div id = "profile_img_box">
+				<img id = "profile_img" src = "{{ STATIC_URL }}images/commonElements/portfolio_img.jpg"/>
+			</div>
+			
+			<p id = "portfolio_text">Portfolio <span id = "portfolio_likes"> 25 </span> <span id = "portfolio_likes"> likes </span></p>
+			
+			<div id = "details_box">
+				<p id = "portfolio_username"> {{ other_user.first_name }} {{ other_user.last_name }} </p>
+				<p id = "portfolio_year"> {{ other_user.userprofile.course }} </p>
+				<p id = "college"> {{ other_user.userprofile.college }} </p>
+				<p id = "email"> {{ other_user.email }} </p>
+			</div>
+			
+		</div>
+		<div class="entry_box">
+		{% for group in groups %}				
+		<div class = "group_header">
+			{{ group.title }}
+		</div>
+		
+		{% for key,value in items.items %}
+			{% if key == group.pk %}
+			{% for item in value %}
+				{% if not item.has_image %}
+		<div id = "main_item_{{ item.pk }}" class = "single_entry_withOutPics">
+			<div class = "desc_box_big">
+				<p class = "desc_title">This is the title of the body</p>
+				<br />
+				<div class = "desc_body">
+				<p>
+				{{ item.content }}
+				</p>
+				</div>
+			</div>
+			
+			<div class = "portfolio_entry_additional">
+				<p class = "item_left_links">
+				<span class = "entry_likes"> 10 </span> <span class = "entry_likes">Likes</span> | <a class = "read_more_btn">Read more...</a>
+				</p>
+				
+				<p class = "item_right_links"> 
+					<a class = "like_btn">Like</a> | <a class = "discussion_btn">Start a Discussion</a> | 
+					<a class = "feedback_btn">Send Feedback</a>
+				</p>
+			</div>
+		</div>
+		{% elif item.has_image %}
+		<div id = "main_item_{{ item.pk }}" class = "single_entry_withPics">
+			<div class = "desc_box_small">
+				<p class = "desc_title">This is the title of the body</p>
+				<br />
+				<div class = "desc_body">
+				<p>
+				{{ item.content }} 
+				</p>
+				</div>
+			</div>
+			
+			<div class = "entry_pic_box">
+				<a class = "cover_pic" href = " {{ item.image_path }} " title = "This is the title of the body">
+					<img class = "entry_pic" src = "{{ item.image_path }}"/>
+				</a>
+			</div>
+			
+			<div class = "portfolio_entry_additional">
+				<p class = "item_left_links">
+				<span class = "entry_likes"> 10 </span> <span class = "entry_likes">Likes</span> | <a class = "read_more_btn">View this Item</a>
+				</p>
+				
+				<p class = "item_right_links"> 
+					<a class = "like_btn">Like</a> | <a class = "discussion_btn">Start a Discussion</a> | 
+					<a class = "feedback_btn">Send Feedback</a>
+				</p>
+			</div>
+		</div>	
+		{% endif %}
+		{% endfor %}
+	{% endif %}
+	{% endfor %}
+	{% endfor %}
+	</div>
+	
+	</div>
+</div>
+
+
+<!--div id = "container_home"-->	
+	<div id = "Header_2">
+		<img src = "{{ STATIC_URL }}images/commonElements/header_2.png"/>
+		
+		<div id = "topBand_2"></div>
+		<div id = "bottomBand_2"></div>
+		
+		<div id = "top_arrow">
+		<img src = "{{ STATIC_URL }}images/commonElements/arrow_down.png" id = "arrow_img"/>
+		</div>
+		
+		<input type = "text" name = "Search_box" id = "Search_box" placeholder = "Search Archilane"/>
+		
+		<!--div id = "search_glass"><img src = "../commonElements/search_glass.png"/></div-->
+		<div id = "download_basket"><img src = "{{ STATIC_URL }}images/commonElements/download_basket.png"/></div>
+		<div id = "home_btn">
+		<a href="/home/"><p>Home</p></a>
+		</div>
+		<div id="page_message">
+		   <!-- To display global messages -->
+		</div>
+	</div>
+	
+	<div id = "mainNavigation_panel">
+		<div id = "portfolio_icon" class = "main_navigation_icon">
+			<a href="/portfolio/{{ user.pk }}"><img src = "{{ STATIC_URL }}images/commonElements/portfolio_icon.png"/></a>
+			<p class = "mainNavigation_icon_text">Portfolio</p>
+		</div>
+		
+		<div id = "forum_icon" class = "main_navigation_icon">
+			<a href="/forum/"><img src = "{{ STATIC_URL }}images/commonElements/forum_icon.png"/></a>
+			<p class = "mainNavigation_icon_text">Forum</p>
+		</div>
+		
+		<div id = "resources_icon" class = "main_navigation_icon">
+			<img src = "{{ STATIC_URL }}images/commonElements/resources_icon.png"/>
+			<p class = "mainNavigation_icon_text">Resources</p>
+		</div>
+		
+		<div id = "people_icon" class = "main_navigation_icon">
+			<img src = "{{ STATIC_URL }}images/commonElements/people_icon.png"/>
+			<p class = "mainNavigation_icon_text">People</p>
+		</div>
+		
+		<div id = "messages_icon" class = "main_navigation_icon">
+			<img src = "{{ STATIC_URL }}images/commonElements/messages_icon.png"/>
+			<p class = "mainNavigation_icon_text">Messages</p>
+		</div>
+	</div>
+	<div id = "panel_left">
+	<!--This is the secondary navigation bar-->
+	<p id = "contents_text">Contents</p>
+	<div id = "portfolio_navigation">
+		{% for group in groups %}
+		<div id = "group_{{ group.pk }}" class = "group">
+			<div class = "portfolio_group">{{ group.title }}</div>
+			<div class = "entry_panel">
+				{% for key, value in items.items %}	
+					{% if key == group.pk %}
+						{% for item in value %}
+						<div id = "portfoilo_entry_{{ item.pk }}" class = "portfolio_entry"><p class="entry_text">{{ item.content }}</p></div>									
+			
+						{% endfor %}
+					{% endif %}
+				{% endfor %}
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+		
+		
+		<div style = "font-size:13px;width:100%;height:150px;">
+			<hr />
+			ad
+		</div>
+		
+	</div>
+	
+
+	
+	<!--div id = "panel_right"-->
+	<!--The one with the profile pic and also the archifeed-->
+		<div id = "profile_info" class = "panel_right">
+		<!--Profile information points etc.-->
+			<img src = "{{ STATIC_URL }}images/commonElements/portfolio_img.jpg" id = "profile_pic"/>
+		
+			<p id = "profileInfo_userName">{{ user.first_name }} </br> {{ user.last_name }}</p>
+			<p id = "profileInfo_collegeName">{{ user.userprofile.college }}</p>
+			<p id = "profileInfo_links"><a  href="/logout/" id = "logout_btn">Logout</a> | <a id = "settings_btn">Settings</a></p>
+		
+			<div id = "points">
+			<img src = "{{ STATIC_URL }}images/commonElements/points_icon.png" id = "points_icon">
+			<p>123</p><!--maximum number of digits limited to 7 only-->
+			</div>
+		
+		</div>
+		
+		<!--div id = "archifeed" class = "panel_right">
+			<div id = "archifeed_header">
+				<em>Archifeed</em>
+			</div>
+			<div class = "archifeed_item">
+			</div>
+			<div class = "archifeed_item">
+			</div>
+			<div class = "archifeed_item">
+			</div>
+		</div-->
+	<!--/div-->
+	
+	<div id = "searchResults_panel">
+	
+		<div class = "search_accordion_header">
+			Forum	
+			<img src = "{{ STATIC_URL }}images/commonElements/Loading_gif.gif"/ class = "loading_gif">
+			<p id = "forum_result_number" class = "search_result_number"></p>
+		</div>
+		<div class = "search_accordion_content" id = "forum_results">
+			<!--div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div-->
+			
+		</div>
+		<div class = "search_accordion_header">
+			Resources
+			<img src = "{{ STATIC_URL }}images/commonElements/Loading_gif.gif"/ class = "loading_gif">
+			<p id = "forum_result_number" class = "search_result_number"></p>
+		</div>
+		<div class = "search_accordion_content" id = "resources_results">
+			<!--div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div-->
+		</div>
+		<div class = "search_accordion_header">
+			People
+			<img src = "{{ STATIC_URL }}images/commonElements/Loading_gif.gif"/ class = "loading_gif">
+			<p id = "forum_result_number" class = "search_result_number"></p>
+		</div>
+		<div class = "search_accordion_content" id = "people_results">
+			<!--div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div-->
+		</div>
+		<div class = "search_accordion_header">
+			Archifeed
+			<img src = "{{ STATIC_URL }}images/commonElements/Loading_gif.gif"/ class = "loading_gif">
+			<p id = "forum_result_number" class = "search_result_number"></p>
+		</div>
+		<div class = "search_accordion_content" id = "archifeed_results">
+			<!--div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div-->
+		</div>
+	
+	</div>
+	
+	<div id = "side_arrow">
+	<
+	</div>
+	
+<script type = "text/JavaScript" src = "{{ STATIC_URL }}js/commonElements/commonScript.js"></script>
+	<script type="text/JavaScript" src = "{{ STATIC_URL }}js/modal_window/jquery.colorbox.js"></script>
+	<script type="text/JavaScript" src = "{{ STATIC_URL }}js/modal_window/jquery.colorbox-min.js"></script>
+	<script type = "text/JavaScript" > 
+			
+			//here you have to check if the user already likes this portfolio adn load accordingly.
+			
+		$(document).ready(function(){	
+		
+			$('a.cover_pic').colorbox({ maxWidth:"800px", transition:"elastic"});
+
+			$('.entry_text').click(function(){
+			var item_id = $(this).parent('.portfolio_entry').attr('id').replace('portfoilo_entry_','main_item_');
+			var item_offset = $('#'+item_id).offset().top;	
+			var item_height = $('#'+item_id).height();
+			var scroll_position = item_offset + (item_height/2) - ($(window).height()/2) - 28;
+			$('html, body').animate({		
+			'scrollTop' : scroll_position },2000);
+			});		
+			
+			$(document).ajaxStart(function(){
+			msg = "Saving Changes...";
+			$('#page_message').innerHTML = "<p>"+msg+"<p>";
+			}).ajaxStop(function(){
+			msg = "Changes Autosaved";
+			$('#page_message').innerHTML = "<p>"+msg+"</p>";
+		   	});
+			
+			$('#likeUnlike_btn').click(function(){
+				if($(this).text()=='Like this Portfolio'){
+					//$(this).text('Unlike this Portfolio');
+					$.ajax({
+
+						url: '/portfolio/{{ user.pk }}/1/',
+						type: "GET",
+						success: function(){
+							$(this).text('Unlike');
+						}
+					      }).done(function(res){
+							alert(data);
+						});
+				}
+				else if($(this).text()=='Unlike'){
+					$.ajax({
+
+						url: '/portfolio/{{ user.pk }}/0/',
+						type: "GET",
+						success: function(){
+							$(this).text('Like this Portfolio');
+						}
+					      }).done(function(res){
+							alert(data);
+						});	
+				}
+			});			
+		});
+
+		function fetch_likes(){
+				$.get('/portfolio/likes/', function(res){
+					alert(res);
+				});
+		}
+		
+		//window.setInterval(function(){ fetch_likes(); }, 60000);
+
+
+		
+	</script>
+	<script type = "text/JavaScript" src = "{{ STATIC_URL }}js/portfolio/portfolio_script.js"></script>
+</body>
+
+</html>

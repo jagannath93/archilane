@@ -1,0 +1,282 @@
+<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{% load static %}
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type = "text/JavaScript" src = "{{ STATIC_URL }}js/commonElements/jquery-1.9.1.min.js"></script>
+	 <!--script src="http://code.jquery.com/jquery-1.9.1.js"></script-->
+ 	 <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+	<!--script type="text/JavaScript" src = "{{ STATIC_URL }}js/forum/ajax_functions.js"></script-->
+	<!--script type="text/javascript" src="{{ STATIC_URL }}js/commonElements/jquery-1.3.2.min.js"></script-->
+	
+	<!--script type="text/javascript" src="{{ STATIC_URL }}js/commonElements/jquery-ui-1.7.1.custom.min.js"></script-->	
+	<link rel="stylesheet" href="{{ STATIC_URL }}js/modal_window/colorbox.css" />
+	
+	<!--script type="text/JavaScript" src = "{{ STATIC_URL }}js/commonElements/jquery.history.js"></script-->
+	<script type="text/JavaScript" src = "{{ STATIC_URL }}js/modal_window/jquery.colorbox.js"></script>
+	<script type="text/JavaScript" src = "{{ STATIC_URL }}js/modal_window/jquery.colorbox-min.js"></script>
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+
+				$('.inline').click(function(e){	
+					e.preventDefault();		
+					$(".inline").colorbox({inline:true, width:"50%"});
+					//$("#add_group_msg").html("");
+					$("#add_item_form").show();
+					$('.add_group').hide();
+					$("#add_item_form")[0].reset();
+				});
+
+
+				$(".add_group_btn").click(function(e){
+					e.preventDefault();
+					$('.add_group').show();
+				});
+
+				$("form#add_item_form").submit(function(e){
+				//alert("add group");
+				e.preventDefault();
+				$.ajaxSetup({ data: {csrfmiddlewaretoken:'{{ csrf_token }}'},}); // Sending csrf_token with ajax post request.	
+				url = $(this).attr("action");
+				form_data = $(this).serialize();
+				method = $(this).attr("method");
+				alert("ajax1");
+				if(method == "POST")
+					$.post(url, form_data, function(data){
+					if(data != ''){
+					document.getElementById('add_item_msg').innerHTML = "Successfully Added.";
+				//url = "/forum/item/"+group_id;
+			
+			}
+		});
+				//formSubmission(url, form_data, "add_group_msg", method);
+				$("#add_item_form").hide();
+			});
+
+			/*$(document).live("submit","form#add_post_form" , function(e){
+				alert("add post !!");
+				$.ajaxSetup({ data: {csrfmiddlewaretoken:'{{ csrf_token }}'},}); // Sending csrf_token with ajax post request.
+				e.preventDefault();
+				url = $(this).attr("action");
+				form_data = $(this).serialize();
+				method = $(this).attr("method");
+				formSubmission(url, form_data, "add_post", method);
+			});*/ 
+
+				/*$('.items').hide();
+				$('.group_menu').hide();
+				
+				$('.group_title').click(function(){ 
+					$(this).siblings('.items').toggle();
+				});*/
+				
+				/*$('.handle').click(function(){
+					$('.group_menu').toggle()
+				});*/
+
+				/*$('.item').click(function(){
+					$(this).css({'background-color':'grey'}).siblings().css({'background-color':'white'});
+				});*/
+				
+
+
+				/* Groups sorting */
+				$("#order").sortable({opacity: 0.6, handle: '.handle', cursor: 'move', update: function(event, ui) {
+					//alert(ui.item); 
+					var order = $(this).sortable("serialize");
+					$.ajaxSetup({
+						data:{csrfmiddlewaretoken : '{{ csrf_token }}'},
+					});
+					var url = '/portfolio/update_groups/?'+order;
+					//var arr = new Array();
+					$.get( url, function(response){
+						
+						//arr = response;
+						var obj = response['data'];
+						
+						/*var groups = new Array();
+						JSON.parse(response, function(key, value){
+							groups[key] = value;
+						});*/
+						
+						var j=0;
+						for(j=0;j<Object.keys(obj).length-1;j++)
+						{
+	$("#main_order").children('#main_group_'+response['data'][j+1]).insertAfter($("#main_order").children('#main_group_'+response['data'][j]));
+						}
+					}); }
+				});
+			
+				
+				/* Items sorting within a Group */
+				$(".items").sortable({opacity: 0.6, cursor: 'move', update: function(event, ui) {
+						//alert(ui.item); 
+						var order = $(this).sortable("serialize");
+						var id = $(this).attr('id');
+						var group_id = id.replace('items_','');
+						//alert(group_id);
+					
+						$.ajaxSetup({
+							data:{csrfmiddlewaretoken : '{{ csrf_token }}'},
+						});
+						var url = '/portfolio/update_items/?'+order+"&group_id="+group_id;
+						$.get( url, function(response){
+							//alert(response['data'][0]);
+							//var items = new Array();
+							//alert("dsfsd");
+							/*JSON.parse(response, function(key,value){
+								//alert("check2");
+								items[key] = value;
+								alert(key+", "+value);
+							});*/
+							//var data = "{{ json|safe }}";
+							var i = 0;
+							for(i=0;i<(response['data'].length)-1;i++)
+							{
+								//var div1 = $('#main_'+id).children('#main_item_'+items[i]);
+							 	//var div2 = $('#main_'+id).children('#main_item_'+items[i+1]);
+							
+ $('#main_items_'+group_id).children('#main_item_'+response['data'][i+1]).insertAfter($('#main_items_'+group_id).children('#main_item_'+response['data'][i]));
+							}
+						}); }
+				}).disableSelection(); 
+
+				/* Moving an Item between Groups */
+				$('.menu_group').click(function(){
+					var item_id = $(this).parent().attr('id').replace('group_menu_','');					
+					var from_id = $('#item_'+item_id).parent().attr('id');			
+					var to_group_id = $(this).attr('id');
+					//alert(item_id+", "+from_id+", "+to_group_id);
+					$("#item_"+item_id).appendTo('#items_'+to_group_id);
+					
+					   $.ajaxSetup({
+						data:{csrfmiddlewaretoken : '{{ csrf_token }}'},
+					   });
+					   var url = "/portfolio/move_items/?group_id="+to_group_id+"&item_id="+item_id;
+					   //var itemID = "";
+					   //var groupID = "";
+			
+					//$.ajax({dataType: 'json'});
+					   $.get(url, function(response){
+						//alert(response['data']);
+						 /*var json = JSON.parse(response, function(key, value){
+							if(key == "itemID") itemID = value;
+							if(key == "groupID") groupID = value;							
+						});*/							
+						 $("#main_item_"+response['data']['itemID']).appendTo('#main_items_'+response['data']['groupID']);
+					   });			
+				});
+							
+				
+				/*$('.item').click(function(){
+					Cut($(this).attr('id'));
+				});
+				
+
+				$('.group').click(function(){
+					if(clipboard != "")
+						Paste($(this).attr('id'));
+					//else
+						//alert("Clipboard Empty!!");						
+				});*/			
+
+
+		});			
+	
+
+		$(document).ajaxStart(function(){
+			msg = "Saving changes...please wait";
+			$('#status')[0].innerHTML = "<h4><b>"+msg+"</b></h4>";
+		}).ajaxStop(function(){
+			msg = "";
+			$("#status")[0].innerHTML = "<h4><b>Changes saved automatically<b></h4>";	
+		   	});
+
+	</script>
+</head>
+<body>
+
+	<div id="status" style="margin-left:20px;width:300px;height:30px;;background-color:white;position:fixed;top:10px;left:500px;"></div>
+		<div id="order" class="groups" style="float:left;width:200px;height:auto;">
+			{% for group in groups %}
+				<div id="group_{{ group.pk }}" class="group" style="background-color:#eff8ff;margin:5px;z-index:0;">
+					<div class="handle" style="height:25px;font-size:20px;width:40px;z-index:0;margin-left:200px;
+						background-color:#024b83;color:white;text-align:right;
+						padding:5px;cursor:move;"><b>+</b></div>
+					<div id="group_title_{{ group.pk }}" class="group_title" style="background-color:green;">{{ group.title }}|<b>{{group.pk}}</b></div>
+					<div id="items_{{ group.pk }}" class="items">
+						{% for key, value in items.items %}	
+							{% if key == group.pk %}
+								{% for item in value %}
+								<div id="item_{{item.pk}}" class="item">
+								<div style="float:left;">{{item.content}}</div>
+								<div id="group_menu_{{item.pk}}" class="group_menu" style="margin-left:240px;background-color:#eff8ff">
+									{% for group1 in groups %}
+										<div id="{{group1.pk}}" class="menu_group">{{ group1.title }}</div>
+									{% endfor %}
+								</div><hr/>
+								</div>
+								{% endfor %}
+							{% endif %}
+						{% endfor %}
+					</div>	
+				</div>
+			{% endfor %}
+		</div>
+		<div id="main_content" style="float:right;width:1000px;height:700px;background-color:grey;">
+		<div id="portfolio" style="margin-left:20px;">
+		<div id="main_order" class="groups" style="float:left;width:200px;height:auto;">
+			{% for group in groups %}
+				<div id="main_group_{{ group.pk }}" class="main_group" style="background-color:#eff8ff;margin:5px;z-index:0;">
+					
+					<div id="group_title_{{ group.pk }}" class="group_title" style="background-color:green;">{{ group.title }}|<b>{{group.pk}}</b></br> {{group.desc}}</div>
+					<div id="main_items_{{ group.pk }}" class="main_items">
+						{% for key, value in items.items %}	
+							{% if key == group.pk %}
+								{% for item in value %}
+								<div id="main_item_{{item.pk}}" class="main_item">
+								<div style="float:left;">{{item.content}}</div>
+								<div id="group_menu_{{item.pk}}" class="group_menu" style="margin-left:240px;background-color:#eff8ff">
+									{% for group1 in groups %}
+										<div id="{{group1.pk}}" class="menu_group">{{ group1.title }}</div>
+									{% endfor %}
+								</div><hr/>
+								</div>
+								{% endfor %}
+							{% endif %}
+						{% endfor %}
+					</div>	
+				</div>
+			{% endfor %}
+
+		<a class='inline' href="#add_item"><button type = "button" name = "add_item">Add Item</button></a>
+		</div> </div> </div>
+
+<!--  Add group form -->
+<div style="display:none;">
+	<div id="add_item">
+		<div id="add_item_msg"></div>
+		<b>Add Group:</b>
+		
+		<form id="add_item_form" action="/portfolio/add_item/" method="POST">{% csrf_token %}
+			
+				<div>Group</div><div>
+				<select name="group">
+				{% for group in groups %}
+					<option value="{{ group.pk }}">{{ group.title }}</option>					
+				{% endfor %}
+					<option value="new"><a class='add_group_btn' href="#add_group_btn"><button type = "button" name = "add_group">Add Group</button></a></option>
+				</select>
+				</div>
+				New Group: <div class="add_group"><input type='text' name="group_title"></div>
+				<br/>
+				Describe your item:<div><textarea name="item_desc"></textarea></div>		
+			
+				<input type="submit" value="Submit" />		
+		</form>
+	</div>
+</div>	
+</body>
+</html>

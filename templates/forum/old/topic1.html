@@ -1,0 +1,94 @@
+
+<!--script>
+	function topic_page(){
+		alert("Topic Page...");
+		 $("form#add_post_form").submit(function(e){
+				$.ajaxSetup({ data: {csrfmiddlewaretoken:'{{ csrf_token }}'},}); // Sending csrf_token with ajax post request.
+				e.preventDefault();
+				url = $(this).attr("action");
+				form_data = $(this).serialize();
+				method = $(this).attr("method");
+				formSubmission(url, form_data, "add_post", method);
+		});             
+
+		 //$(".inline").colorbox({inline:true, width:"50%"});
+
+		 $("form#add_reply_form").submit(function(e){
+				$.ajaxSetup({ data: {csrfmiddlewaretoken:'{{ csrf_token }}'},}); // Sending csrf_token with ajax post request.
+				e.preventDefault();
+				url = $(this).attr("action");
+				form_data = $(this).serialize();
+				method = $(this).attr("method");
+				formSubmission(url, form_data, "add_reply", method);
+		});   
+		
+		$(".inline").click(function(){ alert("add post clicked !!"); });
+		
+	}
+
+</script-->
+
+<div id="topic_page" onload="topic_page()">	
+	<h3><a href="http://www.google.com">Topic page .......................</a></h3>
+{% if topic.topic_name %}
+	<script>alert("topic_page..!!!");</script>
+{% endif %}
+<h2>{{topic.topic_name}}</h2>
+<p><span style="color:grey;">{{topic.topic_desc}}</span></p><hr/>
+	{% if user_profile.user_level == 3 %}
+			{% if not topic.is_moderated %}<a href="/moderator/{{ topic.pk }}/approve/">Approve</a>{% endif %}
+			| <a href="/moderator/{{ topic.pk }}/edit/">Edit</a> | <a href="/moderator/{{ topic.pk }}/delete/">Delete</a> | <a href="">Message</a></br><hr/>
+	{% endif %}
+
+	{% for post in posts %}
+		<div class="post">
+			<p><span style="color:grey;"><b>{{ post.post_content }}</b></style></p>
+				{% if user_profile.user_level == 3 %}
+					{% if not post.is_moderated %}<a href="/moderator/{{ post.post_topic_id }}/{{ post.pk }}/approve/">Approve</a>{% endif %}
+			| <a href="/moderator/{{ post.post_topic_id }}/{{ post.pk }}/edit/">Edit</a> | <a href="/moderator/{{ post.post_topic_id }}/{{ post.pk }}/delete/">Delete</a> | <a href="">Message</a></br><hr/>
+			{% endif %}
+
+		</div>
+		{% for key,values in replies.items %}				
+			{% if key == post.pk %}	
+				{% for reply in values %}
+					<div id="reply_{{post.pk}}_{{reply.pk}}">Reply:{{ reply.reply_content }}</div></br>
+				{% if user_profile.user_level == 3 %}
+					{% if not reply.is_moderated %}	<a href="/moderator/{{ post.post_topic_id }}/{{ post.pk }}/{{reply.pk}}/approve/">Approve</a> {% endif %}| 
+				<a href="/moderator/{{ post.post_topic_id }}/{{ post.pk }}/{{reply.pk}}/edit/">Edit</a> | <a href="/moderator/{{ post.post_topic_id }}/{{ post.pk }}/{{reply.pk}}/delete/">Delete</a> | <a href="">Message</a></br>
+				{% endif %}		
+		
+				{% endfor %}
+			{% endif %}	
+
+	{% endfor %}		
+		<p><a  class='inline' href="#add_reply_{{post.pk}}">Add Reply</a></p>
+		
+		<div style="display:none;">			
+			<div id="add_reply_{{post.pk}}">			
+				<form class="add_reply_form" id="add_reply_form_{{post.pk}}" action="/forum/add_reply/" method="POST"> {% csrf_token %}
+					<input type="text" name="reply_content"/>
+					<input type="hidden" name="post_id" value="{{post.pk}}"/>
+					<input type="submit" value="Submit"/>
+				</form>
+			</div>
+		</div>			
+
+	{% endfor %}
+		
+	<h4>Add Post</h4>
+		<p><a id="add_post_{{topic.pk}}" class='inline' href="#add_post">Add Post</a></p>	
+
+	<div style="display:none;">
+		<div id="add_post">
+			<form id="add_post_form" action="/forum/add_post/" method="POST"> {% csrf_token %}
+				<textarea name="post_content"></textarea>
+				<input type = "hidden" name="topic" value = "{{ topic_id }}">
+				<input type = "submit" value= "Submit">
+			</form>
+		</div>
+	</div>
+
+</div>
+
+

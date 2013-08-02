@@ -1,0 +1,801 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html style='background-color:#79ACB2;'>
+<head>
+{% load static %}
+	<script src="http://test.archilane.com/chat/socket.io/socket.io.js"></script>
+	
+	<script type="text/javascript" src="{{ STATIC_URL }}js/commonElements/jquery-1.9.1.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/chat/chat.css" /> 
+
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/chat/jquery-ui-1.8.9.custom.css" type="text/css" />
+	
+	<!--script language="JavaScript" src="js/jquery-1.4.4.min.js"></script-->
+
+	<script language="JavaScript" src="{{ STATIC_URL }}js/chat/jquery.jsonSuggest-2.js"></script>
+
+	<!--script language="JavaScript" src="js/testData/testData.js"></script-->	
+    <!--script type="text/javascript" src="js/jquery-1.8.0.min.js"></script> 
+    <script type="text/javascript" src="js/jquery.tooltipster.min.js"></script-->
+	<!--link rel="stylesheet" href="stylesheets/jquery.tooltip/jquery.tooltip.css" type="text/css" />
+    	<script type="text/javascript" src="javascripts/jquery.min.js"></script>
+    	<script type="text/javascript" src="javascripts/jquery.tooltip.js"></script-->	
+
+	<script type='text/javascript'>
+	var socket;
+	var client_id;
+	var client_username;
+	var search_oul = new Array();
+	var json_oul;
+	var pending_msg_no = {};
+	var oul = new Array();
+
+///////////////////////////////////fns to get key status //////////////////////////
+	function check_tb(id1, id2)
+	{
+		var cb_id = id1+id2;
+		var msg_input = document.getElementById('msg_input_'+cb_id);
+	  	if( msg_input.value == '' )
+		{
+		if(socket)
+		  socket.emit('key_status','keyup', id1, id2);		   
+		}
+	      
+	}
+	
+
+	function key_status(data, id1, id2)
+	{
+		if(data == 'keydown')
+		{
+		 //if(update_interval)
+		  //clearInterval(update_interval);
+
+		  //update_count = 0;
+
+		socket.emit('key_status', data, id1, id2);
+		}
+		//else if(data == 'keyup')
+		//{;
+		  //last_keyup = new Date().getTime();
+		  //update_count++;
+		  
+		  //if(update_count != 1)
+		  //{update_interval = setInterval('check_time_diff()',4000);
+		 // alert(update_count);
+		  //}	
+		//}
+		
+	}
+////////////////////////// end ////////////////////////////////////////////
+///////////////////////////fns to get notification sounds /////////////////
+
+	function playSound(filename)
+	{   
+                document.getElementById("sound").innerHTML='<audio autoplay="autoplay"><source src="{{ STATIC_URL }}multimedia/chat/' + filename + '.mp3" type="audio/mpeg" /><source src="{{ STATIC_URL }}multimedia/chat/' + filename + '.ogg" type="audio/ogg" /><embed hidden="true" autostart="true" loop="false" src="{{ STATIC_URL }}multimedia/chat/' + filename +'.mp3" /></audio>';
+        }
+
+
+
+///////////////////////////////// end /////////////////////////////////////
+
+///////////////////////// connect() /////////////////////////////////////
+	function connect() //connects the user to the chat
+	{
+		socket = io.connect('http://test.archilane.com/chat');
+		client_username = document.getElementById('username').value;
+		//alert('in connect name: '+client_username);
+		
+		//socket.emit('socket_id',);
+		/*socket.on('left',function(socket_id){
+			alert(socket_id);
+		});*/
+
+  		 socket.on('type_status',function(msg, cb_id){
+			var type_stat = document.getElementById('type_status_disp_'+cb_id);
+				//alert(msg+", id: "+cb_id);
+			if(type_stat != undefined)
+			{	//alert("inside !!");
+				if(msg != 'stopped')
+				{
+						if(!$('#msg_box_'+cb_id).is(':hidden'))
+						{
+							$('#type_status_disp_'+cb_id).show(function(){
+								$('#msg_box_'+cb_id).css({'height':'200px'});
+							});
+						
+	 						type_stat.innerHTML = "<p><span>"+msg+"<span></p>";
+						}
+				}
+				else
+				{
+					$('#type_status_disp_'+cb_id).hide(function(){
+						$('#msg_box_'+cb_id).css({'height':'200px'});
+					});	
+	 				type_stat.innerHTML = '';
+				}
+			}
+	
+  		    });
+
+
+		if(socket)
+		socket.on('inMsg', function(msg, id1, id2, username1){                  
+		        //var cb_id = id2+id1;
+			//alert("msg received : "+msg+" from: "+id1+id2+" to: "+id2+id1);
+
+			var cb_id = id2+id1;
+			var is_div_present = document.getElementById("main_"+cb_id);
+                                if(is_div_present == undefined)                                           
+                                {
+					create_cb(id2, id1, username1);
+					$('#msg_box_'+cb_id).append(msg);
+				}
+				else
+				{
+					if($('#msg_box_'+cb_id).is(':hidden'))
+					{
+						//var info_msg = 'New message';
+						//if(show_msg(info_msg, cb_id))
+						pending_msg_no[cb_id] += 1;
+
+						$('#pending_msg_no_'+cb_id).show(function(){
+							playSound('notification');
+							var msg_no = document.getElementById('pending_msg_no_'+cb_id);
+							msg_no.innerHTML = '';
+							if(msg_no.innerHTML = "<p><b>"+pending_msg_no[cb_id]+"</b></p>")
+							$('#msg_box_'+cb_id).append(msg);
+						});
+					}
+					else
+					{
+						pending_msg_no[cb_id] = 0;
+						$('#msg_box_'+cb_id).append(msg);	
+					}
+				}
+
+			$(document).ready(function(){
+					$('div.message').mouseover(function(){
+					//alert("on message div.");
+					$(this).css({'border':'1px solid #444'});
+					});
+					$('div.message').mouseout(function(){
+						$(this).css({'border':'none'});
+					})
+			});
+
+
+		});
+		if(socket)
+		socket.on('info_msg', function(info_msg, cb_id){
+			show_msg(info_msg, cb_id);
+		});
+
+///////////////////////////// info_msg() ///////////////////////////////////////////////
+		function show_msg(info_msg, cb_id)  // to display info messages.
+		{
+			document.getElementById('info_box_'+cb_id).innerHTML = "<p><b>"+info_msg+"</b></p>";
+			//alert($('info_box_'+cb_id).html());
+			if($('#info_box_'+cb_id).slideDown("slow").delay(3000).slideUp('slow'))
+				return 1;
+			else
+				return 0;			
+		}
+		
+
+////////////////////////////////// end ////////////////////////////////////////////////
+		socket.on('remove_cb',function(cb_id, username){ //to remove cb on disconnection of any user.
+			//alert('event remove_cb: '+cb_id);
+			var cb_presence = document.getElementById('main_'+cb_id);
+			if(cb_presence != undefined)
+			{
+				var info_msg = username+" went to offline";
+				show_msg(info_msg, cb_id);
+				
+				$('#main_'+cb_id).slideDown(3000).delay(3000, function(){
+				    remove_box(cb_id);
+				});
+				  				//alert('cb successfully removed');
+			}
+		});
+
+		if(socket)
+		socket.on('update_ou',function(username,Users){
+			//alert(client_username+' , '+Users.length);
+			
+			var j=0;
+			var k=0;
+
+		if(Users != undefined)
+		if(Users.length == 0||Users.length > 0)
+		{
+			for(j=0,k=0;j < (Users.length-1); j++,k++)
+			{	
+				
+				if(Users[k][0] != client_username && Users.length > 0)
+				{
+				search_oul[j]={};
+				search_oul[j]['id'] = j+1;
+				search_oul[j]['text'] = Users[k][0];
+				
+				}
+				else if(Users[j][0] == client_username)
+				{
+				 search_oul[j] = {};
+				 search_oul[j]['id'] = j+1;
+				 k++;
+				 search_oul[j]['text'] = Users[k][0];				  
+				}				
+			
+			}
+			for(var w = 0;w < Users.length; w++)
+			{
+				oul[w] = new Array(3);
+				oul[w][0] = Users[w][0];
+				oul[w][1] = Users[w][1];
+				oul[w][2] = Users[w][2];	
+
+			}
+		} //end of if
+
+			if(search_oul.length > 0)
+			 {var json_oul =  JSON.stringify(search_oul);
+                           //alert(json_oul);
+			   // alert(JSON.stringify(pending_msg_no));
+			 }
+			
+
+			jQuery(function(){
+
+				if(search_oul.length > 0)
+				{
+					$('input#search_oul').jsonSuggest({data: json_oul, onSelect: callback});
+				}
+				});
+		
+				function callback(result)
+				{
+					//alert(result.text);
+					document.getElementById('search_oul').value="";
+					//alert(result.text);
+					var id2 = get_id(result.text);
+					
+					if(id2 != (-1))
+						create_cb( client_id,  id2,  result.text);
+				}
+
+
+			document.getElementById('right_users').innerHTML = '';
+				
+			if(Users != undefined)
+			for(var i=0;i<Users.length;i++){
+				
+				if(Users[i][0] != client_username)
+				{
+					//passing id1 and id2 to create_cb() function.
+					var data ="<div><button style=\"width:230px;height:30px;\" onclick=\" javascript:create_cb('"+ client_id +"','"+ Users[i][1] +"','"+ Users[i][0] +"'); \">"+Users[i][0]+"</button></div>";
+					$('#right_users').append(data);
+				}
+			}				
+
+/////////////////////////// autocomplete-jquery-ui ////////////////////////
+		
+			/*$('#search_oul').autocomplete({
+				source:search_oul
+			});*/
+
+		});
+
+		socket.on('store_id',function(socket_id){
+		client_id = socket_id;
+		//alert(client_username);
+		socket.emit('new_user',client_username);
+		//alert(client_id);
+	});
+
+	}
+
+	function get_id(name)  //To extract client_username when id is given.
+	{
+		for(var k=0;k<oul.length;k++)
+		{
+			if(oul[k][0] == name)
+			{
+				return oul[k][1];
+			}
+		}
+		return -1;  //Not found.
+	}
+
+//////////////////////////////end of connect()////////////////////////////	
+	/*function new_user()
+	{
+		socket.emit('new_user',client_username);
+	}*/
+	
+	function disconnect() //disconnects the user from chat
+	{
+		socket.disconnect(); 
+	}
+
+
+	
+	
+////*****************************************************************************************************************
+
+	//old code of chat box.
+
+	
+		
+		var count = 0;
+		var _rhs = 255; //changed from 20 to 20 + 235 
+		var rhs =  _rhs.toString()+"px";	
+		
+			
+
+	
+		
+		/*$(document).ready(function(){
+			$('#one').click(function(){
+				$('#msg_box_'id).toggle();
+				$('#three_'+id).toggle();
+				//$('.main').animate({height:'30px'},'fast');
+				//$('#msg_box').slideToggle(1);
+				//$('#three').slideToggle(1);
+			})
+		
+		});*/
+		
+		function toggle_cb(id)
+		{
+			//alert(id);
+			$(document).ready(function(){
+			
+			// var json_string =  JSON.stringify(search_oul);
+		
+
+
+			//alert('toggle_cb'+id);
+			//$('#one_'+id).click(function(){
+				$('#options_'+id).hide();
+				$('#msg_box_'+id).toggle();
+				$('#three_'+id).toggle();
+		
+			
+				var decrement = 50;
+				var new_val = decrement.toString()+"px";
+				
+				if($('#main_'+id).height() < 200)   //considered avg height of the main_id div =200(max=268 ; min=35)
+				{
+					$('#info_box_'+id).css({'bottom':new_val});		
+					$('#type_status_disp_'+id).hide();	
+
+				}
+				else if($('#main_'+id).height() > 200)
+					{
+						$('#info_box_'+id).css({'bottom':'280px'});
+						pending_msg_no[id] = 0;
+						
+						var msg_no = document.getElementById('pending_msg_no_'+id);
+						msg_no.innerHTML = '';
+						
+						$('#pending_msg_no_'+id).hide();
+					}
+				//$('#cb_left_btn_'+id).toggle();
+				//$('#cb_right_btn_'+id).toggle();
+				//$('#one_'+id).css({'text-align':'center'});
+			
+				//$('.main').animate({height:'30px'},'fast');
+				//$('#msg_box').slideToggle(1);
+				//$('#three').slideToggle(1);
+			//})
+		  });
+		}
+		function send_msg(id, id1, id2)	//id = chat_box id.
+		{
+			$(document).ready(function(){
+				
+				//alert('In send_msg() - '+id);
+				//alert($('#msg_input').val());
+				msg = document.getElementById('msg_input_'+id).value;			
+		
+				var data = "<div class='message'><span><b>"+client_username+"</b></span>: "+msg+"</div>";
+
+				$('#msg_box_'+id).append(data);
+				
+			$(document).ready(function(){
+					$('div.message').mouseover(function(){
+					//alert("on message div.");
+					$(this).css({'border':'1px solid #444'});
+					});
+					$('div.message').mouseout(function(){
+						$(this).css({'border':'none'});
+					})
+			});
+
+				socket.emit('send_msg', msg, id, id1, id2); //sending msg to the server
+
+				//alert('msg_input_'+id);
+				//alert(document.getElementById('msg_input_'+id).value);
+				document.getElementById('msg_input_'+id).value='';
+				//$('#msg_input').val()='';
+			});
+			return false;
+		}
+		function box_options(id, value)
+		{	
+			//alert(id+", "+value);
+			
+			//alert('box_options: '+id);
+			$(document).ready(function(){
+				//alert('In box_options() - '+id);
+				
+				//cb_tool_tip();
+
+				$('#options_'+id).toggle(1,function(){
+				//alert(id+", "+value);
+
+					$('li').click(function()
+					{
+						$('#options_'+id).hide();
+						//alert("check-2");
+						$(this).css('background-color', 'grey');
+						$(this).siblings().css('background-color', 'edeff3');
+						//alert($(this).attr('id'));
+					});
+					return false;
+				
+				});				
+				
+				//$(this).find('li').fadeIn(1);
+				
+			});
+			//alert("In box_options");
+			//return false;*/
+		}
+		function remove_box(id)
+		{
+			$(document).ready(function(){
+				//alert('Deleting - '+id);
+				
+				$('#main_'+id).remove();	
+				
+				//count -= 1;               //Since we are not using 'count' variable anywhere ,there is no need to reduce it here.
+				
+				
+				//$('#main_'+id).siblings
+				
+				
+				 _rhs = 255; //changed from 20 to 20+235 //global variable
+				  rhs =  _rhs.toString()+"px";		//global variable
+				  
+				  
+				$("[id^='main_']").each(function(){					
+					
+					$(this).css({'right':rhs,'float':'right'});
+					_rhs += 270;		//changed from 240 to 240+30
+					rhs = _rhs.toString()+"px";
+					
+					//alert(rhs);
+				});
+				
+					//alert(count);
+					
+				//var num = parseInt(id);
+				//alert(id+','+count);
+				var gap = 0;
+				
+				/*for(i=(id+1);i<=(count);i++)
+				{
+					//alert("In for loop");
+				  if(document.getElementById('main_'+i) == undefined)
+					{
+						if(i==count)
+							gap=0;
+						else
+							gap += 240;
+							continue;
+					}
+				  else
+				  {
+					var n_1 = ((220 * (i-1))+(20 * (i-1)))-220-gap;
+					var from_right_1 = new Number(n_1);
+					var right_1 = from_right_1.toString()+'px';
+					//alert(i+", "+right_1);
+					//$('#main_'+i)=$('#main_'+(i+1));
+					//alert(i);					
+					$('#main_'+i).animate({right:right_1},'slow');
+				  }
+								
+				}*/
+			});
+				
+			//return false;
+		}
+		
+		function create_cb(id1, id2, username2)
+		{	
+			$(document).ready(function(){
+				
+					 
+					var id = id1+id2;  //Doubt: why this is not a string object??
+				
+					//alert(id.toLowerCase());
+					//alert(("main_"+id).toLowerCase());
+					////////////////////////////////////////
+					/*var div_presence = document.getElementById("post_"+arr[j].post_id);
+						
+						if(div_presence == undefined)						
+						{											
+						var div = document.createElement("div");
+						div.id="post_"+arr[j].post_id;
+						div.style.width = "500px";
+						//div.style.height = "400px";
+						div.style.background = "white";						
+						//div.style.border="1px solid grey";
+						//div.style.color = "white";
+						div.innerHTML = arr[j].post;
+						document.body.appendChild(div);	*/
+					///////////////////////////////////////////////////////////
+				//document.getElementsByTagName('body') //document.write();
+				var div_presence = document.getElementById("main_"+id);
+				if(div_presence == undefined)						
+				{
+					var main_div = document.createElement("div");
+					main_div.id = "main_"+id;
+					//main_div.title = "I will show messages for this chat box: "+id;					
+					main_div.innerHTML = 
+						//document.getElementById('apple').appendChild(
+						//"<div id=main_"+id+">"+
+
+							"<div id=info_box_"+id+" class='info_box'>"+id+
+							"</div>"+
+							"<div id=pending_msg_no_"+id+" class='pending_msg_no'></div>"+
+
+							"<div id=one_"+id+">"+
+							"<div id=cb_left_btn_"+id+" style='width:30px;height:30px;float:left;'>"+
+							"<a href='javascript:box_options(\""+id+"\");'>"+
+								"<img src='add.gif' style='float:left;margin-left:10px;margin-top:8px;float:left;'>"+
+							"</a>"+
+								"<ul id=options_"+id+" style='position:relative;padding-left:0px;margin-left:23px;margin-top:12px;"+
+										"width:90px;height:80px;list-style:none;background-color:white;border:solid 1px #BBBBBB;z-index:1001'>"+
+									"<li id=invite_"+id+" >Invite</li>"+
+									"<li id=settings_"+id+">Settings</li>"+
+									"<li id=chat_sounds_"+id+">Chat Sounds</li>"+
+									"<li id=report_abuse_"+id+">Report Abuse</li>"+									
+								"</ul>"+
+							"</div>"+
+							"<div id=cb_name_"+id+" class='chat_box' onclick='javascript:toggle_cb(\""+id+"\");' style='width:160px;height:25px;float:left;text-align:center;padding-top:5px;cursor:pointer;'>"+ username2+
+														
+							"</div>"+
+							"<div id=cb_right_btn_"+id+" style='width:30px;height:30px;float:right;'>"+
+							"<a href='javascript:remove_box(\""+id+"\");'>"+
+								"<img src='sub.gif' style='float:right;margin-right:10px;margin-top:8px;'>"+
+							"</a>"+
+							"</div>"+
+						"</div>"+						
+						"<div id=msg_box_"+id+"></div>"+
+						"<div id=type_status_disp_"+id+" class='type_status_disp'></div>"+
+						"<div id=three_"+id+">"+
+				"<form onsubmit='return send_msg(\""+id+"\",\""+id1+"\",\""+id2+"\")' method='post'>"+
+					"<input id=msg_input_"+id+" type='text' placeholder='message here...' onKeydown='return key_status(\"keydown\",\""+id1+"\",\""+id2+"\")' onKeyup='return check_tb(\""+id1+"\",\""+id2+"\")'  style='padding:0px;width:247px;height:28px;'>"+
+							"</form>"+
+						"</div>";
+						
+					document.getElementById('left_main').appendChild(main_div);	
+								
+			
+			//alert("id= "+id);
+			
+			
+			//var n = (220 * (count-1))+(20 * (count));     //previously used eq'n to find 'right' for every 'main_x' box.
+			//var from_right = new Number(n);   					
+			//var right = from_right.toString()+'px';
+			//alert(_rhs);		
+			
+			//alert(right);
+			
+			$('#options_'+id).hide();
+			$('#info_box_'+id).hide();
+			$('#type_status_disp_'+id).hide();
+			$('#pending_msg_no_'+id).hide();
+
+			//var adding_ol_users_box = _rhs+235; //new change bco'z of the addition of online users and groups box on right side.
+			//	rhs = adding_ol_users_box.toString()+'px';	
+			$('#main_'+id).css({'position':'fixed','bottom':'0px','right':rhs,'float':'right'});
+			$('#one_'+id).css({'width':'250px','height':'30px','background-color':'orange'});
+			$('#msg_box_'+id).css({'width':'250px','height':'200px','background-color':'white','overflow-y':'auto'});
+			$('#three_'+id).css({'width':'250px','height':'28px','background-color':'violet'});
+			//$('#one_'+id).css({'width':'220px','height':'30px','background-color':'orange'});
+			$('#info_box_'+id).css({'position':'absolute','bottom':'270px','left':'5px','width':'215px','height':'auto','word-wrap':'break-word'});		
+			$('#pending_msg_no_'+id).css({'width':'30px','height':'30px','position':'absolute','bottom':'20px','left':'15px'});
+					
+	
+
+			pending_msg_no[id] = 0; //initializing this list, pending-msg_no to zero.
+
+			_rhs += 270;//changed from 240 to 240+30
+			rhs = _rhs.toString()+"px";
+		
+			/*var info_box_presence = document.getElementById("info_box_"+id);
+				if(info_box_presence == undefined)						
+				{
+					var info_box_div = document.createElement("div");
+					info_box_div.id = "info_box_"+id;
+					info_box_div.title = "I will show messages for this chat box: "+id;					
+					info_box_div.innerHTML ="<a href='#'>Testing</a>---I will show messages for this chat box"; 
+					document.getElementById('left_main').appendChild(info_box_div);
+				}
+				
+				$('#info_box_'+id).css({'position':'absolute','top':'-100px','right':'50px','width':'210px','height':'auto','background-color':'grey'});*/
+
+
+			//cb_tool_tip(id);
+			socket.emit('register', id, id2);
+
+		   } //end of if 
+
+		});
+
+	
+	}
+
+
+	function cb_tool_tip(id){
+			 /*$j = jQuery.noConflict();
+			 $j(document).ready(function(){
+			 	$j("div.item_123").tooltip();
+			 });*/
+			//$(document).ready(function(){
+			$('#main_'+id).tooltipster({
+				//fixedWidth: 400,
+    				position: 'top',
+				animation: 'slide',
+				arrow: false,	
+				fixedWidth: 210,
+				offsetX: 5,		
+    				arrowColor: '',
+				timer: 10000,
+				//tooltipTheme: '.tooltipster-clean-cut',
+    				tooltipTheme: '.tooltip-custom-2'
+			});
+		//});
+
+	}
+
+	</script>
+	<style type='text/css'>
+		*
+		{
+			margin:0px;
+			padding:0px;
+		}
+		li
+		{
+			cursor:pointer;
+			width:100%;			
+		}
+		.info_box
+		{
+			background-color: #d7dce1;
+			border: 1px solid #afb8c0;
+			font-family: Arial, sans-serif;
+			font-size: 12px; 
+			line-height: 16px; 
+			padding: 10px;
+			border-radius: 2px;
+			text-align: center; 
+			z-index: 9999999; 
+			color: #000;
+			text-align: left; 
+		}
+		input#search_oul { padding:4px; }
+	
+		.type_status_disp
+		{
+			width: 240px;
+			height: 15px;
+			padding:5px;
+			position: absolute;
+			bottom: 28px;
+			background-color: #d7dce1;
+		}
+		.pending_msg_no
+		{
+			background-image:url('pending_msg_no.png');
+			background-repeat:no-repeat;
+			background-color:pink;
+			color: white;
+			text-align: center;
+			font-size: 25px;
+		}	
+		.message
+		{
+			background-color:#d7dce1;
+			width:230px;
+			height: auto;
+			padding:7px;
+			font-size:15px;
+
+		}
+		/*message.hover{border: 1px solid #444;}*/
+		
+		.jsonSuggest li a img {
+	
+		float:left;
+
+		margin-right:5px;
+
+		}
+
+		.jsonSuggest li a small {
+
+		display:block;
+
+		text-align:right;
+
+		}
+
+		.jsonSuggest { font-size:0.8em; }
+
+
+		</style>
+	</head>
+<body>
+	static_url: {{ STATIC_URL }}
+	<div id='left_main' style='position:fixed;float:left;right:232px;bottom:0px;background-color:#79ACB2;height:657px;width:1140px;'>
+		<div style='background-color:black;position:fixed;left:50px;top:150px;padding:10px;'>
+			<!--button onclick='javascript:create_cb();' style='width:50px;height:25px;'>Add</button-->
+			<input type='text' id='username'/>
+			<button onclick='connect();'>Connect</button>	
+			<button onclick='disconnect();'>Disconnect</button>
+		</div>
+		<div id='sound'>
+		</div>
+	</div>
+
+	
+	
+	<div id='right_main' style='position:fixed;right:2px;bottom:5px;float:right;width:230px;height:500px;background-color:pink;text-align:center;'>
+		<!--div id='right_top_header' style='width:230px;height:30px;background-color:brown;color:black;padding-top:5px;'><b>Groups</b>
+		</div>
+	
+		<div id='right_groups'style='width:230px;height:275px;padding-top:5px;'></div-->
+		
+		<div id='right_bottom_header' style='width:230px;height:70px;background-color:brown;color:black;padding-top:5px;'><b>Users Online</b>
+			
+		<div style='height:20px;width:230px;'><input type='text' id='search_oul' placeholder='search here...' size="35"/></div>
+
+		</div>
+	
+		<div id='right_users'style='width:230px; height:430px; padding-top:5px;'></div>
+			
+		<!--div id='right_chat_search' style='width:230px;height:30px;background-color:brown;color:black;padding-top:5px;'><b>Chat</b></div-->
+					
+	</div>
+		
+
+
+	<!--ul>
+	<option>Apple</option>
+	<option>Mango</option>
+	<option>Pine apple</option>
+	</ul-->
+	<!--div class='main'>
+		<div id='one' onclick='javascript:toggle_cb(id);'>
+			<a href='javascript:box_options(id);'>			
+			<img src='add.gif' style='float:left;margin-left:10px;margin-top:8px;'></a>
+			<a href='javascript:hide_box(id);'><img src='sub.gif' style='float:right;margin-right:10px;margin-top:8px;'></a>
+		</div>
+		<div id='msg_box'></div>
+		<div id='three'>
+			<form onsubmit='return send_msg(id)' method='post'>
+				<input id='msg_input' type='text' style='height:28px;width:100%;'>
+			</form>
+		</div>
+	</div-->
+</body>
+</html>

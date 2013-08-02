@@ -1,0 +1,22 @@
+<html>
+	<h3>Signin Form</h3>
+	<form action='/site_auth/signin/' method='POST'>{% csrf_token %}
+		<p><span style="color:red;">{{ message }}</span></p>
+		<table> 
+	               	{% for field in form %}
+                        	<tr><div class ='fieldwrapper'>
+                                	<td>{{ field.label_tag }}:</td><td>{{field}}</td>
+	        	{{ form.name_of_field.errors }}
+                                <td>{{ field.errors }}</td>
+        	                </div></tr>
+                	{% endfor %}
+	        </table>
+        	<input type='submit' name="submit"  value= "Signin->" /> 
+        </form>
+
+	<!--form action='/site_auth/signin/' method='POST'>{% csrf_token %}
+	<strong>Username:</strong><input type='text' name='username'>
+	<strong>Password:</strong><input type='text' name='password'>
+	<input type='submit' value='Signin'><a href=/site_auth/forgot_pass/>Forgot Password </a>
+	</form-->
+</html>

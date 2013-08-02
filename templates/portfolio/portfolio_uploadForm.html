@@ -1,0 +1,102 @@
+<div id = "uploadForm_content">
+	<div id = "form_imageList">
+		<!--div class = "list_image_box">
+			<p><span id = "image_title" class = "image_title">Image 1</span> <span id = "image_delete" class = "image_delete">x</span></p>
+			<img src = "{{ STATIC_URL }}images/portfolio/view_1.jpg" id = "uploaded_image" class = "uploaded_image"/>
+		</div-->
+		<div id = "image_upload_btn">
+			<div id = "pseudo_btn"><p id = "add_image">Add Images</p></div>
+			<input type = "file" id = "upload_btn" title = "add image" style = "visibility : hidden" onchange = "loadImages()" multiple accept = "image/*" name = "imageUploaded_1"/>
+		</div>
+	</div>
+	
+	<div id = "form_rightBox">
+		<div id = "coverPic_box" style="height : 64%">
+			<select id = "coverPic_dropDown">
+				<option value = "none">select the Cover pic</option>
+			</select>
+			<br />
+			<img src = "{{ STATIC_URL }}images/portfolio/no_image.png" id = "item_coverPic"/>
+			
+			<button id = "form_submit_btn" style = "float:right;margin:5px">Add Item</button>
+			<select id = "group_select" onchange = "groupSelected()">
+				<option value = "group_1">group1</option>
+				<option value = "new_group">New Group</option>
+			</select>
+			
+			<select id = "privacy_setting">
+				<option value = "public">Public</option>
+				<option value = "private">Private</option>
+			</select>
+			
+		</div>
+		
+		<div id = "text_boxes" style="height : 24%">
+			<input type = "text" name = "title" id = "item_title_input" placeholder = "Title..."/>
+			<textarea id = "item_desc_input" placeholder = "Description..."></textarea>
+		</div>
+	</div>
+	<script type = "text/JavaScript">
+		$('#pseudo_btn').click(function(){
+			$('#upload_btn').click();
+		});
+		
+		var image_no = 1;
+		var num_of_images = 0;
+		
+		function loadImages(){
+			var inp = document.getElementById('upload_btn');
+			var INP = $('#upload_btn');
+			
+			if(inp.files.length){
+				$('#item_coverPic').attr('src',$('#item_coverPic').attr('src').replace('no_image.png','select_cover_pic.png'));
+			}
+			
+			for(var i=0;i<inp.files.length;i++){
+				$('<div class = "list_image_box" id = "list_image_'+image_no+'">'+
+					'<p><span id = "image_title_'+image_no+'" class = "image_title">Image '+image_no+'</span> <span id = "image_delete_'+image_no+'" class = "image_delete">x</span> '+
+					'<span class = "loading_text" id = "loading_text_'+image_no+'">(Loading...<span id="loadPercent_'+image_no+'" class="loadPercent">10%</span>)</span></p>'+
+					'<img src = "" id = "uploaded_image_'+image_no+'" class = "uploaded_image"/>'+
+					'</div>').appendTo('#form_imageList');
+				
+				$('<option value = "image_'+image_no+'" id = "image_'+image_no+'">Image '+image_no+'</option>').appendTo('#coverPic_dropDown');
+				
+				image_no++;
+				num_of_images++;
+			}
+			
+			$('.image_delete').click(function(){
+				var delete_no = $(this).parent().parent('.list_image_box').attr('id').replace('list_image_','');
+				alert(delete_no);
+				
+				$(this).parent().parent('.list_image_box').remove();
+				$('#coverPic_dropDown').children('#image_'+delete_no).remove();
+				
+				num_of_images--;
+				
+				//console.log('removed');
+				if(num_of_images==0){
+					$('#item_coverPic').attr('src',$('#item_coverPic').attr('src').replace('select_cover_pic.png','no_image.png'));
+					INP.replaceWith(INP = INP.clone(true));//resetting the input-file element by replacing itwith a clone of itself
+				}
+
+			});
+			
+			//code to start the uploading of images - starts
+					
+			//code to start the uploading of images - ends
+			
+			INP.replaceWith(INP = INP.clone(true));//resetting the input-file element by replacing itwith a clone of itself
+		
+		}
+		
+		function groupSelected(){
+			var groupList = document.getElementById('group_select');
+			if(groupList.options[groupList.selectedIndex].value == 'new_group'){
+				$('<input type="text" width="60" id="new_group_name" style="height:22px;"/>').insertAfter('#form_submit_btn');
+			}else{
+				$('#new_group_name').remove();
+			}
+		}
+	</script>
+</div>

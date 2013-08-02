@@ -1,0 +1,2 @@
+{{ object.post_content }}
+{{ object.post_topic.id }}

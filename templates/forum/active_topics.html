@@ -1,0 +1,51 @@
+<div id="table_content">
+
+<div id = "main_content_header">
+	Home	
+</div>	
+	<div id = "buttons_box">
+		<span class="my_activity"><button type = "button" name = "my_activity"> My Activity </button></span>
+		<span class="active_topics"><button type = "button" name = "active_topics"> Active Topics </button></span>
+		<span class="latest_topics"><button type = "button" name = "latest_topics"> Latest Topics </button></span>
+		<a class='inline' href="#add_topic"><button type = "button" name = "post_a_topic">Post a Topic</button></a>
+	</div>
+
+<table id = "forum_home_table" border = "0">
+	<caption id = "table_header">Active Topics</caption>
+	{% for topic in active_topics %}
+		<tr class = "forumHome_table_row">	
+			<td>
+				<div class = "forumTable_main_col">
+					<p class = "forumTable_entry_head">
+						<a id="topic_{{ topic.pk }}" class="topic" href="/forum/topic/{{ topic.pk }}/">
+							{{ topic.topic_name }}
+						</a>
+					</p>
+					<p class = "forumTable_entry_body">{{ topic.topic_desc }}</p>
+				</div>
+			</td>	
+			<td>
+				<div class = "forumTable_side_col">
+					<p><span class = "forumTable_sideCol_LHS">By :</span> 
+						<a href = "" class = "forumTable_sideCol_userName">{{ topic.topic_by.first_name }}</a></p>
+					<p><span class = "forumTable_sideCol_LHS">On :</span> 
+						<span class = "forumTable_sideCol_RHS">{{ topic.topic_date|date:'Y-m-d'}}</span></p>
+					<p><span class = "forumTable_sideCol_LHS">Replies :</span> 
+						
+						{% for key, value in replies_num.items %}
+							{% if key == topic.pk %}
+								<span class = "forumTable_sideCol_RHS">{{ value }}</span>
+							{% endif %}
+						{% endfor %}
+					</p>
+					<p><span class = "forumTable_sideCol_LHS">Category : </span> 
+						<a href = "" class = "forumTable_sideCol_catName">
+							<span class = "topic_cat_name"> {{ topic.topic_cat.cat_name }} </span>
+						</a>
+					</p>
+				</div>
+			</td>	
+		</tr>
+	{% endfor %}
+</table>
+</div>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+	<meta charset='utf-8'/>
+	<link rel="stylesheet" href="{{ STATIC_URL }}js/modal_window/colorbox.css" />
+	<script type="text/JavaScript" src = "{{ STATIC_URL }}js/commonElements/jquery.min.js"></script>
+        <script type="text/JavaScript" src = "{{ STATIC_URL }}js/forum/ajax_functions.js"></script>
+	<script type="text/JavaScript" src = "{{ STATIC_URL }}js/commonElements/jquery.history.js"></script>
+	<script type="text/JavaScript" src = "{{ STATIC_URL }}js/modal_window/jquery.colorbox.js"></script>
+	<script type="text/JavaScript" src = "{{ STATIC_URL }}js/modal_window/jquery.colorbox-min.js"></script>
+</head>
+<body>
+<p><a class="upload" href='/welcome/sdfsdf'>Upload Profile Picture</a><a style="float:right;" href='/site_auth/signout'>Logout</a></p>
+<h3>Hello {{ user.email}}</h3>
+<title>ArchiLane | Forum Home</title>
+
+<div id="msg" style="position:fixed;top:10px;left:350px;width:350px;height:35px;padding:5px;"></div>
+
+<div id='nav_content' style='float:left;'>
+	{% for category in categories %}
+		<div id="category_{{ category.pk }}" class="category" title="{{ category.cat_name }}" > {{ category.cat_name }} </div> </br>
+	{% endfor %}
+</div>	
+
+<div style="display:none;">
+	<div id="add_topic">		
+		<form id="add_topic_form" action="/forum/add_topic/" method="POST">{% csrf_token %}
+			<table>
+			<tr><td>Category</td><td>
+			<select name = "category">
+				{% for category in categories %}
+				<option value = "{{ category.id }}">{{ category.cat_name }}</option>
+				{% endfor %}
+			</select>
+			</td></tr>
+			<tr><td>Topic</td><td><input type='text' name="topic_name"></td></tr>
+			<br/>
+			<tr><td>Describe your Topic</td><td><textarea name="topic_desc"></textarea></td></tr>
+			</table>
+			<p>
+			<input type="submit" value="Submit" />
+			</p>
+		</form>
+	</div>
+</div>	
+
+<div id="main_content" style="float:right;">
+<h2>Add a Topic</h2>
+	<p><a class='inline' href="#add_topic">Add Topic</a></p>
+
+<h3>Latest Topics</h3>
+<table border=1>
+{% for topic in latest_topics %}
+	<tr><td>{{ forloop.counter }}</td><td width="100px"><div id="topic_{{ topic.pk }}" class="topic"> {{ topic.topic_name }}</div></td>
+			<td width="500px">{{ topic.topic_desc }}</td></tr>
+{% endfor %}
+</table>
+
+<h3>Active Topics</h3>
+<table border=1>
+{% for topic in active_topics %}
+	<tr><td>{{ forloop.counter }}</td><td width="100px"><div id="topic_{{ topic.pk }}" class="topic"> {{ topic.topic_name }}</div></td>
+			<td width="500px">{{ topic.topic_desc }}</td></tr>
+{% endfor %}
+</table>
+
+<h3>Top Topics</h3>
+<table border=1>
+{% for topic in top_topics %}
+	<tr><td>{{ forloop.counter }}</td><td width="100px"><div id="topic_{{ topic.pk }}" class="topic">{{ topic.topic_name }}</div></td>
+			<td width="500px">{{ topic.topic_desc }}</td></tr>
+{% endfor %}
+</table>
+</div>
+
+</body>
+
+</html>

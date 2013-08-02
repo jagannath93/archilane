@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+{% load static %}
+<title>Archilane</title>
+	<link type="text/css" href="{{ STATIC_URL }}css/commonElements/commonElements.css" rel="stylesheet"></link>
+	<link type="text/css" href="{{ STATIC_URL }}css/forum/forum_stylesheet.css" rel="stylesheet"></link>
+	<link rel="stylesheet" href="{{ STATIC_URL }}js/modal_window/colorbox.css" />
+	<script type = "text/JavaScript" src = "{{ STATIC_URL }}js/commonElements/jquery-1.9.1.min.js"></script>
+	<script type="text/JavaScript" src = "{{ STATIC_URL }}js/forum/ajax_functions.js"></script>
+	<script type="text/JavaScript" src = "{{ STATIC_URL }}js/commonElements/jquery.history.js"></script>
+	<script type="text/JavaScript" src = "{{ STATIC_URL }}js/modal_window/jquery.colorbox.js"></script>
+	<script type="text/JavaScript" src = "{{ STATIC_URL }}js/modal_window/jquery.colorbox-min.js"></script>
+</head>
+
+<body>
+<div style="display:none;">
+	<div id="add_topic">
+		<div id="add_topic_msg"></div>
+		<form id="add_topic_form" action="/forum/add_topic/" method="POST">{% csrf_token %}
+			<table>
+				<tr><td>Category</td><td>
+				<select name = "category">
+					{% for category in categories %}
+					<option value = "{{ category.id }}">{{ category.cat_name }}</option>
+					{% endfor %}
+				</select>
+				</td></tr>
+				<tr><td>Topic</td><td><input type='text' name="topic_name"></td></tr>
+				<br/>
+				<tr><td>Describe your Topic</td><td><textarea name="topic_desc"></textarea></td></tr>
+			</table>
+			<p>
+				<input type="submit" value="Submit" />
+			</p>
+		</form>
+	</div>
+</div>	
+<div id = "main_content">
+	<!--This is the main content of the page according to the corresponding app or the main page-->
+<div id = "main_content_header">
+	Home	
+</div>	
+	<div id = "buttons_box">
+		<span class="my_activity"><button type = "button" name = "my_activity"> My Activity </button></span>
+		<span class="active_topics"><button type = "button" name = "active_topics"> Active Topics </button></span>
+		<span class="latest_topics"><button type = "button" name = "latest_topics"> Latest Topics </button></span>
+		<a class='inline' href="#add_topic"><button type = "button" name = "post_a_topic">Post a Topic</button></a>
+	</div>
+
+<table id = "forum_home_table" border = "0">
+	<caption id = "table_header">Latest Topics</caption>
+	{% for topic in latest_topics %}
+		<tr class = "forumHome_table_row">	
+			<td>
+				<div class = "forumTable_main_col">
+					<p class = "forumTable_entry_head">
+						<a id="topic_{{ topic.pk }}" class="topic" href="/forum/topic/{{ topic.pk }}/">
+							{{ topic.topic_name }}
+						</a>
+					</p>
+					<p class = "forumTable_entry_body">{{ topic.topic_desc }}</p>
+				</div>
+			</td>	
+			<td>
+				<div class = "forumTable_side_col">
+					<p><span class = "forumTable_sideCol_LHS">By :</span> 
+						<a href = "" class = "forumTable_sideCol_userName">{{ topic.topic_by.first_name }}</a></p>
+					<p><span class = "forumTable_sideCol_LHS">On :</span> 
+						<span class = "forumTable_sideCol_RHS">{{ topic.topic_date|date:'Y-m-d'}}</span></p>
+					<p><span class = "forumTable_sideCol_LHS">Replies :</span> 
+						
+						{% for key, value in replies_num.items %}
+							{% if key == topic.pk %}
+								<span class = "forumTable_sideCol_RHS">{{ value }}</span>
+							{% endif %}
+						{% endfor %}
+					</p>
+					<p><span class = "forumTable_sideCol_LHS">Category : </span> 
+						<a href = "" class = "forumTable_sideCol_catName">
+							<span class = "topic_cat_name"> {{ topic.topic_cat.cat_name }} </span>
+						</a>
+					</p>
+				</div>
+			</td>	
+		</tr>
+	{% endfor %}
+</table>
+</div>
+
+<!--div id = "container_home"-->	
+	<div id = "Header_2">
+		<img src = "{{ STATIC_URL }}images/commonElements/header_2.png"/>
+		
+		<div id = "topBand_2"></div>
+		<div id = "bottomBand_2"></div>
+		
+		<div id = "top_arrow">
+		<img src = "{{ STATIC_URL }}images/commonElements/arrow_down.png" id = "arrow_img"/>
+		</div>
+		
+		<input type = "text" name = "Search_box" id = "Search_box" placeholder = "Search Archilane"/>
+		
+		<!--div id = "search_glass"><img src = "../commonElements/search_glass.png"/></div-->
+		<div id = "download_basket"><img src = "{{ STATIC_URL }}images/commonElements/download_basket.png"/></div>
+		<div id = "home_btn">
+		<a href="/home/"><p>Home</p></a>
+		</div>
+		<div id="page_message">
+		   <!-- To display global messages -->
+		</div>
+	</div>
+	
+	<div id = "mainNavigation_panel">
+		<div id = "portfolio_icon" class = "main_navigation_icon">
+			<a href="/portfolio/"><img src = "{{ STATIC_URL }}images/commonElements/portfolio_icon.png"/></a>
+			<p class = "mainNavigation_icon_text">Portfolio</p>
+		</div>
+		
+		<div id = "forum_icon" class = "main_navigation_icon">
+			<a href="/forum/"><img src = "{{ STATIC_URL }}images/commonElements/forum_icon.png"/></a>
+			<p class = "mainNavigation_icon_text">Forum</p>
+		</div>
+		
+		<div id = "resources_icon" class = "main_navigation_icon">
+			<img src = "{{ STATIC_URL }}images/commonElements/resources_icon.png"/>
+			<p class = "mainNavigation_icon_text">Resources</p>
+		</div>
+		
+		<div id = "people_icon" class = "main_navigation_icon">
+			<img src = "{{ STATIC_URL }}images/commonElements/people_icon.png"/>
+			<p class = "mainNavigation_icon_text">People</p>
+		</div>
+		
+		<div id = "messages_icon" class = "main_navigation_icon">
+			<img src = "{{ STATIC_URL }}images/commonElements/messages_icon.png"/>
+			<p class = "mainNavigation_icon_text">Messages</p>
+		</div>
+	</div>
+	
+	<div id = "panel_left">
+	<!--This is the secondary navigation bar-->
+		<div id = "forum_navigation">
+		<p id = "browse_categories">Browse Categories<p>
+		
+		{% for group in groups %}	
+			<p class = "forum_category">{{ group.cat_group }}</p>
+			<div class = "subcategory_panel">
+				{% for subclass in categories %}				
+					{% if subclass.cat_group == group.cat_group %}
+					<p class = "forum_subcategory" title="{{ subclass.cat_name }}">{{ subclass.cat_name }}</p>		
+					{% endif %}
+				{% endfor %}		
+			</div>	
+		{% endfor %}		
+		</div>
+		
+		
+		<div style = "font-size:13px;width:100%;height:150px;">
+			<hr />
+			ad
+		</div>
+		
+	</div>
+	
+
+	
+	<!--div id = "panel_right"-->
+	<!--The one with the profile pic and also the archifeed-->
+		<div id = "profile_info" class = "panel_right">
+		<!--Profile information points etc.-->
+			<img src = "{{ user.userprofile.image.url }}" id = "profile_pic"/>
+		
+			<p id = "profileInfo_userName">Ranjeeth <br /> Mahankali</p>
+			<p id = "profileInfo_collegeName">Dept. of Arch and Planning <br />IIT Roorkee</p>
+			<p id = "profileInfo_links"><a id = "logout_btn" href="/logout/" >Logout</a> | <a id = "settings_btn">Settings</a></p>
+		
+			<div id = "points">
+			<img src = "{{ STATIC_URL }}images/commonElements/points_icon.png" id = "points_icon">
+			<p>123</p><!--maximum number of digits limited to 7 only-->
+			</div>
+		
+		</div>
+		
+		<!--div id = "archifeed" class = "panel_right">
+			<div id = "archifeed_header">
+				<em>Archifeed</em>
+			</div>
+			<div class = "archifeed_item">
+			</div>
+			<div class = "archifeed_item">
+			</div>
+			<div class = "archifeed_item">
+			</div>
+		</div-->
+	<!--/div-->
+	
+	<div id = "searchResults_panel">
+	
+		<div class = "search_accordion_header">
+			Forum	
+			<img src = "{{ STATIC_URL }}images/commonElements/Loading_gif.gif"/ class = "loading_gif">
+			<p id = "forum_result_number" class = "search_result_number"></p>
+		</div>
+		<div class = "search_accordion_content" id = "forum_results">
+			<!--div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div-->
+			
+		</div>
+		<div class = "search_accordion_header">
+			Resources
+			<img src = "{{ STATIC_URL }}images/commonElements/Loading_gif.gif"/ class = "loading_gif">
+			<p id = "forum_result_number" class = "search_result_number"></p>
+		</div>
+		<div class = "search_accordion_content" id = "resources_results">
+			<!--div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div-->
+		</div>
+		<div class = "search_accordion_header">
+			People
+			<img src = "{{ STATIC_URL }}images/commonElements/Loading_gif.gif"/ class = "loading_gif">
+			<p id = "forum_result_number" class = "search_result_number"></p>
+		</div>
+		<div class = "search_accordion_content" id = "people_results">
+			<!--div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div-->
+		</div>
+		<div class = "search_accordion_header">
+			Archifeed
+			<img src = "{{ STATIC_URL }}images/commonElements/Loading_gif.gif"/ class = "loading_gif">
+			<p id = "forum_result_number" class = "search_result_number"></p>
+		</div>
+		<div class = "search_accordion_content" id = "archifeed_results">
+			<!--div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div>
+			<div class = "search_accordion_result"></div-->
+		</div>
+	
+	</div>
+	
+	<div id = "side_arrow">
+	<
+	</div>
+	
+<!--/div-->
+	
+	<script type = "text/JavaScript" src = "{{ STATIC_URL }}js/commonElements/commonScript.js"></script>
+	<script type = "text/JavaScript" src = "{{ STATIC_URL }}js/forum/forum_script.js"></script>
+	
+</body>
+
+</html>

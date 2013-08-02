@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>	
+	{% for item in data %}	
+		<div class="news_items">	
+			<p><a href="{{ item.link }}">{{ item.title }}</a></p>
+			<p>{{ item.des }}</p>
+			<p>Source: {{ item.source }} | Published on: {{ item.pub_date }}</p>
+		</div>
+	{% endfor %}
+</body>
+</html>

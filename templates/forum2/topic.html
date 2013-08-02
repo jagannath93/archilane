@@ -1,0 +1,29 @@
+<html>
+<body>
+	
+	
+	{% for post in posts %}
+		<p><span style="color:grey;"><b>{{ post.post_content }}</b></style></p>
+		{% for key,values in replies.items %}				
+			{% if key == post.pk %}	
+				{% for reply in values %}
+					{{ reply.reply_content }}</br>
+				{% endfor %}
+			{% endif %}
+		{% endfor %}
+	
+		<form action="/forum/add_reply/" method="POST"> {% csrf_token %}
+                        <input type="text" name="reply_content"/>
+                        <input type="hidden" name="post_id" value="{{post.pk}}"/>
+                        <!--input type="submit" value="reply"/-->
+                </form>
+	{% endfor %}
+		
+	<h4>Add POst</h4>
+	<form action="/forum/add_post/" method="POST"> {% csrf_token %}
+		<textarea name="post_content"></textarea>
+		<input type = "hidden" name="topic" value = "{{ topic_id }}">
+		<input type="submit" value= "Post">
+	</form>
+</body>
+</html>

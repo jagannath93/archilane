@@ -1,0 +1,51 @@
+<html>
+<h3><a href='/site_auth/upload_pic/'>Upload Profile Picture</a><a style="float:right;" href='/logout/'>Logout</a></h3>
+<h3>Hello {{ user.email}}</h3>
+<title>ArchiLane | Forum Home</title>
+	<h2>Add a Thread</h2>
+		<form action="/forum/add_thread/" method="POST">{% csrf_token %}
+			<table>
+			<tr><td>Category</td><td>
+			<select name = "category">
+				{% for category in categories %}
+				<option value = "{{ category.id }}">{{ category.cat_name }}</option>
+				{% endfor %}
+			</select>
+			</td></tr>
+			<tr><td>Thread</td><td><input type='text' name="thread_name"></td></tr>
+			<br/>
+			<tr><td>Describe your Thread</td><td><textarea name="thread_desc"></textarea></td></tr>
+			</table>
+			<p>
+			<input type="submit" value="Submit" />
+			</p>
+		</form>
+
+<h3>Latest Threads</h3>
+<table border=1>
+{% for thread in latest_threads %}
+	<tr><td>{{ forloop.counter }}</td><td width="100px">{{ thread.thread_name }}</td>
+			<td width="500px">{{ thread.thread_desc }}</td></tr>
+{% endfor %}
+</table>
+
+<h3>Active Threads</h3>
+<table border=1>
+{% for thread in active_threads %}
+	<tr><td>{{ forloop.counter }}</td><td width="100px">{{ thread.thread_name }}</td>
+			<td width="500px">{{ thread.thread_desc }}</td></tr>
+{% endfor %}
+</table>
+
+<h3>Top Threads</h3>
+<table border=1>
+{% for thread in top_threads %}
+	<tr><td>{{ forloop.counter }}</td><td width="100px">{{ thread.thread_name }}</td>
+			<td width="500px">{{ thread.thread_desc }}</td></tr>
+{% endfor %}
+</table>
+
+
+	</body>
+
+</html>

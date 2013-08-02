@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>archilane</title>
+{% load static %}
+<link type="text/css" href="{{ STATIC_URL }}css/commonElements/commonElements.css" rel="stylesheet"></link>
+<link type="text/css" href="{{ STATIC_URL }}css/landing_page/styleSheet1.css" rel="stylesheet"></link>
+<link rel="shortcut icon" type="image/png" href="{{ STATIC_URL }}images/commonElements/favicon.png" />
+<script type = "text/JavaScript" src = "{{ STATIC_URL }}js/commonElements/jquery.min.js"></script>
+<script type = "text/JavaScript">
+//jQuery(document).ready(function(){});
+function slideTo_page2_frm_1(){
+	$('#ytplayer').hide();
+	$('.container_1').animate({height : 'toggle'},'slow',function(){
+	$('.container_1').hide();
+	$('#container_2').slideDown('slow');
+	});
+	
+}
+
+function slideTo_page1_frm_2(){
+	$('#container_2').slideUp('slow',function(){$('.container_1').animate({height:'toggle'},'slow');$('#ytplayer').show();});
+}
+</script>
+</head>
+
+<body>
+<div id="Header">
+		<img src="{{ STATIC_URL }}images/commonElements/header.png"/>
+	
+		<div id = "topBand"></div>
+		
+		<div id = "bottomBand"></div>
+</div>
+<div id = "container_1-1" class = "container_1">
+	<div id = "panel_loginForm">
+		<div id="msg_box" style="height:30px;width:100%;padding-left:10px;">
+			{% if message %}
+			 <p> <span>{{ message }}</span></p>
+			{% endif %}
+		</div>
+		<div id = "loginForm">
+			<form action = "/site_auth/signin/" method = "POST">
+			{% csrf_token %}
+				<label class = "Login_form_elements">Email</label>
+				<input type = "text" name = "username" class = "Login_form_elements"/>
+				
+				<br /><br /><br />
+				
+				<label class = "Login_form_elements">Password</label>
+				<input type="password" name="password" class = "Login_form_elements"/>
+				<br /><br />
+			
+				<a href = "#" class = "Login_form_elements"><p id = "log">forgot password</p></a>
+				
+				<br/><br/>
+				
+				<button type = "submit" class = "Login_form_elements">Log In</button>
+				<label id = "keepMeLoggedIn">Keep me Logged in</label>
+				<input type = "checkbox" name = "keep_me_Logged_in" value = "keep_me_Logged_in" class = "Login_form_elements"/>
+				
+				<br /><br/>
+			</form>
+		</div>
+	</div>
+</div>
+<form action = "/site_auth/signup/" method = "POST" id = "form_signup">
+{% csrf_token %}
+<div id = "container_1-2" class = "container_1">
+	<div id = "panel_signupForm">
+		<hr style = "margin : 10px 18px 0px 18px"/>
+		<br />
+		<p class = "Signup_form_elements" style = "margin-left : 18px">Not a member ? Then <span id = "signUp" class = "Signup_form_elements">Sign up</span></p>
+		<div id = "signup_form">
+			
+				<input type = "text" name = "first_name" class = "Signup_form_elements" PLACEHOLDER = "First Name"/>
+				<input type = "text" name = "last_name" class = "Signup_form_elements" PLACEHOLDER = "Last Name"/>
+				<input type = "text" name = "username" class = "Signup_form_elements" PLACEHOLDER = "Username"/>
+				<input type = "text" name = "email" class = "Signup_form_elements" PLACEHOLDER = "Email"/>
+			
+				<input type = "radio" name = "designation" value = "Stu" style = "margin : 18px 5px 18px 0px"/>
+				<label class = "Signup_form_elements">Student</label>
+			
+				<label class = "Signup_form_elements"><p id = "radio_pro">Teaching Faculty or <br />professional</p></label>
+				<input type = "radio" name = "designation" value = "Pro" style = "margin : 18px 5px 18px 0px" id = "radio_pro"/>
+			
+				<br />
+				<br />
+				<button type = "button" class = "Signup_form_elements" onclick = "slideTo_page2_frm_1()">Continue</button>
+		</div>
+	</div>
+	
+</div>
+
+	<script type = "text/JavaScript">
+		$(document).ready(function(){
+		
+		$('#signup_form').hide();
+		
+		var $signup_form = $('#signup_form');
+		
+		if(!$('#signup_form').is(':visible')){
+		$('#signUp').click(function(){
+		$signup_form.slideDown();
+		});}
+		
+
+		
+		$(window).resize(function(){//alert('yo');
+		var $ww = $(window);
+		var $html = $('html');
+		
+		if($ww.width()<1000){$html.css('overflow-x','scroll');
+							$('#topBand').css('width','690px');
+							$('#bottomBand').css('width','690px');}
+		else{$html.css('overflow-x','hidden');
+			$('#topBand').css('width','auto');
+			$('#bottomBand').css('width','auto');}
+		});
+		});
+	</script>
+	
+<div id = "container_2">
+	<div id = "panel_1">
+
+		    <br /><br /><br />
+			<label class = "panel_1">password</label>
+			
+			<br />
+			<input type = "password" id = "password" name = "password1" class = "panel_1"/>
+			
+			<br /><br />
+			
+			<label class = "panel_1">confirm password</label>
+			
+			<br />
+			<input type = "password" id = "password" name = "password2" class = "panel_1"/>
+			
+			<br /><br />
+			
+			
+			
+			
+			
+			
+			<label id = "date of birth" class = "panel_1">date of birth</label>
+			
+			<br />
+			<input id="date" type = "text" name = "dob" class = "panel_1"  PLACEHOLDER = "Date Of Birth"/--> 
+			<!--input id = "date" type = "text" name = "date" class = "panel_1"PLACEHOLDER = "Date"/>
+			<input id = "month" type = "text" name = "month" class = "panel_1"PLACEHOLDER = "Month"/>
+			<input id = "year" type = "text" name = "year" class = "panel_1"PLACEHOLDER = "Year"/-->
+			
+			<br /><br />
+			
+			<label class = "panel_1">Male</label>
+			<input type="radio" name="gender" value="M" />
+			<label class = "panel_1">Female</label>
+			<input type="radio" name="gender" value="F" />
+			
+			<br /><br />
+			
+			<button type = "button" name = "next" class = "student_signup_form_elements" id = "backBtn" onclick = "slideTo_page1_frm_2()">Back</button>
+			
+		
+			<br /><br />
+			
+		
+	
+	
+
+
+
+	
+	</div>
+
+
+	<div id = "panel_2">
+
+	
+		
+            <br /><br /><br />
+			<label class = "panel_2">college</label>
+			<br />
+			<select name="college" class = "panel_2">
+				<option value="IIT, Roorkee" style = "font-style:italic">Indian Institute of Technology, Roorkee</option>
+				<option value="IIT, Kharagpur">Indian Institute of Technology, Kharagpur</option>
+				<option value="SPA, Delhi">School of Planning and Architecture, Delhi</option>
+			</select>
+			
+			<br /><br />
+			
+			<label class = "panel_2">course</label>
+			<br />			
+			<select name="course" class = "panel_2">
+				<option value="B.ARCH">Bachelor in Architecture and Planning</option>
+				<option value="M.ARCH">Master in Architecture and Planning</option>
+				<option value="M.URBAN">Master in Urban and Rural Planning</option>
+				<option value="ARCH.Phd">Doctorate in Architecture and Planning</option>
+			</select>
+			
+			
+			<br /><br />
+			
+			<label class = "panel_2">year of joining</label>
+            <br />
+			<select name="year" class = "panel_2">    <!-- Changed: It's better to take year than year of joining -->
+				<option value='1'>First</option>
+				<option value='2'>Second</option>
+				<option value='3'>Third</option>
+			        <option value='4'>Fourth</option>
+				<option value='5'>Fifth</option>
+			</select>
+			<!--select name="year of joining" class = "panel_2">
+				<option value="2000">2010</option>
+				<option value="2011">2011</option>
+				<option value="2012">2012</option>
+			</select-->
+			
+			<br /><br />
+		<input type = "submit" name = "submit" class = "student_signup_form_elements" id = "nextBtn" value="Next"/>
+
+	</div>
+
+	<div id = "captcha">
+
+    <div id = "captcha_background">
+	
+	</div>
+
+	<!--div id = "captcha_content">
+		
+		
+			<a href = "www.google.com" target = "blank" class = "captcha"><p>what is this?</p></a>
+			<label id = "security check" class = "captcha">security check</label>
+			<br /><br /><br />
+		
+			<label class = "captcha">enter the text here</label>
+			<br />
+			<input type = "text" name = "enter the text here" class = "captcha"/>
+	</div-->
+	
+
+</div>
+
+
+</div>
+</form>
+
+<div id ="footer"></div>
+
+<script type = "text/JavaScript">
+$(document).ready(function(){
+//$('#container_2').css('left',$(document).width());
+$('#container_2').hide();
+//$('#date').datepicker()
+});
+</script>
+<!--div id = "ytplayer">
+		<iframe src = "http://www.youtube.com/embed/9bZkp7q19f0" id = "iff"/>
+</div-->
+</body>
+
+</html>
