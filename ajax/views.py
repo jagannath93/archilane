@@ -19,6 +19,3 @@ def get_navigation(request, c_id):
 		return render_to_response('ajax/nav.html', context_instance = RequestContext(request))
 	else:
 		return HttpResponse("Page Not Found!!")
-
-def ex(var):
-	return 'just for testing...'
