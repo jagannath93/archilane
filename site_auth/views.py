@@ -175,21 +175,28 @@ def signout(request):
 
 def upload_pic(request):
 	if request.method == 'POST':
-		form = UploadPicForm(request.POST, request.FILES)
-		if form.is_valid():
-			uprofile = UserProfile.objects.get(user = request.user)
-			image = request.FILES['pic']
-			filename = image.name
-			ext = filename.split('.')[-1]
-			image.name = uprofile.user.username +"."+ ext
-			import os
-			from django.conf import settings
-			full_path = os.path.join(settings.MEDIA_ROOT, "profile_pics/"+image.name)
-			if os.path.exists(full_path):
-				os.remove(full_path)
-			uprofile.image = image
-			uprofile.save()
-			return HttpResponseRedirect('/home/')
+		#form = UploadPicForm(request.POST, request.FILES)
+		#if form.is_valid():
+		uprofile = UserProfile.objects.get(user = request.user)
+		#image = request.FILES['pic']
+		image = request.POST.get('profile_pic')
+		#filename = image.name
+		#ext = filename.split('.')[-1]
+		image_name = uprofile.user.username +".jpg"
+
+		import os
+		import re
+		from django.conf import settings
+		full_path = os.path.join(settings.MEDIA_ROOT, "profile_pics/"+image_name)
+		imgstr = re.search(r'base64,(.*)', image).group(1)
+		output = open(full_path ,'wb')
+		output.write(imgstr.decode('base64'))
+		output.close()
+		#if os.path.exists(full_path):
+		#	os.remove(full_path)
+		uprofile.image = "profile_pics/" + image_name
+		uprofile.save()
+		return HttpResponseRedirect('/home/')
 	else:
 		form = UploadPicForm()
 	return render_to_response('frontend/settings.html', {'form':form},
