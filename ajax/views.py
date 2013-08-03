@@ -22,4 +22,3 @@ def get_navigation(request, c_id):
 
 def ex(var):
 	return 'just for testing...'
-sdkj fk jsdkfhsdkjfhkjsd
