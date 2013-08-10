@@ -12,6 +12,7 @@
 	<script type="text/JavaScript" src = "{{ STATIC_URL }}js/commonElements/jquery.history.js"></script>
 	<script type="text/JavaScript" src = "{{ STATIC_URL }}js/modal_window/jquery.colorbox.js"></script>
 	<script type="text/JavaScript" src = "{{ STATIC_URL }}js/modal_window/jquery.colorbox-min.js"></script>
+	<link rel="shortcut icon" type="image/png" href="{{ STATIC_URL }}images/commonElements/favicon.png" />
 </head>
 
 <body>
@@ -39,8 +40,8 @@
 </div>	
 <div id = "main_content">
 	<!--This is the main content of the page according to the corresponding app or the main page-->
-<div id = "main_content_header">
-	Topic
+	<div id = "main_content_header">
+		Topic
 	</div>	
 	<div id = "buttons_box">
 		<span class="my_activity"><button type = "button" name = "my_activity"> My Activity </button></span>
@@ -99,7 +100,7 @@
 	<br /><br />	
 	<table id = "forum_read_posts" border = "0" cellspacing = "0">
 		<caption id = "forum_read_postList_header">
-			 Replies_num
+			 All Replies (replies_num)
 		</caption>
 		
 		{% for post in posts %}	
@@ -116,11 +117,30 @@
 				</p>
 			</td>			
 			<td class = "forum_read_postBody">
-				<p>
-					{{ post.post_content }} | <b>Post</b>
-				</p>				
+				<div class = "post_content">
+					<p>
+						{{ post.post_content }} | <b>Post</b>
+					</p>
+					<div class = "post_replies_box">
+						<span class = "replies_head">Replies (replies_num)<hr class = "reply_seperator"/></span>
+						{% for key,values in replies.items %}				
+							{% if key == post.pk %}	
+							{% for reply in values %}			
+								<div class = "reply_links" id = "reply_{{ reply.pk }}">
+										<p class = "reply_link_box">
+											<img src = "{{ reply.reply_by.userprofile.image.url }}" class = "reply_profilePic"/>
+											<span class = "post_reply_username">{{ reply.reply_by.first_name }}</span><span class = "post_reply_content">   "{{ reply.reply_content }}"</span>
+										</p>
+										<p class = "post_reply_contentFull"><br />{{ reply.reply_content }}<br /><a class = "hide_reply_link">hide</a></p>
+										<br />
+								</div>
+						{% endfor %}
+							{% endif %}
+							{% endfor %}
+					</div>
+				</div>
 				<a  class='inline' href="#add_reply_{{post.pk}}">
-					<button type = "button" name = "reply_to_post" class = "reply_to_post_btn"> Reply </button>
+					<span class = "reply_to_post_btn"> <button>Reply </button></span>
 				</a>
 			</td>
 		</tr>
@@ -136,7 +156,7 @@
 		</div>
 	</div>
 	<!-- end -->
-			{% for key,values in replies.items %}				
+		<!-- replies removed and forum structure changes	{% for key,values in replies.items %}				
 				{% if key == post.pk %}	
 					{% for reply in values %}			
 						<tr id = "reply_{{ reply.pk }}" class = "forum_read_post">
@@ -160,8 +180,8 @@
 						</tr>
 					{% endfor %}
 				{% endif %}
-			{% endfor %}	
-		{% endfor %}
+			{% endfor %}	-->
+		{% endfor %} 
 	</table>
 </div>
 
@@ -246,7 +266,7 @@
 	<!--The one with the profile pic and also the archifeed-->
 		<div id = "profile_info" class = "panel_right">
 		<!--Profile information points etc.-->
-			<img src = "{{ STATIC_URL }}images/commonElements/profile_pic.jpg" id = "profile_pic"/>
+			<img src = "{{ user.userprofile.image.url }}" id = "profile_pic"/>
 		
 			<p id = "profileInfo_userName">Ranjeeth <br /> Mahankali</p>
 			<p id = "profileInfo_collegeName">Dept. of Arch and Planning <br />IIT Roorkee</p>

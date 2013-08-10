@@ -32,8 +32,9 @@ urlpatterns = patterns('',
 
 
 #archifeed
-	(r'^archifeed/extract/', 'archifeed.views.data_extractor'),
-	(r'^archifeed/', 'archifeed.views.archifeed'),
+	(r'^archifeed/extract/$', 'archifeed.views.data_extractor'),
+	(r'^archifeed/$', 'archifeed.views.archifeed'),
+	(r'^archifeed/settings/$', 'archifeed.views.settings'),
 
 	(r'^portfolio/(?P<user_id>\d+)/$', 'portfolio.views.home'),
 	(r'^portfolio/(?P<owner_id>\d+)/(?P<token>\d+)/$', 'portfolio.views.mark_portfolio'),
@@ -75,7 +76,8 @@ urlpatterns = patterns('',
 	(r'^forum/category/unsubscribe/$', 'forum.views.cat_unsubscription'),
 	(r'^forum/topic/subscribe/$', 'forum.views.topic_subscription'),
 	(r'^forum/topic/unsubscribe/$', 'forum.views.topic_unsubscription'),
-	#('^uploads/$', 'resources.views.home'),
+	
+	(r'^resources/$', 'resources.views.response_mimetype'),
 	#('^uploadurl$', 'resources.views.FileHandler'),	
 
 	

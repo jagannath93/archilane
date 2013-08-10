@@ -1,12 +1,25 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+#class Group(models.Model):
+#	name = models.CharField(max_length=20, choices=GROUP_CHOICES)
+			
+
 class UserProfile(models.Model):
 	GENDER_CHOICES = (
 		(u'M',u'Male'),
 		(u'F',u'Female'),
 	)
+
+	'''
+	GROUP_CHOICES = (
+	(u'P', u'Professional'),
+	(u'S', u'Student'),
+	)
+	'''	
 	user = models.OneToOneField(User)
+	#group = models.CharField(max_length=20, choices=GROUP_CHOICES)
+
 	friend = models.ManyToManyField('self', through = 'FriendRelations', symmetrical = False, related_name = 'friends')
 	following = models.ManyToManyField('self', through = 'FollowRelations', symmetrical = False, related_name = 'people_following')
 

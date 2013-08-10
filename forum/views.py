@@ -21,8 +21,8 @@ def home(request):	# login_field
 	#top_topics = Topic.objects.order_by("topic_views" )[:5]
 	#active_topics = Topic.objects.order_by("topic_active" )[:5]
 
-#	return render_to_response ('forum/home.html', {'latest_threads':latest_threads},
-#			{'top_threads':top_threads},{'active_threads':active_threads},	context_instance=RequestContext(request))
+	#return render_to_response ('forum/home.html', {'latest_threads':latest_threads},
+	#{'top_threads':top_threads},{'active_threads':active_threads},	context_instance=RequestContext(request))
 	return render_to_response ('forum/home.html',{'categories':categories, 'groups':groups, "latest_topics":latest_topics} 
 					, context_instance=RequestContext(request))
 @login_required
@@ -96,13 +96,16 @@ def add_topic(request):
 		t1.topic_subscribers.add(request.user)  # Topic subscriptions
 		t1.subscribes += 1
 		t1.save()
-	content = "New topic Posted : "+ t1.topic_name +" by -"+ str(request.user)
+	###content = "New topic Posted : "+ t1.topic_name +" by -"+ str(request.user)
 	url = "http://test.archilane.com/forum/topic/" + str(t1.id)
 	topic_subscribers = t1.topic_subscribers.all()
-	Notification.save_notification(content,url,'forum','Topic','private',topic_subscribers)
+
+	module = 'add_topic'
+	key = t1.pk 
+	Notification.save_notification(module, key, url,'forum','Topic','private',topic_subscribers)
 	if t1.topic_cat.subscribes > 0:
 		cat_subscribers = t1.topic_cat.cat_subscribers.all()
-		Notification.save_notification(content,url,'forum','Category','private',cat_subscribers)
+		Notification.save_notification(module, key, url,'forum','Category','private',cat_subscribers)
 	return HttpResponse(t1.pk)
 	#return HttpResponseRedirect("/forum/topic/%s" % t1.id)
 

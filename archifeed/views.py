@@ -4,7 +4,8 @@ import hashlib
 import datetime
 import uuid
 import os
-from archifeed.models import ArchiFeed
+from archifeed.models import ArchiFeed, Category, AFeedUser
+from django.utils import simplejson
 #from similarity import compare
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import RequestContext
@@ -20,9 +21,8 @@ def data_extractor(request):
   	#try:
 	#archifeed(path, 'sports')    
 	#except Exception as e:return HttpResponse(e)
-#	return HttpResponse("Task completed."+ path)
-
-#def archifeed(path, channel):
+	#return HttpResponse("Task completed."+ path)
+	#def archifeed(path, channel):
 	if channel == "national":
 		xml_file_path = path + 'hindu_nat.xml'
 		category = channel
@@ -76,6 +76,21 @@ def data_extractor(request):
 
 	return HttpResponse(link)
 
+def update_user_cats(request):
+	user_cat_ids = request.POST.getlist('_cats')
+	for id in user_cat_ids:
+		c = Category.objects.get(pk=id)
+		if c not in  request.user.category_set.all():
+			uc = request.user.category_set.add(c)
+			uc.frequency = request.POST.get('_fre_'+ id)
+			uc.frequency = request.POST.get('_col_'+ id)
+			uc.save()
+		else:
+			c.frequency = request.POST.get('_fre_'+id)
+			c.color = request.POST.get('_col_'+id)
+			c.save()
+	return HttpResponseRedirect(reverse('archifeed.views.setting'))
+
 allowed_users = ['jaganuap', 'neel7uap']
 @user_passes_test(lambda u: u.username in allowed_users)
 @login_required
@@ -94,4 +109,33 @@ def archifeed(request):
 	#return HttpResponse(pub_date)
 	return render_to_response('archifeed/index.html',{'data':afeed})
 
+@login_required
+def settings(request):
+	categories = Category.objects.all()
+	user_categories = AFeedUser.categories.all()
+
+	data = {}
+	tmp = {}
+	i = 0
+	for category in categories:
+		cat = {}
+		#for item in category:
+		cat['name'] = category.name 
+		cat['des'] = category.des
+		tmp[i] = cat
+		i = i+1
 	
+	data['cat'] = tmp
+	tmp = {}
+	i = 0
+	for category in user_categories:
+		cat = {}
+		#for item in category:
+		cat['name'] = category.name
+		cat['frequency'] = category.frequency
+		cat['color'] = category.color
+		tmp[i] = cat
+		i = i+1	
+	data['_cat'] = tmp
+	json_obj = {'data' : data}
+	return HttpResponse(simplejson.dumps(json_obj), mimetype='application/json')

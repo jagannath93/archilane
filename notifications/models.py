@@ -17,7 +17,8 @@ NOTIFICATION_STATES = (
 
 class Notification(models.Model):
 	ntfnId = models.CharField(max_length=35, blank=True)
-	content = models.TextField()
+	module = models.CharField(max_length=30)
+	key = models.IntegerField(max_length=5, default = -1) #Need to change: max_length - max 5 digits b'coz pk can be larger than this.
 	model = models.CharField(max_length=25, blank=True)
 	app = models.CharField(max_length=30, blank=True)
 	url = models.URLField(blank=True, null=True)
@@ -33,9 +34,9 @@ class Notification(models.Model):
 
 
 	@staticmethod
-	def save_notification(content, url, app, model, type, receivers=[]):
+	def save_notification(module, key, url, app, model, type, receivers=[]):
 		ntfnId = ''
-		ntfn = Notification(ntfnId=ntfnId, content=content, url=url, app=app, model = "Portfolio" if model else '')
+		ntfn = Notification(ntfnId=ntfnId, module=module, key=key, url=url, app=app, model = "Portfolio" if model else '')
 		ntfn.save()
 		import hashlib
 		m = hashlib.md5()
