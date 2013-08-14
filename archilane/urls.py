@@ -23,6 +23,7 @@ urlpatterns = patterns('',
 	#(r'^ajax/con/(?P<c_id>\w+)/$', 'ajax.views.get_content'),
 	#(r'^search/$', 'search.views.search'),
 	#(r'^search/global/$' ,'search.views.global_search'),
+	url(r'', include('social_auth.urls')),
 
 #portfolio:
 	#(r'^portfolio/$', 'portfolio.views.home'),

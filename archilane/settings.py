@@ -146,12 +146,34 @@ INSTALLED_APPS = (
     'messages',
     'portfolio',
     #'resources',
+	'social_auth',
 
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
 )
+
+# social auth config
+AUTHENTICATION_BACKENDS = (
+	'social_auth.backends.contrib.facebook.FacebookBackend',
+	'django.contrib.auth.backends.ModelBackend',
+)
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+	'django.contrib.auth.context_processors.auth',
+	'social_auth.context_processors.social_auth_by_type_backends',
+)
+
+SOCIAL_AUTH_ENABLED_BACKENDS = ('facebook',)
+SOCIAL_AUTH_DEFAULT_USERNAME = ('new_social_auth_user')
+
+FACEBOOK_APP_ID = '373611066098116'
+FACEBOOK_API_SECRET = '6e73e5aa757eb20d8a794746d3170b7d'
+
+LOGIN_URL = '/site_auth/signup'
+LOGIN_REDIRECT_URL = '/home/'
+LOGIN_ERROR_URL = '/site_auth/signup'
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
