@@ -1,14 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-class AFeedUser(models.model):
-	user = models.OneToOneField(User)
-	frequency = models.IntegerField(max_length=3, default=0)
-	categories = models.ManyToManyField(Category)				
-	
-	def __unicode__(self):
-		return self.user
-
 class Category(models.Model):
 	name = models.CharField(max_length=30)
 	des = models.CharField(max_length=100)
@@ -17,6 +9,15 @@ class Category(models.Model):
 	
 	def __unicode__(self):	
 		return self.name
+
+class AFeedUser(models.Model):
+	user = models.OneToOneField(User)
+	frequency = models.IntegerField(max_length=3, default=0)
+	categories = models.ManyToManyField(Category)				
+	
+	def __unicode__(self):
+		return self.user
+
 
 class ArchiFeed(models.Model):
 	category = models.ForeignKey(Category, related_name='feed_category')

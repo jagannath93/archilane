@@ -4,7 +4,7 @@ import hashlib
 import datetime
 import uuid
 import os
-from archifeed.models import ArchiFeed, Category, AFeedUser
+from models import ArchiFeed, Category, AFeedUser
 from django.utils import simplejson
 #from similarity import compare
 from django.http import HttpResponse, HttpResponseRedirect
